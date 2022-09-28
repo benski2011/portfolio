@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
+/// <summary>
+/// Class is used to freeze/unfreeze the game
+/// </summary>
 public class unfreeze : MonoBehaviour
 {
     VideoPlayer video;

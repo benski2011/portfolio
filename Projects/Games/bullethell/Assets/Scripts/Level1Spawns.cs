@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public enum levelEventType { wait, enemy1, enemy2, enemy3, stop, end, text};
 public enum imgtype { tanya, command };
 
+/// <summary>
+/// level 1 script info
+/// </summary>
 public struct LevelEvent
 {
     public LevelEvent(levelEventType s, int i = 0, int j =0, string v1 = "", string v2 = "")

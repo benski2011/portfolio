@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// player bullet script - attacks enemy
+/// </summary>
 public class playerbullet : MonoBehaviour
 {
     public GameObject player; 

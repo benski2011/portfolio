@@ -44,24 +44,28 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //attach audio and main manager
         gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         AudioManager = GameObject.FindWithTag("AudioManager").GetComponent<AudioManager>();
         //Cursor.lockState = CursorLockMode.Confined;
         //Cursor.visible = false;
 
-       
+        //what is this
         abilitySprite.transform.localScale = new Vector2(0, abilitySprite.transform.localScale.y);
+
         increaseAbility();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //check if game is still running
         if (gm.GetComponent<GameManager>().GameEnd)
         {
             return;
         }
 
+        //input manager - needs to be refactored
         Rigidbody rb = GetComponent<Rigidbody>();
         if (Input.GetKey(KeyCode.A))
             rb.AddForce(Vector3.left * MoveSpeed * Time.deltaTime) ; ;

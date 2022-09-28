@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-
+/// <summary>
+/// manager to keep track of enemy behavior and numbers
+/// </summary>
 public class EnemyManager : MonoBehaviour
 {
     public GameObject audiomanager;

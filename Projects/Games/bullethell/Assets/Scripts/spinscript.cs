@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class spinscript : MonoBehaviour
 {
-
+    /// <summary>
+    /// rotates parent object
+    /// </summary>
     public float speed = 1;
     float roty;
     Transform r;

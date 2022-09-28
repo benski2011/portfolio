@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// main enemy ai script
+/// </summary>
 public class enemyScript : MonoBehaviour
 {
     public float firerate = 0.5f;
