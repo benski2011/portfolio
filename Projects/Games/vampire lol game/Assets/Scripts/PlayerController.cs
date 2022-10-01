@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                DirectoryInfo dir = new DirectoryInfo(@"C:\Users\benjas\Documents\git\benski\portfolio\Projects\Games\vampire lol game\Assets\Scripts\playerbuffs");
+                DirectoryInfo dir = new DirectoryInfo(@"C:\Users\bensk\Documents\git\portfolio\Projects\Games\vampire lol game\Assets\Scripts\playerbuffs");
                 FileInfo[] info = dir.GetFiles("*.cs");
                 foreach (FileInfo f in info)
                 {
