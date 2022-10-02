@@ -40,8 +40,8 @@ public class enemyScript : MonoBehaviour
 
         if (Time.time > canfire)
         {
-            //Shoot();
-            ShootRay();
+            Shoot();
+            //ShootRay();
             //Shotgun();
             //ArcShot();
             //DelayedShoot();
