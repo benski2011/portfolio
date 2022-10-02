@@ -1,0 +1,2 @@
+known bugs
+- the game will add more abilities than allowed. need a check to see ammunt of levels that will be added, and see if that is more than allowed number of abilities. 
