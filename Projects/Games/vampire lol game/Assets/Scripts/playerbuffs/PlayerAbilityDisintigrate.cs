@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Annie
 /// Description: Fireball projectile moves towards random enemy, dealing damage to all enemies
 /// </summary>
-public class PlayerAbilityDisintigrate : MonoBehaviour
+public class PlayerAbilityDisintigrate : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityDisintigrate : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

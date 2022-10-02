@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Sum
 /// Description: Increase movement speed
 /// </summary>
-public class PlayerAbilityGhost : MonoBehaviour
+public class PlayerAbilityGhost : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityGhost : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Zac
 /// Description: When damaged, blobs fall out of player, picking one up heals players X damage
 /// </summary>
-public class PlayerAbilityCellDivision : MonoBehaviour
+public class PlayerAbilityCellDivision : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityCellDivision : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

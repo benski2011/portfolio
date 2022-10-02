@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Veigar
 /// Description: Delayed projectile on a location
 /// </summary>
-public class PlayerAbilityDarkMatter : MonoBehaviour
+public class PlayerAbilityDarkMatter : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityDarkMatter : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

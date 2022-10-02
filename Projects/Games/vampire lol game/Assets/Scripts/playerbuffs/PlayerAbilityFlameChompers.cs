@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Jinx
 /// Description: Chompers are thrown towards enemies, damage and stun enemy
 /// </summary>
-public class PlayerAbilityFlameChompers : MonoBehaviour
+public class PlayerAbilityFlameChompers : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+  
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityFlameChompers : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

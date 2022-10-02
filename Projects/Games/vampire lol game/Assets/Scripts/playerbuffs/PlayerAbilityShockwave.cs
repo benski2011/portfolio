@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Orianna
 /// Description: Ball is moved to enemy group, aoe damage and enemy displacement 
 /// </summary>
-public class PlayerAbilityShockwave : MonoBehaviour
+public class PlayerAbilityShockwave : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityShockwave : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

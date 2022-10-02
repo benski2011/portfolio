@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Veigar
 /// Description: Delayed AOE, stuns enemies 
 /// </summary>
-public class PlayerAbilityEventHorizon : MonoBehaviour
+public class PlayerAbilityEventHorizon : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityEventHorizon : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

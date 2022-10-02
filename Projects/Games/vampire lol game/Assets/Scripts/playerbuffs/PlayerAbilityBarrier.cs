@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Sum
 /// Description: Shield from damage
 /// </summary>
-public class PlayerAbilityBarrier : MonoBehaviour
+public class PlayerAbilityBarrier : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityBarrier : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

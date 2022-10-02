@@ -7,9 +7,10 @@ using UnityEngine;
 /// Description: Charge an pulse towards random enemies
 /// </summary>
 
-public class PlayerAbilityArcanopulse : MonoBehaviour
+public class PlayerAbilityArcanopulse : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+   
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +22,11 @@ public class PlayerAbilityArcanopulse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
 
-    }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
+
+
+
 }

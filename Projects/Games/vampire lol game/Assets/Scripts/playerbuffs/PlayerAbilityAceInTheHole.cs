@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Caitlyn
 /// Description: Deals massive damage to highest hp target
 /// </summary>
-public class PlayerAbilityAceInTheHole : MonoBehaviour
+public class PlayerAbilityAceInTheHole : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityAceInTheHole : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+ 
 }

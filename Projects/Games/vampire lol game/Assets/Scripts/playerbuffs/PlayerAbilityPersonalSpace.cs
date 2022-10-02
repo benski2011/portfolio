@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Vex
 /// Description: If enemies are too closed, they gets pushed away
 /// </summary>
-public class PlayerAbilityPersonalSpace : MonoBehaviour
+public class PlayerAbilityPersonalSpace : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityPersonalSpace : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

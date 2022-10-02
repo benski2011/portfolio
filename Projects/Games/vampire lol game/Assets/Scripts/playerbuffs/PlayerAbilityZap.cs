@@ -6,9 +6,8 @@ using UnityEngine;
 /// Champion: Jinx
 /// Description: Tiny ray is shot towards closet enemy
 /// </summary>
-public class PlayerAbilityZap : MonoBehaviour
+public class PlayerAbilityZap : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +21,5 @@ public class PlayerAbilityZap : MonoBehaviour
     {
         
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+ 
 }

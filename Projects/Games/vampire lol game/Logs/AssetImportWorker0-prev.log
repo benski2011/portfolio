@@ -1,0 +1,1689 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.38f1 (8f5fde82e2dc) revision 9396190'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'no' Physical Memory: 32525 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.38f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/bensk/Documents/git/portfolio/Projects/Games/vampire lol game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57764
+Successfully changed project path to: C:/Users/bensk/Documents/git/portfolio/Projects/Games/vampire lol game
+C:/Users/bensk/Documents/git/portfolio/Projects/Games/vampire lol game
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 18.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.38f1 (8f5fde82e2dc)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bensk/Documents/git/portfolio/Projects/Games/vampire lol game/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3090 (ID=0x2204)
+    Vendor:   
+    VRAM:     24348 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.38f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000758 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 17.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.313 seconds
+Domain Reload Profiling:
+	ReloadAssembly (314ms)
+		BeginReloadAssembly (34ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (240ms)
+			LoadAssemblies (33ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (79ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (15ms)
+			SetupLoadedEditorAssemblies (89ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (18ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (44ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001280 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.521 seconds
+Domain Reload Profiling:
+	ReloadAssembly (521ms)
+		BeginReloadAssembly (78ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (411ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (167ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (111ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1547 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.0 MB.
+System memory in use after: 71.1 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 1983.
+Total: 1.664000 ms (FindLiveObjects: 0.064800 ms CreateObjectMapping: 0.020000 ms MarkObjects: 1.525800 ms  DeleteObjects: 0.052800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd21fa7a6c7995562054ace971d31a84') in 0.005207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.372422 seconds.
+  path: Assets/Scenes/texture test.unity
+  artifactKey: Guid(cfe86b333bcd0ba48a969ac0768889b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/texture test.unity using Guid(cfe86b333bcd0ba48a969ac0768889b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82a4cf5191e31979faf336cd3285235') in 0.004668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.077003 seconds.
+  path: Assets/Material/lol charachter png
+  artifactKey: Guid(78dc03639747c914e9c528a890198be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png using Guid(78dc03639747c914e9c528a890198be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac48911106b43471cdecd2c7f0673e4') in 0.004498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.077772 seconds.
+  path: Assets/Material/lol charachter png/annie_sprite.png
+  artifactKey: Guid(cc8898a59cac3364fbc31d1a0b192492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_sprite.png using Guid(cc8898a59cac3364fbc31d1a0b192492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582a3baf4e0664775c0a348066f8c836') in 0.044446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Material/lol charachter png/mordekaiser_sprite.png
+  artifactKey: Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/mordekaiser_sprite.png using Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156a7484baa0f61e8312ed552474a504') in 0.012137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Material/lol charachter png/missfortune_sprite.png
+  artifactKey: Guid(659feb8f5aa6e9346ac8a24486253f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/missfortune_sprite.png using Guid(659feb8f5aa6e9346ac8a24486253f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877e6335d4a25a475b8fb5c7edb98611') in 0.010964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Material/lol charachter png/ashe_sprite.png
+  artifactKey: Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_sprite.png using Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6290a217a5c0970f7e165823b3e825a') in 0.011289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Material/lol charachter png/ziggs_sprite.png
+  artifactKey: Guid(48a67f46a66b21541bb60fac07186e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ziggs_sprite.png using Guid(48a67f46a66b21541bb60fac07186e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '557175f389737add45f73f6c6b352157') in 0.013551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Material/lol charachter png/karthus_sprite.png
+  artifactKey: Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/karthus_sprite.png using Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8947c9f5b32bb4e6349eccaab28050ee') in 0.009273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Material/lol charachter png/gnar_sprite.png
+  artifactKey: Guid(787e49a9439e0cb4fad47eccfd5a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/gnar_sprite.png using Guid(787e49a9439e0cb4fad47eccfd5a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5026561b32386555a37a184dcf43ddbc') in 0.013849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Material/lol charachter png/veigar_sprite.png
+  artifactKey: Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/veigar_sprite.png using Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b05abd27d97dfde48c66e30d1fcabd5') in 0.008864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Material/lol charachter png/sona_sprite.png
+  artifactKey: Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/sona_sprite.png using Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3427325092bdb40faaf72de80ce8ca8') in 0.012603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Material/lol charachter png/yoric_sprite.png
+  artifactKey: Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/yoric_sprite.png using Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8077809b26c935836d408017409dd48d') in 0.008512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Material/lol charachter png/lucian_sprite.png
+  artifactKey: Guid(472e1e4336021d1478df84b706aca2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/lucian_sprite.png using Guid(472e1e4336021d1478df84b706aca2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '820202123df650fb7b392ad442a449f6') in 0.008738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Material/lol charachter png/kayle_sprite.png
+  artifactKey: Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/kayle_sprite.png using Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eadca134c5f671059312305457123db') in 0.011932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Material/lol charachter png/olaf_sprite.png
+  artifactKey: Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/olaf_sprite.png using Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3b19493db7ce0291b22d0ca3ab00ac') in 0.011520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Material/lol charachter png/ekko_sprite.png
+  artifactKey: Guid(5d90f6237654cba4286efdd73406ff00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ekko_sprite.png using Guid(5d90f6237654cba4286efdd73406ff00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c42688b366323bd45d5558fef293b9') in 0.012025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.862941 seconds.
+  path: Assets/Material/lol charachter png/annie_sprite.png
+  artifactKey: Guid(cc8898a59cac3364fbc31d1a0b192492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_sprite.png using Guid(cc8898a59cac3364fbc31d1a0b192492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e661d2233938cc8c5e3be9dcd4dca8') in 0.006864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.228509 seconds.
+  path: Assets/Material/lol charachter png/Materials
+  artifactKey: Guid(f6490e06787475e40971902539c14c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials using Guid(f6490e06787475e40971902539c14c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18f4b4010eb3af2568d48eee96f3f2c3') in 0.003315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045220 seconds.
+  path: Assets/Material/lol charachter png/Materials/annie_sprite.mat
+  artifactKey: Guid(d14b2046e011e2f4cabfa7815bb793bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/annie_sprite.mat using Guid(d14b2046e011e2f4cabfa7815bb793bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e8baa64475691c4760514d76d787f2a') in 0.044861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112.861103 seconds.
+  path: Assets/Material/lol charachter png/ashe_sprite.png
+  artifactKey: Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_sprite.png using Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95fa67874bd97b8e513ca7b270184502') in 0.010978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Material/lol charachter png/mordekaiser_sprite.png
+  artifactKey: Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/mordekaiser_sprite.png using Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8187dd0258ea3970db14221e8163bf') in 0.007305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Material/lol charachter png/missfortune_sprite.png
+  artifactKey: Guid(659feb8f5aa6e9346ac8a24486253f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/missfortune_sprite.png using Guid(659feb8f5aa6e9346ac8a24486253f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ff4518c8b405ab7f330b11855ef809') in 0.012225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Material/lol charachter png/ziggs_sprite.png
+  artifactKey: Guid(48a67f46a66b21541bb60fac07186e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ziggs_sprite.png using Guid(48a67f46a66b21541bb60fac07186e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec924e0a8f7f9899ba5f56ccd1bb112') in 0.005985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Material/lol charachter png/karthus_sprite.png
+  artifactKey: Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/karthus_sprite.png using Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e394d790c1e5b7ea16609a8d1944e9fc') in 0.009494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Material/lol charachter png/gnar_sprite.png
+  artifactKey: Guid(787e49a9439e0cb4fad47eccfd5a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/gnar_sprite.png using Guid(787e49a9439e0cb4fad47eccfd5a292d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243d255b964ea226b5af19e8b97a6270') in 0.006483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Material/lol charachter png/veigar_sprite.png
+  artifactKey: Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/veigar_sprite.png using Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87a84da00cfe59098b55fda7a4b5d58') in 0.012154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Material/lol charachter png/sona_sprite.png
+  artifactKey: Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/sona_sprite.png using Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d39819fde44ee6932b6661cd67c0c37') in 0.006932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Material/lol charachter png/yoric_sprite.png
+  artifactKey: Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/yoric_sprite.png using Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd11114b384607dc4e96b7ad7bacc3984') in 0.005912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Material/lol charachter png/lucian_sprite.png
+  artifactKey: Guid(472e1e4336021d1478df84b706aca2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/lucian_sprite.png using Guid(472e1e4336021d1478df84b706aca2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ae38fb9d6b850828db877e8baeb3b8') in 0.008516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Material/lol charachter png/kayle_sprite.png
+  artifactKey: Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/kayle_sprite.png using Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab1b91c5a2bb0a59c0df948e9a50cd4') in 0.007774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Material/lol charachter png/olaf_sprite.png
+  artifactKey: Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/olaf_sprite.png using Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce15a972e9152d16efd84ebd8ed89a5') in 0.009190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Material/lol charachter png/ekko_sprite.png
+  artifactKey: Guid(5d90f6237654cba4286efdd73406ff00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ekko_sprite.png using Guid(5d90f6237654cba4286efdd73406ff00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc65e9f7b580becc6d04de78fa556f3b') in 0.008488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.363526 seconds.
+  path: Assets/Material/lol charachter png/Materials/ashe_sprite.mat
+  artifactKey: Guid(4404766bde805a54793e8863c4fce59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ashe_sprite.mat using Guid(4404766bde805a54793e8863c4fce59a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88114cb2a013cbf7c51720ee98594d1') in 0.013195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.077154 seconds.
+  path: Assets/Material/lol charachter png/annie_sprite.png
+  artifactKey: Guid(cc8898a59cac3364fbc31d1a0b192492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_sprite.png using Guid(cc8898a59cac3364fbc31d1a0b192492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f214aa1e54ddfa4a5d1c6b3f222fc64') in 0.007421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.186047 seconds.
+  path: Assets/Material/lol charachter png/ashe_sprite.png
+  artifactKey: Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_sprite.png using Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5964690b9af4ffc47f90b13b2878e5a5') in 0.019525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.123840 seconds.
+  path: Assets/Material/lol charachter png/ashe_sprite.png
+  artifactKey: Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_sprite.png using Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce8b996d2d2d21f5b3b2c853da29532') in 0.006539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.502159 seconds.
+  path: Assets/Material/lol charachter png/ashe_sprite.png
+  artifactKey: Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_sprite.png using Guid(2cf80405099d1f243bec44188716696e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6de89044d6380d1e0dce5bf5ea54d8e') in 0.006560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 161.516198 seconds.
+  path: Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif
+  artifactKey: Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif using Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee31a14a8cd239352146c9ba5b635e4') in 0.009143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.545666 seconds.
+  path: Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif
+  artifactKey: Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif using Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6c88b91d7203828901568f72eaa60a') in 0.006627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.041728 seconds.
+  path: Assets/Material/lol charachter png/Materials/annie_megaman_style_by_potemkill_d7idb2n.mat
+  artifactKey: Guid(c220698a43f2bdb449cb47e97e86a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/annie_megaman_style_by_potemkill_d7idb2n.mat using Guid(c220698a43f2bdb449cb47e97e86a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834823053be6cccc016d113fe754705d') in 0.008676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.204379 seconds.
+  path: Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n 1.gif
+  artifactKey: Guid(e902fd6955aab614c82b66882bba3e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n 1.gif using Guid(e902fd6955aab614c82b66882bba3e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9475234aac61b19e3f312a9f0593eb6b') in 0.006919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif
+  artifactKey: Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif using Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b2571645f71e95affbac600acb22525') in 0.006506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif
+  artifactKey: Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif using Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee1e5aee74b38b99580f059e0be0aee') in 0.007040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif
+  artifactKey: Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif using Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bd765c73da381ee66d0b2aefb850e0') in 0.007360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif
+  artifactKey: Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif using Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78272889041a072353655ed0a05d338e') in 0.006812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif
+  artifactKey: Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif using Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51897e9e580f6721dcba76c519bf27e5') in 0.006509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif
+  artifactKey: Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif using Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf75f8bee41e942ff039760e18d4b1b') in 0.007655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.507946 seconds.
+  path: Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif
+  artifactKey: Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif using Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33497789c6d01bc586c74c00cf791d31') in 0.007140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif
+  artifactKey: Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif using Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30ed3cba2610af4534e73c90fafb698') in 0.005707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif
+  artifactKey: Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif using Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1d49e09f61bcfd2b0a3e69e52bdbd7') in 0.015271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif
+  artifactKey: Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif using Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c149e027269a6100a5f9951e73f23cfe') in 0.005233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif
+  artifactKey: Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif using Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffcd877fadd436cb85a04d1171f6a44c') in 0.006018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif
+  artifactKey: Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif using Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df58ad37cabe3d2cdcbc1400df7e296a') in 0.005593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.797683 seconds.
+  path: Assets/Material/lol charachter png/Materials/ashe_megaman_style_by_potemkill_d7htrfe.mat
+  artifactKey: Guid(f38d667698cfb774cabf80934844c621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ashe_megaman_style_by_potemkill_d7htrfe.mat using Guid(f38d667698cfb774cabf80934844c621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe22e63b40428ec5f7f794e96aebd620') in 0.006751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Material/lol charachter png/Materials/lucian_megaman_style_by_potemkill_d8kmhtc.mat
+  artifactKey: Guid(562447b3c8f7b7b4eac3a5224eb8eb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/lucian_megaman_style_by_potemkill_d8kmhtc.mat using Guid(562447b3c8f7b7b4eac3a5224eb8eb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fb59443c946ae69094325afe5fd286') in 0.006902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Material/lol charachter png/Materials/ekko_megaman_style_by_potemkill_d8w3kzj.mat
+  artifactKey: Guid(4c5d247bdd7060d448aeb2ff279c36eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ekko_megaman_style_by_potemkill_d8w3kzj.mat using Guid(4c5d247bdd7060d448aeb2ff279c36eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125e2550fd06f7b908a0d608a1ce2198') in 0.006308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Material/lol charachter png/Materials/kayle_sprite.mat
+  artifactKey: Guid(8bae9ce8e04876a468137705616a03f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/kayle_sprite.mat using Guid(8bae9ce8e04876a468137705616a03f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61ff887e384c99f6719ceed658130805') in 0.007289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Material/lol charachter png/Materials/olaf_sprite.mat
+  artifactKey: Guid(f2823d1e00836f645a4d3307eef2efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/olaf_sprite.mat using Guid(f2823d1e00836f645a4d3307eef2efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906b61c9e25a5a75e82fb0cb0162d177') in 0.007596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Material/lol charachter png/Materials/ziggs_megaman_style_by_potemkill_d81q6ym.mat
+  artifactKey: Guid(237889187373a414a951b568474aa4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ziggs_megaman_style_by_potemkill_d81q6ym.mat using Guid(237889187373a414a951b568474aa4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15686615168be5fd6ac8b7af957120e') in 0.008451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Material/lol charachter png/Materials/karthus_sprite.mat
+  artifactKey: Guid(3ca6fc5c0a395aa4bbef0091d519889c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/karthus_sprite.mat using Guid(3ca6fc5c0a395aa4bbef0091d519889c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9874ae65a9a7da35b4d49cba3b0b7a43') in 0.006540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Material/lol charachter png/Materials/sona_sprite.mat
+  artifactKey: Guid(a78287eb80243e4448dcc3a89e76e15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/sona_sprite.mat using Guid(a78287eb80243e4448dcc3a89e76e15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98c68994572c6a68744068b731b97c6') in 0.007501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Material/lol charachter png/Materials/veigar_sprite.mat
+  artifactKey: Guid(0effb3c66c58aba41b263c61bec15eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/veigar_sprite.mat using Guid(0effb3c66c58aba41b263c61bec15eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ba77a37c69ca28d3a86318af43c31c') in 0.006668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Material/lol charachter png/Materials/mordekaiser_sprite.mat
+  artifactKey: Guid(26d8c597b56e24c4e9d609ef336d80b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/mordekaiser_sprite.mat using Guid(26d8c597b56e24c4e9d609ef336d80b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b2bb08ff255a3659e62a8bb2900492') in 0.015543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Material/lol charachter png/Materials/gnar_megaman_style_by_potemkill_d7vbq0x.mat
+  artifactKey: Guid(7bb7593cb0ab8cc4e8dcf9f1d6d3f86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/gnar_megaman_style_by_potemkill_d7vbq0x.mat using Guid(7bb7593cb0ab8cc4e8dcf9f1d6d3f86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6d2deb2a4517605ff8feea01d71b7c') in 0.006396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Material/lol charachter png/Materials/miss_fortune_megaman_style_by_potemkill_d7k26gq.mat
+  artifactKey: Guid(753725b04a127674cb3c4e3351ad7f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/miss_fortune_megaman_style_by_potemkill_d7k26gq.mat using Guid(753725b04a127674cb3c4e3351ad7f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea70c69e2047f2dcd229744b74c0f4f') in 0.006752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Material/lol charachter png/Materials/yoric_sprite.mat
+  artifactKey: Guid(6bbb8e72980bc724998028f379bda21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/yoric_sprite.mat using Guid(6bbb8e72980bc724998028f379bda21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cce807af97959d55bb236a9b0c6f05f') in 0.007015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 101.245383 seconds.
+  path: Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif
+  artifactKey: Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif using Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5319accf1b2b2a8b7a2ed7046a54187f') in 0.007052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Material/lol charachter png/mordekaiser_sprite.png
+  artifactKey: Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/mordekaiser_sprite.png using Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7362b7c2ab63174d58a6e459b661254f') in 0.017157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif
+  artifactKey: Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif using Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55412d9a3d6f855d981a95e50f672c17') in 0.007850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif
+  artifactKey: Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif using Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714f5d9acd6b0fbd80e972847645d4df') in 0.007065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif
+  artifactKey: Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif using Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c2a5d8ac9ca0119c4a283a6aaedf2d') in 0.006898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Material/lol charachter png/karthus_sprite.png
+  artifactKey: Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/karthus_sprite.png using Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692d2267ef11f96ddfc15d0e4573c176') in 0.006637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Material/lol charachter png/veigar_sprite.png
+  artifactKey: Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/veigar_sprite.png using Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392c92a9b5d4d891f4f88b38708a20c3') in 0.006775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif
+  artifactKey: Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif using Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815c609881559bb2d4c5fca654fe2dac') in 0.007466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif
+  artifactKey: Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif using Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2843b843bc446b7fce4cc3f0455213b9') in 0.005636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif
+  artifactKey: Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif using Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87855f6891fcd3cf5b3d0fe153e1eb7f') in 0.007079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Material/lol charachter png/sona_sprite.png
+  artifactKey: Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/sona_sprite.png using Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e02edb2c13b870a579bf188c31555d0f') in 0.006331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Material/lol charachter png/yoric_sprite.png
+  artifactKey: Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/yoric_sprite.png using Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d5d98ec20124821e9231e93868f563') in 0.006497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Material/lol charachter png/kayle_sprite.png
+  artifactKey: Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/kayle_sprite.png using Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05bdc5e15cbd687a6ef1ea6e3ab3c90') in 0.007354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Material/lol charachter png/olaf_sprite.png
+  artifactKey: Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/olaf_sprite.png using Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353832d6e97a476aa61f6c10011a27f1') in 0.008952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.765999 seconds.
+  path: Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif
+  artifactKey: Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/annie_megaman_style_by_potemkill_d7idb2n.gif using Guid(bc362ba712a68044996844ab89f01145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4596e626b15e553c35eaad3bd92d4296') in 0.012050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.133115 seconds.
+  path: Assets/Material/lol charachter png/karthus_sprite.png
+  artifactKey: Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/karthus_sprite.png using Guid(c99e9270f69a33b4ebd81ad01e3e8c98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045116a788abf3b3c312fc44a81d4988') in 0.004197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006245 seconds.
+  path: Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif
+  artifactKey: Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ashe_megaman_style_by_potemkill_d7htrfe.gif using Guid(f66d423be6e37674f9d96a0107f17cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c4d862d48bbf2ad2cd1f078acffea4') in 0.011944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Material/lol charachter png/mordekaiser_sprite.png
+  artifactKey: Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/mordekaiser_sprite.png using Guid(5080bc6b5d8c5544c918b7e40bc45aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c692b3c91441fbc74331a98aed68cbe') in 0.008195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif
+  artifactKey: Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/lucian_megaman_style_by_potemkill_d8kmhtc.gif using Guid(f3a8e82df84737140a5a60d58fc79a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feed0fdf530dbfe0f97b1677d7c47509') in 0.005037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif
+  artifactKey: Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ziggs_megaman_style_by_potemkill_d81q6ym.gif using Guid(08f7297d23dbdbc47bcbd34113186ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6daba9f04b67f65a45889de62ae0e7') in 0.005840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Material/lol charachter png/veigar_sprite.png
+  artifactKey: Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/veigar_sprite.png using Guid(f98275314c9970e4aaceaa69d5a756ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff94a8ee944486905b213f225c805825') in 0.017606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif
+  artifactKey: Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/miss_fortune_megaman_style_by_potemkill_d7k26gq.gif using Guid(984206f91a0d79545922459d862e06da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a688c54c104acdcd62766d71205af758') in 0.007729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif
+  artifactKey: Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/ekko_megaman_style_by_potemkill_d8w3kzj.gif using Guid(416e5db1c268d4147893564fbdc4b8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cacae1ad9afd7caddc9db2f96a2d7ed') in 0.005560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif
+  artifactKey: Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/gnar_megaman_style_by_potemkill_d7vbq0x.gif using Guid(ba24585528b499d4a80ab67094c71341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea38a0f4d6fc617ffd2de8ea38b9caa8') in 0.005443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Material/lol charachter png/sona_sprite.png
+  artifactKey: Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/sona_sprite.png using Guid(056a556f5de47c24e90bdfe836b64902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73a2b43e087d74e116ca41af5acdd71') in 0.004046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Material/lol charachter png/yoric_sprite.png
+  artifactKey: Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/yoric_sprite.png using Guid(a4380f777808aec44a882e7e167670a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2d550cedf475a91bae7fc1644a24ce') in 0.003856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Material/lol charachter png/kayle_sprite.png
+  artifactKey: Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/kayle_sprite.png using Guid(1c2d9ae5b5e6da049bd4ea30e4ee346d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f23d1efc79782c6430d86b931ba55c') in 0.007256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Material/lol charachter png/olaf_sprite.png
+  artifactKey: Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/olaf_sprite.png using Guid(4d50053400644fc4c904312f77dc19ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1d972694c5c7ff8ea1f6faff8a66f3') in 0.003557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.163831 seconds.
+  path: Assets/Material/AbilityIcons
+  artifactKey: Guid(33a8f9465683c9242bdd0bdbcf61d1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons using Guid(33a8f9465683c9242bdd0bdbcf61d1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0f548ea2889e65cee4a05185899153') in 0.014443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044435 seconds.
+  path: Assets/Material/AbilityIcons/Icon_AbsoluteZero.jpg
+  artifactKey: Guid(9abf9656e0004294c96464aea454e06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_AbsoluteZero.jpg using Guid(9abf9656e0004294c96464aea454e06b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e29130a6ccb432fa379e90d4a8de13d') in 0.013149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Shockwave.png
+  artifactKey: Guid(de4a81b792069404d9b4a15fa31251ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Shockwave.png using Guid(de4a81b792069404d9b4a15fa31251ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb63ec882af9803e1d8b18906b32281') in 0.023157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Material/AbilityIcons/Icon_MoltenShield.png
+  artifactKey: Guid(f1feba2579ab6af41b63e21d69ba7a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_MoltenShield.png using Guid(f1feba2579ab6af41b63e21d69ba7a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b70e2d5341d84e800cfe547a4a9577f') in 0.013403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Material/AbilityIcons/Icon_AceInTheHole.png
+  artifactKey: Guid(d67f014a15d016546b022eeba245ed09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_AceInTheHole.png using Guid(d67f014a15d016546b022eeba245ed09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343fd88d6a9b8120bf3a21b47ed3c2d8') in 0.010221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Material/AbilityIcons/Icon_EventHorizon.png
+  artifactKey: Guid(ed487f1a1d701d94ab3a57d7e0f105bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_EventHorizon.png using Guid(ed487f1a1d701d94ab3a57d7e0f105bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9df2a476c08af64ca6b8f2df2a4c570') in 0.014764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Cleanse.png
+  artifactKey: Guid(2673515845b9c1d4d85961bd4130fc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Cleanse.png using Guid(2673515845b9c1d4d85961bd4130fc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a47911e121b33a80e6207be71c98942') in 0.009583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Material/AbilityIcons/Icon_TravlersCall.png
+  artifactKey: Guid(f7ec473638d0e894aabb3c0fa4e9a660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_TravlersCall.png using Guid(f7ec473638d0e894aabb3c0fa4e9a660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159be4951ef46045848dfd6e1713db5e') in 0.011754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Barrier.png
+  artifactKey: Guid(dc9c3b6e0663e0249865c08d5317f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Barrier.png using Guid(dc9c3b6e0663e0249865c08d5317f688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d77990105697b744d22159f22bcf98f') in 0.012741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Rewind.png
+  artifactKey: Guid(3f78b69aa1ddff04f9e9b5f9380fe34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Rewind.png using Guid(3f78b69aa1ddff04f9e9b5f9380fe34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f17264ffa2b07fc281a076e1425c945') in 0.013867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Material/AbilityIcons/Icon_FlameChompers.png
+  artifactKey: Guid(1aeb8064e0fae744981c461ce77ae6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_FlameChompers.png using Guid(1aeb8064e0fae744981c461ce77ae6bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438e904b05529dbeee26ffb7688d6f42') in 0.015411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Material/AbilityIcons/Icon_MakeItRain.png
+  artifactKey: Guid(ba94c41d3bb91b640b9aeaabe5fac995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_MakeItRain.png using Guid(ba94c41d3bb91b640b9aeaabe5fac995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea881b213df011e99a8bf2ed284899be') in 0.015135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Disintigrate.png
+  artifactKey: Guid(8ece176770c960346b8bb73a89171c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Disintigrate.png using Guid(8ece176770c960346b8bb73a89171c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553587e3ddffcf085d9312eab17e840a') in 0.008540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Material/AbilityIcons/Icon_TheCulling.png
+  artifactKey: Guid(5a81221b3769dea4aa483c0343511b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_TheCulling.png using Guid(5a81221b3769dea4aa483c0343511b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c930eec015b1cac7ee0d811b0d83ee') in 0.009254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Arcanopulse.png
+  artifactKey: Guid(b10fd8a4727f3dc41bd04ab5eb169168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Arcanopulse.png using Guid(b10fd8a4727f3dc41bd04ab5eb169168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2654d7c662f3970f93dbd1761ff00c') in 0.009493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Material/AbilityIcons/Icon_BloomingBurst.png
+  artifactKey: Guid(48ed3f7360809bb4b8ad4ff181a7fb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_BloomingBurst.png using Guid(48ed3f7360809bb4b8ad4ff181a7fb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f3991440bbe77b34b67ccf934fe11d') in 0.010761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Material/AbilityIcons/Icon_CellDivision.png
+  artifactKey: Guid(e57da4fcbebf06c4c83caefcc6bad213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_CellDivision.png using Guid(e57da4fcbebf06c4c83caefcc6bad213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca11b08da026a317053461ed1095810') in 0.008965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Material/AbilityIcons/Icon_PersonalSpace.png
+  artifactKey: Guid(a844d496919e1f74f9e1aa5d53573cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_PersonalSpace.png using Guid(a844d496919e1f74f9e1aa5d53573cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a6f03424099b91b207928a88bc3a1a') in 0.008380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Material/AbilityIcons/Icon_DarkMatter.png
+  artifactKey: Guid(33a3f11b4d1830041ad85d31167d4703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_DarkMatter.png using Guid(33a3f11b4d1830041ad85d31167d4703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0385d63108a67779163f04af079fb2') in 0.008523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Material/AbilityIcons/Icon_BalefulStrike.png
+  artifactKey: Guid(7278ceabbfde4c8449ac2445abd7ab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_BalefulStrike.png using Guid(7278ceabbfde4c8449ac2445abd7ab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c28323af06c491acd44399c812d426') in 0.008753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Burnout.png
+  artifactKey: Guid(beb9f302d1fd0c849b325a15b666db4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Burnout.png using Guid(beb9f302d1fd0c849b325a15b666db4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c28d573943a0b6e7816162f59b8e72') in 0.007888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Material/AbilityIcons/Icon_BoomerangThrow.png
+  artifactKey: Guid(1d529a564f4bfe046b1d7e443ab49cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_BoomerangThrow.png using Guid(1d529a564f4bfe046b1d7e443ab49cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c7ae3c7827506c4a6df7624d64e442') in 0.008997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Ghost.png
+  artifactKey: Guid(cceb71d53bf94c049a0bc774d6dd6663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Ghost.png using Guid(cceb71d53bf94c049a0bc774d6dd6663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2063b6f0d9642d44ba239970cfefa68d') in 0.010087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Material/AbilityIcons/Icon_ChainOfCorruption.png
+  artifactKey: Guid(6589d71a110f7894fa6837ad56dcc361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_ChainOfCorruption.png using Guid(6589d71a110f7894fa6837ad56dcc361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16cb540043f38bed22dba9fc55b1469') in 0.007827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Material/AbilityIcons/Icon_Zap.png
+  artifactKey: Guid(c3f5dc2fcd423df48bf61731d9ad9bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/AbilityIcons/Icon_Zap.png using Guid(c3f5dc2fcd423df48bf61731d9ad9bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a07c9982b235b686b2f568e94d7826e') in 0.009586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.279663 seconds.
+  path: Assets/Material/lol charachter png/Materials/annie_megaman_style_by_potemkill_d7idb2n.mat
+  artifactKey: Guid(c220698a43f2bdb449cb47e97e86a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/annie_megaman_style_by_potemkill_d7idb2n.mat using Guid(c220698a43f2bdb449cb47e97e86a94d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214180fd195e19f4641af2bfbefe9125') in 0.012730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Material/lol charachter png/Materials/lucian_megaman_style_by_potemkill_d8kmhtc.mat
+  artifactKey: Guid(562447b3c8f7b7b4eac3a5224eb8eb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/lucian_megaman_style_by_potemkill_d8kmhtc.mat using Guid(562447b3c8f7b7b4eac3a5224eb8eb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f112d54352867b232cd845dcef1482') in 0.009306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Material/lol charachter png/Materials/ekko_megaman_style_by_potemkill_d8w3kzj.mat
+  artifactKey: Guid(4c5d247bdd7060d448aeb2ff279c36eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ekko_megaman_style_by_potemkill_d8w3kzj.mat using Guid(4c5d247bdd7060d448aeb2ff279c36eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c4fc0c22a4c8d9f5e8b5153d12224f') in 0.009849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Material/lol charachter png/Materials/kayle_sprite.mat
+  artifactKey: Guid(8bae9ce8e04876a468137705616a03f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/kayle_sprite.mat using Guid(8bae9ce8e04876a468137705616a03f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a39b63760284afe155b6a73de5097b9') in 0.009488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Material/lol charachter png/Materials/ashe_megaman_style_by_potemkill_d7htrfe.mat
+  artifactKey: Guid(f38d667698cfb774cabf80934844c621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ashe_megaman_style_by_potemkill_d7htrfe.mat using Guid(f38d667698cfb774cabf80934844c621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486efc151cd2aa3f225ddb25d798c631') in 0.008408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Material/lol charachter png/Materials/olaf_sprite.mat
+  artifactKey: Guid(f2823d1e00836f645a4d3307eef2efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/olaf_sprite.mat using Guid(f2823d1e00836f645a4d3307eef2efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e65febf672a7dda9dae02e524238370') in 0.008785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Material/lol charachter png/Materials/ziggs_megaman_style_by_potemkill_d81q6ym.mat
+  artifactKey: Guid(237889187373a414a951b568474aa4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/ziggs_megaman_style_by_potemkill_d81q6ym.mat using Guid(237889187373a414a951b568474aa4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01312159c203f9f46331e25ae7eb829') in 0.008753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Material/lol charachter png/Materials/karthus_sprite.mat
+  artifactKey: Guid(3ca6fc5c0a395aa4bbef0091d519889c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/karthus_sprite.mat using Guid(3ca6fc5c0a395aa4bbef0091d519889c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9b586280002142a86d1c4af771be6f') in 0.007176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Material/lol charachter png/Materials/sona_sprite.mat
+  artifactKey: Guid(a78287eb80243e4448dcc3a89e76e15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/sona_sprite.mat using Guid(a78287eb80243e4448dcc3a89e76e15b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '072ee23e7a94bcdc63da2dd7eeac7a50') in 0.008896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Material/lol charachter png/Materials/veigar_sprite.mat
+  artifactKey: Guid(0effb3c66c58aba41b263c61bec15eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/veigar_sprite.mat using Guid(0effb3c66c58aba41b263c61bec15eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da90717a1c0c6ae378c02948a6992cd') in 0.016670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Material/lol charachter png/Materials/mordekaiser_sprite.mat
+  artifactKey: Guid(26d8c597b56e24c4e9d609ef336d80b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/mordekaiser_sprite.mat using Guid(26d8c597b56e24c4e9d609ef336d80b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f1a818f0ba861d5651aae3327f388f') in 0.007909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Material/lol charachter png/Materials/gnar_megaman_style_by_potemkill_d7vbq0x.mat
+  artifactKey: Guid(7bb7593cb0ab8cc4e8dcf9f1d6d3f86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/gnar_megaman_style_by_potemkill_d7vbq0x.mat using Guid(7bb7593cb0ab8cc4e8dcf9f1d6d3f86c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce36cd5571ffab1daa301c6763e46c2') in 0.008301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Material/lol charachter png/Materials/miss_fortune_megaman_style_by_potemkill_d7k26gq.mat
+  artifactKey: Guid(753725b04a127674cb3c4e3351ad7f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/miss_fortune_megaman_style_by_potemkill_d7k26gq.mat using Guid(753725b04a127674cb3c4e3351ad7f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c613fa35a3c7ebeb65ddfcacd9e2a838') in 0.008833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Material/lol charachter png/Materials/yoric_sprite.mat
+  artifactKey: Guid(6bbb8e72980bc724998028f379bda21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/Materials/yoric_sprite.mat using Guid(6bbb8e72980bc724998028f379bda21a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1648a8239d4dc7b0908eabcbbcdf105') in 0.008788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.758794 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecaa4ddf7297e76d151cf85f269d944') in 0.015076 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001248 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.689 seconds
+Domain Reload Profiling:
+	ReloadAssembly (690ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (542ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.6 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2050.
+Total: 2.137500 ms (FindLiveObjects: 0.076400 ms CreateObjectMapping: 0.020600 ms MarkObjects: 1.986800 ms  DeleteObjects: 0.052500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001166 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (520ms)
+		BeginReloadAssembly (66ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (419ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (143ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (166ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (108ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.6 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2053.
+Total: 1.583200 ms (FindLiveObjects: 0.069000 ms CreateObjectMapping: 0.019700 ms MarkObjects: 1.456900 ms  DeleteObjects: 0.037100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001345 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.501 seconds
+Domain Reload Profiling:
+	ReloadAssembly (501ms)
+		BeginReloadAssembly (62ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (155ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.6 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2056.
+Total: 1.725900 ms (FindLiveObjects: 0.072900 ms CreateObjectMapping: 0.021100 ms MarkObjects: 1.581400 ms  DeleteObjects: 0.049800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001271 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.510 seconds
+Domain Reload Profiling:
+	ReloadAssembly (510ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (409ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (139ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (160ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.6 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2059.
+Total: 1.613800 ms (FindLiveObjects: 0.078500 ms CreateObjectMapping: 0.020300 ms MarkObjects: 1.477600 ms  DeleteObjects: 0.036600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001196 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.559 seconds
+Domain Reload Profiling:
+	ReloadAssembly (559ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (456ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (156ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (172ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2062.
+Total: 1.635600 ms (FindLiveObjects: 0.088700 ms CreateObjectMapping: 0.021800 ms MarkObjects: 1.470900 ms  DeleteObjects: 0.053300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001504 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.514 seconds
+Domain Reload Profiling:
+	ReloadAssembly (514ms)
+		BeginReloadAssembly (63ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (411ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (143ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (158ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2065.
+Total: 1.588700 ms (FindLiveObjects: 0.081900 ms CreateObjectMapping: 0.019900 ms MarkObjects: 1.451300 ms  DeleteObjects: 0.035000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.503 seconds
+Domain Reload Profiling:
+	ReloadAssembly (503ms)
+		BeginReloadAssembly (65ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (158ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2068.
+Total: 1.595500 ms (FindLiveObjects: 0.074500 ms CreateObjectMapping: 0.022100 ms MarkObjects: 1.464300 ms  DeleteObjects: 0.034100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001184 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.523 seconds
+Domain Reload Profiling:
+	ReloadAssembly (524ms)
+		BeginReloadAssembly (63ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (425ms)
+			LoadAssemblies (48ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (141ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (175ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2071.
+Total: 1.811600 ms (FindLiveObjects: 0.084900 ms CreateObjectMapping: 0.021500 ms MarkObjects: 1.665400 ms  DeleteObjects: 0.039300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.595 seconds
+Domain Reload Profiling:
+	ReloadAssembly (596ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (491ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (158ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (210ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2074.
+Total: 1.635000 ms (FindLiveObjects: 0.086000 ms CreateObjectMapping: 0.022600 ms MarkObjects: 1.449500 ms  DeleteObjects: 0.076200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001382 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.557 seconds
+Domain Reload Profiling:
+	ReloadAssembly (557ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (456ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (178ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2077.
+Total: 2.364300 ms (FindLiveObjects: 0.123300 ms CreateObjectMapping: 0.038800 ms MarkObjects: 2.150300 ms  DeleteObjects: 0.051000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001255 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.556 seconds
+Domain Reload Profiling:
+	ReloadAssembly (556ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (447ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (155ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (169ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (111ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2080.
+Total: 1.931700 ms (FindLiveObjects: 0.134100 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.695100 ms  DeleteObjects: 0.058400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001231 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.566 seconds
+Domain Reload Profiling:
+	ReloadAssembly (567ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (445ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (183ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (39ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2083.
+Total: 1.760600 ms (FindLiveObjects: 0.081500 ms CreateObjectMapping: 0.021300 ms MarkObjects: 1.594400 ms  DeleteObjects: 0.061800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 809.380727 seconds.
+  path: Assets/Material/lol charachter png/yojimqzf.bmp
+  artifactKey: Guid(3161723b199905a4bb0049d78c29aa1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/lol charachter png/yojimqzf.bmp using Guid(3161723b199905a4bb0049d78c29aa1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed61acd99ceeeb6921d4035544140b4') in 0.027540 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.505 seconds
+Domain Reload Profiling:
+	ReloadAssembly (505ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (402ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (133ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (158ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (1ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1542 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 74.7 MB.
+System memory in use after: 74.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2086.
+Total: 1.639800 ms (FindLiveObjects: 0.076100 ms CreateObjectMapping: 0.021000 ms MarkObjects: 1.501700 ms  DeleteObjects: 0.039900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

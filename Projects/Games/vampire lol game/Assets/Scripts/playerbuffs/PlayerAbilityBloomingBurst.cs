@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Neeko
 /// Description: shoot random projectile towards enemy, it grows in size
 /// </summary>
-public class PlayerAbilityBloomingBurst : MonoBehaviour
+public class PlayerAbilityBloomingBurst : AbilityBaseClass
+
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityBloomingBurst : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

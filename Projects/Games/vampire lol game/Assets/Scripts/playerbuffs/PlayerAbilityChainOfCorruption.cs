@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Varus
 /// Description: Shoots chains towards enemies, it spreads
 /// </summary>
-public class PlayerAbilityChainOfCorruption : MonoBehaviour
+public class PlayerAbilityChainOfCorruption : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityChainOfCorruption : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

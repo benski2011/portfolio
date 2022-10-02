@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Gnar
 /// Description: Throw boomerang towards random enemy, goes back towards player
 /// </summary>
-public class PlayerAbilityBoomerangThrow : MonoBehaviour
+public class PlayerAbilityBoomerangThrow : AbilityBaseClass
+
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityBoomerangThrow : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

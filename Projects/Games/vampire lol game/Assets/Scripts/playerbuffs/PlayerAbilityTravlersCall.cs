@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Bard
 /// Description: Chimes spawn randomly around the map, give player Xp
 /// </summary>
-public class PlayerAbilityTravlersCall : MonoBehaviour
+public class PlayerAbilityTravlersCall : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityTravlersCall : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }

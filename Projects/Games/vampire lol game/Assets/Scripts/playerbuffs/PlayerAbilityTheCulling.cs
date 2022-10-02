@@ -5,9 +5,9 @@ using UnityEngine;
 /// Champion: Lucian
 /// Description: Projectiles are shot in player movement direction, number is based on level
 /// </summary>
-public class PlayerAbilityTheCulling : MonoBehaviour
+public class PlayerAbilityTheCulling : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,5 @@ public class PlayerAbilityTheCulling : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+ 
 }

@@ -5,9 +5,8 @@ using UnityEngine;
 /// Champion: Nunu
 /// Description: Massive charging AOE around player
 /// </summary>
-public class PlayerAbilityAbosulteZero : MonoBehaviour
+public class PlayerAbilityAbosulteZero : AbilityBaseClass
 {
-    public int ObjectLevel = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +20,5 @@ public class PlayerAbilityAbosulteZero : MonoBehaviour
     {
 
     }
-    internal void IncreaseLevel()
-    {
-        Debug.Log("increassed ability by: " + ObjectLevel);
-        ObjectLevel++;
-    }
+
 }
