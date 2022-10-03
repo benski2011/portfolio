@@ -285,7 +285,7 @@ public class enemyScript : MonoBehaviour
     {
         if (other.tag == "bullet")
         {
-            gm.GetComponent<Level1Spawns>().NumberOfEnemies--;
+            gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
             Destroy(this.gameObject);
         }
 

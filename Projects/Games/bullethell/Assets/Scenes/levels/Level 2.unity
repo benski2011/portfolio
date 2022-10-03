@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -759,6 +759,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+--- !u!1 &266846129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7122426164769972274, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  m_PrefabInstance: {fileID: 266846128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &266846130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  m_PrefabInstance: {fileID: 266846128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &267462703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,13 +3765,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476649239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ec0fb56c6993c148badc671d7ea82a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 16001b6aa3f053f4e8438f8b4353ca19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audiomanager: {fileID: 0}
-  enemy: {fileID: 1718049187}
+  audiomanager: {fileID: 1941768996}
+  enemy: {fileID: 266846130}
   enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
+  enemyPlane: {fileID: 266846129}
   enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
 --- !u!4 &1476649241
 Transform:
@@ -3808,18 +3818,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1532436684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 984ac69ec27249749be4571b9c8b21f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 38766d810e03ae44a844b12254e2ac92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberOfEnemies: 0
+  waitForText: 0
   enemymanager: {fileID: 1476649239}
   textUi: {fileID: 2033536734}
   talkingImage: {fileID: 1534900163}
-  gamemanager: {fileID: 0}
+  gamemanager: {fileID: 1532436684}
   tanyaimg: {fileID: 21300000, guid: 9f5828cf9a630dc45b9d10bf14d5cd96, type: 3}
   vishaimg: {fileID: 21300000, guid: a73a3ffdbedcbf94084471ecd111793e, type: 3}
   flagimg: {fileID: 21300000, guid: 475087fa209c9814dbbbcaf5d4bacc2f, type: 3}
-  NumberOfEnemies: 0
-  waitForText: 0
 --- !u!114 &1532436686
 MonoBehaviour:
   m_ObjectHideFlags: 0

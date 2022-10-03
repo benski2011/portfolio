@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
 
         string inc = "";
 
-        level1Spawns.waitForText = true; 
+        this.GetComponent<LevelBaseScript>().waitForText = true; 
         for (int i = 0; i < textToWrite.Length; i++)
         {
             inc += textToWrite[i];
@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.00f);
         }
         yield return new WaitForSeconds(0f);
-        level1Spawns.waitForText = false;
-        level1Spawns.time = 0;
+        this.GetComponent<LevelBaseScript>().waitForText = false;
+        this.GetComponent<LevelBaseScript>().time = 0;
     }
 }

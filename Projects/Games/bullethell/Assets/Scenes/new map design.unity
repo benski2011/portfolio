@@ -3739,6 +3739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476649241}
   - component: {fileID: 1476649240}
+  - component: {fileID: 1476649242}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -3758,11 +3759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec0fb56c6993c148badc671d7ea82a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audiomanager: {fileID: 0}
-  enemy: {fileID: 1718049187}
-  enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
-  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
 --- !u!4 &1476649241
 Transform:
   m_ObjectHideFlags: 0
@@ -3781,6 +3777,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1476649242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476649239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c031275565405488a36f800a790370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audiomanager: {fileID: 1941768996}
+  enemy: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
+  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
+  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
 --- !u!1 &1532436684
 GameObject:
   m_ObjectHideFlags: 0
