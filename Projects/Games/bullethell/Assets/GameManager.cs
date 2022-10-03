@@ -111,10 +111,10 @@ public class GameManager : MonoBehaviour
         {
             inc += textToWrite[i];
             textUi.GetComponent<TMPro.TextMeshProUGUI>().text = inc;
-            yield return new WaitForSeconds(0.00f);
+            yield return new WaitForSeconds(0.02f);
         }
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(1f);
         this.GetComponent<LevelBaseScript>().waitForText = false;
-        this.GetComponent<LevelBaseScript>().time = 0;
+        this.GetComponent<LevelBaseScript>().time = 0.00f;
     }
 }

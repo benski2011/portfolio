@@ -40,12 +40,12 @@ public class enemyScript : MonoBehaviour
 
         if (Time.time > canfire)
         {
-            Shoot();
+            //Shoot();
             //ShootRay();
             //Shotgun();
             //ArcShot();
             //DelayedShoot();
-            //CircleShot();
+            CircleShot();
             canfire = Time.time + firerate;
         }
         if (canmove)
