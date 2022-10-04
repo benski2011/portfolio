@@ -3738,7 +3738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1476649241}
-  - component: {fileID: 1476649240}
+  - component: {fileID: 1476649242}
   m_Layer: 0
   m_Name: EnemyManager
   m_TagString: Untagged
@@ -3746,23 +3746,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1476649240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476649239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ec0fb56c6993c148badc671d7ea82a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audiomanager: {fileID: 0}
-  enemy: {fileID: 1718049187}
-  enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
-  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
 --- !u!4 &1476649241
 Transform:
   m_ObjectHideFlags: 0
@@ -3781,6 +3764,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1476649242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476649239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c7447825de7e94981e24cd8c2cf7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audiomanager: {fileID: 1941768996}
+  enemy: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
+  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
+  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
 --- !u!1 &1532436684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,9 +3808,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1532436684}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 984ac69ec27249749be4571b9c8b21f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 02436642ae9593a4c9355df7377b58ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NumberOfEnemies: 0
+  waitForText: 0
   enemymanager: {fileID: 1476649239}
   textUi: {fileID: 2033536734}
   talkingImage: {fileID: 1534900163}
@@ -3818,8 +3820,6 @@ MonoBehaviour:
   tanyaimg: {fileID: 21300000, guid: 9f5828cf9a630dc45b9d10bf14d5cd96, type: 3}
   vishaimg: {fileID: 21300000, guid: a73a3ffdbedcbf94084471ecd111793e, type: 3}
   flagimg: {fileID: 21300000, guid: 475087fa209c9814dbbbcaf5d4bacc2f, type: 3}
-  NumberOfEnemies: 0
-  waitForText: 0
 --- !u!114 &1532436686
 MonoBehaviour:
   m_ObjectHideFlags: 0
