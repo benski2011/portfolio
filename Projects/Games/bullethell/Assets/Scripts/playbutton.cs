@@ -19,7 +19,11 @@ public class playbutton : MonoBehaviour
 
         Debug.Log("You have clicked the button!");
         MapSelect.SetActive(true);
-        startmenu.SetActive(false);
+        if (startmenu)
+        {
+            startmenu.SetActive(false);
+        }
+        
 
     }
 }
