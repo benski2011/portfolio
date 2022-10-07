@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/levels/Level 1.unity
+- path: Assets/Scenes/enemy test map.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
