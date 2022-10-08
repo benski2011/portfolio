@@ -42,10 +42,10 @@ public class enemyScript : MonoBehaviour
         {
             //Shoot();
             //ShootRay();
-            //Shotgun();
-            //ArcShot();
+            //ShotGun();
+            ArcShot();
             //DelayedShoot();
-            CircleShot();
+            //CircleShot();
             canfire = Time.time + firerate;
         }
         if (canmove)
