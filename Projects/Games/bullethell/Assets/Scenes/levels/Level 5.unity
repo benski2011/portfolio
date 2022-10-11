@@ -3820,6 +3820,14 @@ MonoBehaviour:
   tanyaimg: {fileID: 21300000, guid: 9f5828cf9a630dc45b9d10bf14d5cd96, type: 3}
   vishaimg: {fileID: 21300000, guid: a73a3ffdbedcbf94084471ecd111793e, type: 3}
   flagimg: {fileID: 21300000, guid: 475087fa209c9814dbbbcaf5d4bacc2f, type: 3}
+  radioimg: {fileID: 21300000, guid: ad864ed86cd0afc41ace8afd45bfbd4f, type: 3}
+  SueBoss_undamaged: {fileID: 21300000, guid: e8e9019fa93b1274d89321274446285e, type: 3}
+  SueBoss_mad: {fileID: 21300000, guid: 1a4d9acd59abc5544b6f2360123c5c3a, type: 3}
+  SueBoss_damaged: {fileID: 21300000, guid: c95907bc393f52e4597465071d7404ce, type: 3}
+  Mary: {fileID: 21300000, guid: e990a6f829fa1164f8ec9decbdbc9fb3, type: 3}
+  MaryMad: {fileID: 21300000, guid: a501216f7092cdd498f752608205c2fa, type: 3}
+  observer: {fileID: 21300000, guid: 2980661f4ffc53447b795a6d5e622cfc, type: 3}
+  error: {fileID: 21300000, guid: a29c046d80941194bb2530e0da8cf756, type: 3}
 --- !u!4 &1532436687
 Transform:
   m_ObjectHideFlags: 0

@@ -21,6 +21,17 @@ public class GameManager : MonoBehaviour
     public Sprite tanyaimg;
     public Sprite vishaimg;
     public Sprite flagimg;
+    public Sprite radioimg;
+    public Sprite SueBoss_undamaged;
+    public Sprite SueBoss_mad;
+    public Sprite SueBoss_damaged;
+    public Sprite Mary;
+    public Sprite MaryMad;
+    public Sprite observer;
+
+
+    public Sprite error; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -98,6 +109,27 @@ public class GameManager : MonoBehaviour
                 break;
             case "flag":
                 talkingImage.GetComponent<Image>().sprite = flagimg;
+                break;
+            case "radio":
+                talkingImage.GetComponent<Image>().sprite = radioimg;
+                break;
+            case "SueBoss_undamaged":
+                talkingImage.GetComponent<Image>().sprite = SueBoss_undamaged;
+                break;
+            case "SueBoss_mad":
+                talkingImage.GetComponent<Image>().sprite = SueBoss_mad;
+                break;
+            case "SueBoss_damaged":
+                talkingImage.GetComponent<Image>().sprite = SueBoss_damaged;
+                break;
+            case "Mary":
+                talkingImage.GetComponent<Image>().sprite = Mary;
+                break;
+            case "MaryMad":
+                talkingImage.GetComponent<Image>().sprite = MaryMad;
+                break;
+            case "observer":
+                talkingImage.GetComponent<Image>().sprite = observer;
                 break;
 
             default:

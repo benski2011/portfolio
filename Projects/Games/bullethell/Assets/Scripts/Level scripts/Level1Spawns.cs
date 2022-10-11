@@ -45,9 +45,7 @@ public class Level1Spawns : LevelBaseScript
     public GameObject talkingImage;
     public GameObject gamemanager;
 
-    public Sprite tanyaimg;
-    public Sprite vishaimg;
-    public Sprite flagimg;
+
 
 
     int ListIndex = 0;
@@ -74,13 +72,29 @@ public class Level1Spawns : LevelBaseScript
         //todo enums 
         Debug.Log("setup level 1");
 
-        //StartCoroutine(startuptext());
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "The Entente Alliance has violated our borders. " +
+            "Fairy 08 have been tasked to run observational tasks.", v2: "observer"));
+
+
+        level1.Add(new LevelEvent(levelEventType.text, v1: "What a ironc call sign.!", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Norden control, everything seems to be going as planned.", v2: "tanya"));
+
+        level1.Add(new LevelEvent(levelEventType.text, v1: "z--zz--bbtt-zz-zz-z", v2: "observer"));
+
+        level1.Add(new LevelEvent(levelEventType.text, v1: "What on earth? Interference?", v2: "tanya"));
+
+
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Our attack failed. Taking out observers and returning to base.", v2: "SueBoss_undamaged"));
+
+        level1.Add(new LevelEvent(levelEventType.text, v1: "An intercepted transmission?", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Observers? Are they refering to me?", v2: "tanya"));
+
+        //spawn enemies and make tanya mad? call in HQ
+
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Task: Initiate Delaying action until reinforcements arrives", v2: "flag"));
+
+
+        
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level1.Add(new LevelEvent(levelEventType.enemy1, 1));

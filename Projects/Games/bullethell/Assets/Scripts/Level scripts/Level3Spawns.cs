@@ -39,15 +39,16 @@ public class Level3Spawns : LevelBaseScript
         // stop is combined with spawn to make it possible to spawn multiple enemy types 
 
         //todo enums 
-        Debug.Log("setup level 1");
+        Debug.Log("setup level 3");
 
         //StartCoroutine(startuptext());
-        level3.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level3.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level3.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level3.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
+        
+        level3.Add(new LevelEvent(levelEventType.text, v1: "The northern battalion is facing heavy resistance up north. Your company will reinforce the current line.", v2: "radio"));
+        level3.Add(new LevelEvent(levelEventType.text, v1: "There has also been observed bombers in the area, these are high priority targets.", v2: "radio"));
+
+
+        level3.Add(new LevelEvent(levelEventType.text, v1: "Assist the Empire soldiers. Find a way to deal with the bombers.", v2: "flag"));
+
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level3.Add(new LevelEvent(levelEventType.enemy1, 1));

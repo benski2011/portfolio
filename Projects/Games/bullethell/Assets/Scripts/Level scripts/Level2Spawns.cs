@@ -39,15 +39,19 @@ public class Level2Spawns : LevelBaseScript
         // stop is combined with spawn to make it possible to spawn multiple enemy types 
 
         //todo enums 
-        Debug.Log("setup level 1");
+        Debug.Log("setup level 2");
 
-        //StartCoroutine(startuptext());
-        level2.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level2.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level2.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level2.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
+        
+        level2.Add(new LevelEvent(levelEventType.text, v1: "Men! We have been tasked to ensure total air superiority in our battle against Dacia.", v2: "tanya"));
+        level2.Add(new LevelEvent(levelEventType.text, v1: "As this will be a live fire exercise, I recommend testing your training on these “soldiers”", v2: "tanya"));
+
+        level2.Add(new LevelEvent(levelEventType.text, v1: "Aye aye, Commander.", v2: "visha"));
+        level2.Add(new LevelEvent(levelEventType.text, v1: "It would also be a good time to test out my new upgrades from the mad doctor.", v2: "tanya"));
+        //make this italic? 
+
+        level2.Add(new LevelEvent(levelEventType.text, v1: "Task: Ensure Air superiority over Dacia.", v2: "flag"));
+        
+
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level2.Add(new LevelEvent(levelEventType.enemy1, 1));

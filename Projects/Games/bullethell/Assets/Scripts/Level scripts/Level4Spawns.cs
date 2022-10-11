@@ -18,7 +18,7 @@ public class Level4Spawns : LevelBaseScript
 
 
     int ListIndex = 0;
-    List<LevelEvent> level1 = new List<LevelEvent>();
+    List<LevelEvent> level4 = new List<LevelEvent>();
     bool lvlstart = true;
     float timeUntilExe = 0f; 
     // Start is called before the first frame update
@@ -39,35 +39,32 @@ public class Level4Spawns : LevelBaseScript
         // stop is combined with spawn to make it possible to spawn multiple enemy types 
 
         //todo enums 
-        Debug.Log("setup level 1");
+        Debug.Log("setup level 4");
 
-        //StartCoroutine(startuptext());
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
+
+        level4.Add(new LevelEvent(levelEventType.text, v1: "Your task is to take out the guns stationed in the Orse fjord. Expect heavy enemy forces.", v2: "flag"));
+
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
+        level4.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level4.Add(new LevelEvent(levelEventType.stop));
+             
+             
+        level4.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level4.Add(new LevelEvent(levelEventType.text, v1: "More enemy soldiers spotted, incoming counter attack.", v2: "visha"));
+        level4.Add(new LevelEvent(levelEventType.text, v1: "Fight with all you got men, these guns must be silenced.", v2: "tanya"));
 
-        level1.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level4.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level4.Add(new LevelEvent(levelEventType.stop));
 
-        level1.Add(new LevelEvent(levelEventType.enemy2, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 3));
-        Debug.Log("end of setup level 1");
+        level4.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+        level4.Add(new LevelEvent(levelEventType.text, v1: "WHAT IS SHE DOING HERE, ATTACK!", v2: "SueBoss_mad"));
+
+       
 
         //level1.Add(new LevelEvent(levelEventType.end));
 
@@ -82,7 +79,7 @@ public class Level4Spawns : LevelBaseScript
         if (lvlstart)
         {
             time += Time.deltaTime;
-            LevelEvent current = level1[ListIndex];
+            LevelEvent current = level4[ListIndex];
             timeUntilExe = current.secounds;
 
             if (time >= timeUntilExe && !waitForText)
