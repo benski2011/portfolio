@@ -19,7 +19,7 @@ public class Level8Spawns : LevelBaseScript
 
 
     int ListIndex = 0;
-    List<LevelEvent> level1 = new List<LevelEvent>();
+    List<LevelEvent> level8 = new List<LevelEvent>();
     bool lvlstart = true;
     float timeUntilExe = 0f; 
     // Start is called before the first frame update
@@ -40,37 +40,41 @@ public class Level8Spawns : LevelBaseScript
         // stop is combined with spawn to make it possible to spawn multiple enemy types 
 
         //todo enums 
-        Debug.Log("setup level 1");
+        Debug.Log("setup level 8");
 
         //StartCoroutine(startuptext());
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
 
-        //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
+        level8.Add(new LevelEvent(levelEventType.text, v1: "MEN! Today we are attacking enemy supply depots.", v2: "tanya"));
+        level8.Add(new LevelEvent(levelEventType.text, v1: "I expect you all to do your best!", v2: "tanya"));
+        level8.Add(new LevelEvent(levelEventType.text, v1: "For pasta!", v2: "visha"));
+        level8.Add(new LevelEvent(levelEventType.text, v1: "Lieutenant!", v2: "tanya"));
 
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level8.Add(new LevelEvent(levelEventType.text, v1: "Take out enemies defending hostile supply depots. Capture the pasta at all costs.", v2: "flag"));
 
-        level1.Add(new LevelEvent(levelEventType.enemy2, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 3));
+        //level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level8.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level8.Add(new LevelEvent(levelEventType.stop));
+
+
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level8.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level8.Add(new LevelEvent(levelEventType.stop));
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+        level8.Add(new LevelEvent(levelEventType.enemy3, 1));
+        level8.Add(new LevelEvent(levelEventType.stop));
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+        level8.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level8.Add(new LevelEvent(levelEventType.stop));
+
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 3));
         Debug.Log("end of setup level 1");
 
-        //level1.Add(new LevelEvent(levelEventType.end));
+        //level8.Add(new LevelEvent(levelEventType.end));
 
 
 
@@ -83,7 +87,7 @@ public class Level8Spawns : LevelBaseScript
         if (lvlstart)
         {
             time += Time.deltaTime;
-            LevelEvent current = level1[ListIndex];
+            LevelEvent current = level8[ListIndex];
             timeUntilExe = current.secounds;
 
             if (time >= timeUntilExe && !waitForText)
