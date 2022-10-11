@@ -1,0 +1,1 @@
+This folder contains papers and writings from my later years of univerisity - Some of which are related to the programs and games founds in the Project folder
