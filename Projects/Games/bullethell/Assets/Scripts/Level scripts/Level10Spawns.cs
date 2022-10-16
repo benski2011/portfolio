@@ -13,6 +13,8 @@ public class Level10Spawns : LevelBaseScript
     public GameObject talkingImage;
     public GameObject gamemanager;
 
+    public GameObject Mapmanager; 
+
     public Sprite tanyaimg;
     public Sprite vishaimg;
     public Sprite flagimg;
@@ -53,6 +55,11 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.text, v1: "Men! We are not allowed to retreat from this battle! We will crush these commies!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "For freedom!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "Task: Achieve victory at all cost", v2: "flag"));
+
+        //special event 
+        level10.Add(new LevelEvent(levelEventType.special, v1: "mapchange"));
+
+
         level10.Add(new LevelEvent(levelEventType.text, v1: "Massive waves of incoming air units are approaching.", v2: "observer"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "We need to cancel their city tour.", v2: "tanya"));
         //level10.Add(new LevelEvent(levelEventType.text, v1: "Spawn dudes on broom and fighter planes", v2: "visha"));
@@ -132,6 +139,10 @@ public class Level10Spawns : LevelBaseScript
                         Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
                         break;
 
+                    case levelEventType.special:
+                        ProcessSpeical(current.text);
+                        break;
+
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
                     default:
                         break;
@@ -145,4 +156,17 @@ public class Level10Spawns : LevelBaseScript
 
     }
 
+    private void ProcessSpeical(string text)
+    {
+        switch (text)
+        {
+            case "mapchange":
+                Debug.Log("map change special detected");
+                Mapmanager.GetComponent<MultiCitySpawn>().NextObjectList = true;
+                break;
+
+            default:
+                break;
+        }
+    }
 }

@@ -19,7 +19,7 @@ public class Level7Spawns : LevelBaseScript
 
 
     int ListIndex = 0;
-    List<LevelEvent> level1 = new List<LevelEvent>();
+    List<LevelEvent> level7 = new List<LevelEvent>();
     bool lvlstart = true;
     float timeUntilExe = 0f; 
     // Start is called before the first frame update
@@ -43,31 +43,46 @@ public class Level7Spawns : LevelBaseScript
         Debug.Log("setup level 1");
 
         //StartCoroutine(startuptext());
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
+        
+
+        //Enemy on horses, smg boss fight 2 now with shotgun
+
+        //Spawn some allies
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Multiple magical signatures detected in area 42.", v2: "radio"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Requesting permission to engage.", v2: "tanya"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Negative, wait for reinforcements", v2: "radio"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Unable to comply, if we can the dro---", v2: "tanya"));
+        //GRANTZ GET SNIPED
+        level7.Add(new LevelEvent(levelEventType.text, v1: "A battalion of mages, incoming!", v2: "visha"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Task: Survive", v2: "flag"));
+        //Spawn many difficult enemies on ski and horse
+        //Last boss is smg dude with shotgun
+        //Start with shooting a lot of shotgun bullets
+        
+        level7.Add(new LevelEvent(levelEventType.text, v1: "THIS IS GODS RECCONING", v2: "SueBoss_damaged"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "SHOTGUNS!", v2: "tanya"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "THIS IS A TREATY VIOLATION!", v2: "tanya"));
+
+
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level7.Add(new LevelEvent(levelEventType.stop));
 
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level7.Add(new LevelEvent(levelEventType.stop));
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy3, 1));
+        level7.Add(new LevelEvent(levelEventType.stop));
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy2, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
+        level7.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level7.Add(new LevelEvent(levelEventType.stop));
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 3));
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 3));
         Debug.Log("end of setup level 1");
 
         //level1.Add(new LevelEvent(levelEventType.end));
@@ -83,7 +98,7 @@ public class Level7Spawns : LevelBaseScript
         if (lvlstart)
         {
             time += Time.deltaTime;
-            LevelEvent current = level1[ListIndex];
+            LevelEvent current = level7[ListIndex];
             timeUntilExe = current.secounds;
 
             if (time >= timeUntilExe && !waitForText)

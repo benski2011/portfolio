@@ -16,19 +16,25 @@ public class enemyScript : MonoBehaviour
     public Vector3 pos1;
     public Vector3 pos2;
 
+    GameObject ray;
+
     Vector3 playerpos; 
     Vector3 goal;
     bool canmove = false; 
     public float enemyHp;
     public GameManager gm;
-    GameObject raypivot = null; 
+    public bool RayExist = false;
+
+    GameObject raypivot = null;
+    public GameObject enemyPivot;
+    public GameObject RayPrefab;
 
     public GameObject player;
     public AudioManager AudioPlayer; 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.FindWithTag("Player").transform.Find("Player_midpoint").gameObject;
         goal = pos1;
         gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
     }
@@ -41,9 +47,9 @@ public class enemyScript : MonoBehaviour
         if (Time.time > canfire)
         {
             //Shoot();
-            //ShootRay();
+            ShootRay();
             //ShotGun();
-            ArcShot();
+            //ArcShot();
             //DelayedShoot();
             //CircleShot();
             canfire = Time.time + firerate;
@@ -53,13 +59,16 @@ public class enemyScript : MonoBehaviour
             Move();
         }
         
-        if(raypivot != null)
+        if(ray)
         {
-            raypivot.transform.position = this.transform.position;
-            var lookPos = raypivot.transform.position- playerpos;
-            lookPos.y = 0;
-            var rotation = Quaternion.LookRotation(lookPos);
-            raypivot.transform.rotation = Quaternion.Slerp(raypivot.transform.rotation, rotation,1f);
+           ray.transform.position = this.transform.position;
+           Vector3 direction = playerpos - ray.transform.position;
+           direction.y = 0;
+           direction = direction.normalized;
+           
+           ray.transform.rotation = Quaternion.FromToRotation(Vector3.forward, direction);
+
+
         }
     }
 
@@ -80,12 +89,7 @@ public class enemyScript : MonoBehaviour
 
             clone.transform.LookAt(player.transform);
 
-
-
-
             clone.transform.Rotate(90, 0, 0);
-
-
 
 
             clone.GetComponent<Rigidbody>().AddForce(playerpos1 * 1500);
@@ -219,25 +223,6 @@ public class enemyScript : MonoBehaviour
 
 
 
-    private void ShootRay()
-    {
-        if (raypivot == null)
-        {
-            raypivot = new GameObject("pivpoint");
-            raypivot.transform.parent = this.transform;
-            raypivot.transform.position = Vector3.zero;
-
-            GameObject ray = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            ray.GetComponent<Collider>().enabled = false; 
-            ray.transform.position = Vector3.zero;
-            ray.transform.localScale = new Vector3(1,4,100);
-            ray.transform.parent = raypivot.gameObject.transform;
-            ray.transform.position = new Vector3(0,0,-50);
-
-        }
-
-
-    }
 
     private void ShotGun()
     {
@@ -288,6 +273,21 @@ public class enemyScript : MonoBehaviour
             gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
             Destroy(this.gameObject);
         }
+
+    }
+
+
+    private void ShootRay()
+    {
+        if (ray == null)
+        {
+
+            ray = Instantiate(RayPrefab);
+            //ray.transform.parent = this.transform;
+            ray.transform.position = this.transform.position;
+
+        }
+
 
     }
 }

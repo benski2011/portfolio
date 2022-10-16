@@ -1,1 +1,3 @@
 Random offset on aiming, clear on the ray aim funciton 
+
+all prefabs have a collider on it, this should be removed via a editor script

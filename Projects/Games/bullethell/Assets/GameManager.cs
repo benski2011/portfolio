@@ -97,7 +97,6 @@ public class GameManager : MonoBehaviour
         string textToWrite = text;
         string image = img;
 
-        Debug.Log(image);
 
         switch (image)
         {
