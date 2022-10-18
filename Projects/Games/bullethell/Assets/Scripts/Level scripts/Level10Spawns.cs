@@ -140,7 +140,8 @@ public class Level10Spawns : LevelBaseScript
                         break;
 
                     case levelEventType.special:
-                        ProcessSpeical(current.text);
+                        Debug.Log("special detect");
+                        ProcessSpecial(current.text);
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
@@ -156,7 +157,7 @@ public class Level10Spawns : LevelBaseScript
 
     }
 
-    private void ProcessSpeical(string text)
+    private void ProcessSpecial(string text)
     {
         switch (text)
         {

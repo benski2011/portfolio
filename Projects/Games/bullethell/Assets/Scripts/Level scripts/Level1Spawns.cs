@@ -12,6 +12,8 @@ public enum imgtype { tanya, command };
 /// </summary>
 public struct LevelEvent
 {
+
+    //todo move this shit to its own file 
     public LevelEvent(levelEventType s, int i = 0, int j =0, string v1 = "", string v2 = "")
     {
         type = s;
@@ -75,23 +77,23 @@ public class Level1Spawns : LevelBaseScript
         level1.Add(new LevelEvent(levelEventType.text, v1: "The Entente Alliance has violated our borders. " +
             "Fairy 08 have been tasked to run observational tasks.", v2: "observer"));
 
-//
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "What a ironc call sign.!", v2: "tanya"));
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "Norden control, everything seems to be going as planned.", v2: "tanya"));
-//
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "z--zz--bbtt-zz-zz-z", v2: "observer"));
-//
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "What on earth? Interference?", v2: "tanya"));
-//
-//
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "Our attack failed. Taking out observers and returning to base.", v2: "SueBoss_undamaged"));
-//
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "An intercepted transmission?", v2: "tanya"));
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "Observers? Are they refering to me?", v2: "tanya"));
-//
-//  //spawn enemies and make tanya mad? call in HQ
-//
-//  level1.Add(new LevelEvent(levelEventType.text, v1: "Task: Initiate Delaying action until reinforcements arrives", v2: "flag"));
+      
+        level1.Add(new LevelEvent(levelEventType.text, v1: "What a ironc call sign.!", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Norden control, everything seems to be going as planned.", v2: "tanya"));
+      
+        level1.Add(new LevelEvent(levelEventType.text, v1: "z--zz--bbtt-zz-zz-z", v2: "observer"));
+      
+        level1.Add(new LevelEvent(levelEventType.text, v1: "What on earth? Interference?", v2: "tanya"));
+      
+      
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Our attack failed. Taking out observers and returning to base.", v2: "SueBoss_undamaged"));
+      
+        level1.Add(new LevelEvent(levelEventType.text, v1: "An intercepted transmission?", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Observers? Are they refering to me?", v2: "tanya"));
+      
+        //spawn enemies and make tanya mad? call in HQ
+      
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Task: Initiate Delaying action until reinforcements arrives", v2: "flag"));
 
 
         

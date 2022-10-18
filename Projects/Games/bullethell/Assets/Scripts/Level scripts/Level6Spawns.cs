@@ -18,7 +18,7 @@ public class Level6Spawns : LevelBaseScript
 
 
     int ListIndex = 0;
-    List<LevelEvent> level1 = new List<LevelEvent>();
+    List<LevelEvent> level6 = new List<LevelEvent>();
     bool lvlstart = true;
     float timeUntilExe = 0f; 
     // Start is called before the first frame update
@@ -42,40 +42,29 @@ public class Level6Spawns : LevelBaseScript
         Debug.Log("setup level 6");
 
         //StartCoroutine(startuptext());
-        
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Multiple magical signatures detected in area 42!", v2: "observer"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Requesting permission to engage.", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Negative, wait for reinforcements.", v2: "observer"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Unable to comply, if we can the dro---", v2: "tanya"));
-
-        //sniped ally
-
-        level1.Add(new LevelEvent(levelEventType.text, v1: "A battalion of mages, incoming!", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Task:Survive", v2: "flag"));
+       
+        level6.Add(new LevelEvent(levelEventType.text, v1: "Arane", v2: "flag"));
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level6.Add(new LevelEvent(levelEventType.stop));
 
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level6.Add(new LevelEvent(levelEventType.stop));
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy3, 1));
+        level6.Add(new LevelEvent(levelEventType.stop));
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy2, 1));
-        level1.Add(new LevelEvent(levelEventType.stop));
+        level6.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level6.Add(new LevelEvent(levelEventType.stop));
 
-        level1.Add(new LevelEvent(levelEventType.wait, 0, 3));
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 3));
 
-        //shotgun dude
-        level1.Add(new LevelEvent(levelEventType.text, v1: "THIS IS GODS RECCONING", v2: "SueBoss_damaged"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "THIS IS A TREATY VIOLATION", v2: "tanya"));
 
 
         Debug.Log("end of setup level 1");
@@ -93,7 +82,7 @@ public class Level6Spawns : LevelBaseScript
         if (lvlstart)
         {
             time += Time.deltaTime;
-            LevelEvent current = level1[ListIndex];
+            LevelEvent current = level6[ListIndex];
             timeUntilExe = current.secounds;
 
             if (time >= timeUntilExe && !waitForText)
@@ -125,6 +114,9 @@ public class Level6Spawns : LevelBaseScript
                         break;
                     case levelEventType.end:
                         Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
+                        break;
+                    case levelEventType.special:
+                        Debug.Log("specials"); 
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;

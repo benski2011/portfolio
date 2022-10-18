@@ -53,6 +53,10 @@ public class Level7Spawns : LevelBaseScript
         level7.Add(new LevelEvent(levelEventType.text, v1: "Negative, wait for reinforcements", v2: "radio"));
         level7.Add(new LevelEvent(levelEventType.text, v1: "Unable to comply, if we can the dro---", v2: "tanya"));
         //GRANTZ GET SNIPED
+
+        level7.Add(new LevelEvent(levelEventType.special, v1: "sniped"));
+
+
         level7.Add(new LevelEvent(levelEventType.text, v1: "A battalion of mages, incoming!", v2: "visha"));
         level7.Add(new LevelEvent(levelEventType.text, v1: "Task: Survive", v2: "flag"));
         //Spawn many difficult enemies on ski and horse
@@ -130,6 +134,9 @@ public class Level7Spawns : LevelBaseScript
                         break;
                     case levelEventType.end:
                         Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
+                        break;
+                    case levelEventType.special:
+                        Debug.Log("special"); 
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
