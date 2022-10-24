@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +6,9 @@ public class cityspawntestscript : MonoBehaviour
 {
     [SerializeField]
     public List<GameObject> Objects;
+
+    public bool NextObjectList = false;
+
     public List<GameObject> ObjectPool;
 
     public List<GameObject> CurrentActive;
@@ -14,7 +16,7 @@ public class cityspawntestscript : MonoBehaviour
     public Vector3 StartPos;
     public int SpawnOffset;
 
-    public float speed =0.2f;
+    public float speed = 0.2f;
 
     int[] rotationDegrees = { 0, 90, 180, 270 };
 
@@ -26,16 +28,29 @@ public class cityspawntestscript : MonoBehaviour
         {
             for (int ii = 0; ii < 5; ii++)
             {
-                GameObject temp = Instantiate(Objects[ii], new Vector3(999,999,999), Quaternion.identity);
+                GameObject temp = Instantiate(Objects[ii], new Vector3(999, 999, 999), Quaternion.identity);
                 int rot = UnityEngine.Random.Range(0, 4);
-                temp.transform.Rotate(0, rotationDegrees[rot], 0);
+                //temp.transform.Rotate(0, rotationDegrees[rot], 0);
                 temp.transform.SetParent(this.gameObject.transform);
                 ObjectPool.Add(temp);
-                temp.SetActive(false);            
+                temp.SetActive(false);
             }
         }
 
-        Debug.Log(ObjectPool.Count);
+        foreach (var item in ObjectPool)
+        {
+            foreach (Collider c in item.GetComponentsInChildren<Collider>())
+            {
+                c.enabled = false;
+            }
+        }
+
+
+
+
+
+
+
         for (int i = 0; i < 4; i++)
         {
 
@@ -47,28 +62,30 @@ public class cityspawntestscript : MonoBehaviour
             Debug.Log(StartPos);
             tile.transform.localPosition = StartPos;
             CurrentActive.Add(tile);
+            ObjectPool.Remove(tile);
             StartPos.z += 60;
         }
     }
 
     private void RemoveMapItem()
     {
-        throw new NotImplementedException();
+
     }
 
     private void NewMapItem()
     {
-        throw new NotImplementedException();
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
         for (int i = 0; i < CurrentActive.Count; i++)
         {
 
-            CurrentActive[i].gameObject.transform.localPosition = 
-                new Vector3(CurrentActive[i].gameObject.transform.localPosition.x , 
+            CurrentActive[i].gameObject.transform.localPosition =
+                new Vector3(CurrentActive[i].gameObject.transform.localPosition.x,
                 CurrentActive[i].gameObject.transform.localPosition.y, CurrentActive[i].gameObject.transform.localPosition.z - speed);
 
             if (CurrentActive[i].gameObject.transform.localPosition.z < -65)
@@ -79,16 +96,20 @@ public class cityspawntestscript : MonoBehaviour
                 Debug.Log(RandomInt);
 
                 GameObject tile = ObjectPool[RandomInt].gameObject;
+                ObjectPool.Remove(tile);
+                ObjectPool.Add(CurrentActive[i].gameObject);
+
                 tile.SetActive(true);
-                tile.transform.localPosition = new Vector3(CurrentActive[CurrentActive.Count - 1].transform.localPosition.x ,
+                tile.transform.localPosition = new Vector3(CurrentActive[CurrentActive.Count - 1].transform.localPosition.x,
                     CurrentActive[CurrentActive.Count - 1].transform.localPosition.y, CurrentActive[CurrentActive.Count - 1].transform.localPosition.z + 60);
-                    
-                GameObject ToBeDeleted = CurrentActive[i].gameObject;
-                CurrentActive.RemoveAt(i);
+
+                CurrentActive[i].gameObject.transform.localPosition = new Vector3(999, 999, 999);
+                CurrentActive[i].gameObject.SetActive(false);
+
+                CurrentActive.Remove(CurrentActive[i]);
                 CurrentActive.Add(tile);
-                ObjectPool.Add(ToBeDeleted);
-                ToBeDeleted.transform.position = new Vector3(999, 999, 999);
-                ToBeDeleted.SetActive(false);
+
+
                 //Destroy(ToBeDeleted);
 
 
@@ -96,5 +117,5 @@ public class cityspawntestscript : MonoBehaviour
         }
     }
 
-    
+
 }

@@ -68,3 +68,4 @@ MonoBehaviour:
   CurrentActive: []
   StartPos: {x: 0, y: 0, z: 0}
   SpawnOffset: 0
+  speed: 0.2

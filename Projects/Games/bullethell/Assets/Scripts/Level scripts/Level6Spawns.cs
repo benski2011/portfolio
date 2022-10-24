@@ -41,9 +41,12 @@ public class Level6Spawns : LevelBaseScript
         //todo enums 
         Debug.Log("setup level 6");
 
+
+        // horse enemies 
         //StartCoroutine(startuptext());
        
-        level6.Add(new LevelEvent(levelEventType.text, v1: "Arane", v2: "flag"));
+        level6.Add(new LevelEvent(levelEventType.text, v1: "The 203rd is to elimitate enemy mages who have joined forces with Arene rebels.", v2: "observer"));
+        level6.Add(new LevelEvent(levelEventType.text, v1: "Afterward, work with allies to recapture the city.", v2: "observer"));
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
