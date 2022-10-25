@@ -48,6 +48,8 @@ public class Level3Spawns : LevelBaseScript
 
 
         level3.Add(new LevelEvent(levelEventType.text, v1: "Assist the Empire soldiers. Find a way to deal with the bombers.", v2: "flag"));
+        level3.Add(new LevelEvent(levelEventType.text, v1: "Hello", v2: "tanya"));
+        level3.Add(new LevelEvent(levelEventType.text, v1: "Goodbye", v2: "tanya"));
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));

@@ -51,7 +51,7 @@ public class Level8Spawns : LevelBaseScript
 
 
 
-        level8.Add(new LevelEvent(levelEventType.text, v1: "Take out enemies defending hostile supply depots. Capture the pasta at all costs.", v2: "flag"));
+        level8.Add(new LevelEvent(levelEventType.text, v1: "Objective: Take out enemies defending hostile supply depots. Capture the pasta at all costs.", v2: "flag"));
 
 
         //level8.Add(new LevelEvent(levelEventType.wait, 0, 2));

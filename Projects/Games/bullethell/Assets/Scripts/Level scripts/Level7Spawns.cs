@@ -58,7 +58,7 @@ public class Level7Spawns : LevelBaseScript
 
 
         level7.Add(new LevelEvent(levelEventType.text, v1: "A battalion of mages, incoming!", v2: "visha"));
-        level7.Add(new LevelEvent(levelEventType.text, v1: "Task: Survive", v2: "flag"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Objective: Survive", v2: "flag"));
         //Spawn many difficult enemies on ski and horse
         //Last boss is smg dude with shotgun
         //Start with shooting a lot of shotgun bullets

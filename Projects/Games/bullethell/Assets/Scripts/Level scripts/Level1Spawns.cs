@@ -78,7 +78,7 @@ public class Level1Spawns : LevelBaseScript
             "Fairy 08 have been tasked to run observational tasks.", v2: "observer"));
 
       
-        level1.Add(new LevelEvent(levelEventType.text, v1: "What a ironc call sign.!", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "What a ironc call sign!", v2: "tanya"));
         level1.Add(new LevelEvent(levelEventType.text, v1: "Norden control, everything seems to be going as planned.", v2: "tanya"));
       
         level1.Add(new LevelEvent(levelEventType.text, v1: "z--zz--bbtt-zz-zz-z", v2: "observer"));
@@ -89,7 +89,7 @@ public class Level1Spawns : LevelBaseScript
         level1.Add(new LevelEvent(levelEventType.text, v1: "Our attack failed. Taking out observers and returning to base.", v2: "SueBoss_undamaged"));
       
         level1.Add(new LevelEvent(levelEventType.text, v1: "An intercepted transmission?", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Observers? Are they refering to me?", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Observers? Are they referring to me?", v2: "tanya"));
       
         //spawn enemies and make tanya mad? call in HQ
       

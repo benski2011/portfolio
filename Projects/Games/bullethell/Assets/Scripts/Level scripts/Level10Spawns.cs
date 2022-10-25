@@ -67,7 +67,7 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.text, v1: "HER AGAIN?!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "YOU KILLED MY FATHER! PREPARE TO DIE!", v2: "MaryMad"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "What's With This Sassy Lost Child?", v2: "tanya"));
-        level10.Add(new LevelEvent(levelEventType.text, v1: "Task: Achieve victory at all cost", v2: "flag"));
+        level10.Add(new LevelEvent(levelEventType.text, v1: "Objective: Achieve victory at all cost", v2: "flag"));
 
         //level10.Add(new LevelEvent(levelEventType.text, v1: "God fight ? God speaks when Mary is beaten?", v2: "visha"));
 

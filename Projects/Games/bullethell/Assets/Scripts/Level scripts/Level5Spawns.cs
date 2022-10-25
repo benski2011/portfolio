@@ -44,8 +44,8 @@ public class Level5Spawns : LevelBaseScript
         //StartCoroutine(startuptext());
    
         level1.Add(new LevelEvent(levelEventType.text, v1: "You have been tasked to run delaying action until victory has been achieved.", v2: "observer"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "A soldier's job is never finished.!", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Objectives: Run delaying action", v2: "flag"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "A soldier's job is never finished.", v2: "tanya"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Objective: Run delaying action", v2: "flag"));
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level1.Add(new LevelEvent(levelEventType.enemy1, 1));

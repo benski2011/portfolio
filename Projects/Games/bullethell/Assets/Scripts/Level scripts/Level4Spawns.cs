@@ -42,7 +42,7 @@ public class Level4Spawns : LevelBaseScript
         Debug.Log("setup level 4");
 
 
-        level4.Add(new LevelEvent(levelEventType.text, v1: "Your task is to take out the guns stationed in the Orse fjord. Expect heavy enemy forces.", v2: "flag"));
+        level4.Add(new LevelEvent(levelEventType.text, v1: "Objective: Take out the guns stationed in the Orse fjord. Expect heavy enemy forces.", v2: "flag"));
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
