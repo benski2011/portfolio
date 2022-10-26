@@ -48,6 +48,8 @@ public class Level1Spawns : LevelBaseScript
     public GameObject gamemanager;
 
 
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
 
 
     int ListIndex = 0;
@@ -58,6 +60,7 @@ public class Level1Spawns : LevelBaseScript
     void Start()
     {
         gamemanager = GameObject.Find("GameManager");
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
 
         Level1Setup();
         

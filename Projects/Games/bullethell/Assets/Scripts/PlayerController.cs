@@ -80,8 +80,8 @@ public class PlayerController : MonoBehaviour
         {
             if (ability > 99)
             {
-                StartCoroutine(fireAbility());
-                decreaseAbility();
+               // StartCoroutine(fireAbility());
+               // decreaseAbility();
             }
             else
             {

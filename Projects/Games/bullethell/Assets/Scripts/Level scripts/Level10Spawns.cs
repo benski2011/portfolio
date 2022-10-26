@@ -19,6 +19,9 @@ public class Level10Spawns : LevelBaseScript
     public Sprite vishaimg;
     public Sprite flagimg;
 
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
+
 
     int ListIndex = 0;
     List<LevelEvent> level10 = new List<LevelEvent>();
@@ -27,6 +30,7 @@ public class Level10Spawns : LevelBaseScript
     // Start is called before the first frame update
     void Start()
     {
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
         gamemanager = GameObject.Find("GameManager");
 
         Level10Setup();
@@ -54,7 +58,7 @@ public class Level10Spawns : LevelBaseScript
 
         level10.Add(new LevelEvent(levelEventType.text, v1: "Men! We are not allowed to retreat from this battle! We will crush these commies!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "For freedom!", v2: "tanya"));
-        level10.Add(new LevelEvent(levelEventType.text, v1: "Task: Achieve victory at all cost", v2: "flag"));
+        level10.Add(new LevelEvent(levelEventType.text, v1: "Objective: Achieve victory at all cost", v2: "flag"));
 
         //special event 
         level10.Add(new LevelEvent(levelEventType.special, v1: "mapchange"));

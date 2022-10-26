@@ -16,6 +16,8 @@ public class Level6Spawns : LevelBaseScript
     public Sprite vishaimg;
     public Sprite flagimg;
 
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
 
     int ListIndex = 0;
     List<LevelEvent> level6 = new List<LevelEvent>();
@@ -28,6 +30,7 @@ public class Level6Spawns : LevelBaseScript
 
         Level6Setup();
         
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
 
         //StartCoroutine(Spawn());
     }

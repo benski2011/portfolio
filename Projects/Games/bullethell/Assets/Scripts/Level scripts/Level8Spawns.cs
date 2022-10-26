@@ -17,6 +17,9 @@ public class Level8Spawns : LevelBaseScript
     public Sprite vishaimg;
     public Sprite flagimg;
 
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
+
 
     int ListIndex = 0;
     List<LevelEvent> level8 = new List<LevelEvent>();
@@ -26,6 +29,7 @@ public class Level8Spawns : LevelBaseScript
     void Start()
     {
         gamemanager = GameObject.Find("GameManager");
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
 
         Level8Setup();
         

@@ -112,19 +112,19 @@ public class GameManager : MonoBehaviour
             case "radio":
                 talkingImage.GetComponent<Image>().sprite = radioimg;
                 break;
-            case "SueBoss_undamaged":
+            case "sueboss_undamaged":
                 talkingImage.GetComponent<Image>().sprite = SueBoss_undamaged;
                 break;
-            case "SueBoss_mad":
+            case "sueboss_mad":
                 talkingImage.GetComponent<Image>().sprite = SueBoss_mad;
                 break;
-            case "SueBoss_damaged":
+            case "sueboss_damaged":
                 talkingImage.GetComponent<Image>().sprite = SueBoss_damaged;
                 break;
-            case "Mary":
+            case "mary":
                 talkingImage.GetComponent<Image>().sprite = Mary;
                 break;
-            case "MaryMad":
+            case "marymad":
                 talkingImage.GetComponent<Image>().sprite = MaryMad;
                 break;
             case "observer":

@@ -15,6 +15,8 @@ public class Level2Spawns : LevelBaseScript
     public Sprite tanyaimg;
     public Sprite vishaimg;
     public Sprite flagimg;
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
 
 
     int ListIndex = 0;
@@ -24,6 +26,7 @@ public class Level2Spawns : LevelBaseScript
     // Start is called before the first frame update
     void Start()
     {
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
         gamemanager = GameObject.Find("GameManager");
 
         Level2Setup();

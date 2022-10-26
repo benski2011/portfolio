@@ -18,6 +18,10 @@ public class Level7Spawns : LevelBaseScript
     public Sprite flagimg;
 
 
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
+
+
     int ListIndex = 0;
     List<LevelEvent> level7 = new List<LevelEvent>();
     bool lvlstart = true;
@@ -26,6 +30,7 @@ public class Level7Spawns : LevelBaseScript
     void Start()
     {
         gamemanager = GameObject.Find("GameManager");
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
 
         Level7Setup();
         

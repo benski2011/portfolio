@@ -15,6 +15,8 @@ public class Level5Spawns : LevelBaseScript
     public Sprite tanyaimg;
     public Sprite vishaimg;
     public Sprite flagimg;
+    public GameObject VoiceLineManager;
+    private VoiceLinePlayer VP;
 
 
     int ListIndex = 0;
@@ -26,6 +28,7 @@ public class Level5Spawns : LevelBaseScript
     {
         gamemanager = GameObject.Find("GameManager");
 
+        VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
         Level5Setup();
         
 
