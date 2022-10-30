@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyFighterPlane : EnemyBaseScript
 {
+
+ 
+
     // Start is called before the first frame update
     void Start()
     {
