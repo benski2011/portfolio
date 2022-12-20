@@ -40,18 +40,9 @@ public class Level11Spawns : LevelBaseScript
         // stop is combined with spawn to make it possible to spawn multiple enemy types 
 
         //todo enums 
-        Debug.Log("setup level 1");
-
-        //StartCoroutine(startuptext());
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Commander, you have been tasked to take out the enemy main bomber," +
-            " but to get there you need to take out the enemy mages.", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "This should be an walk in the park.", v2: "tanya"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Incoming!", v2: "visha"));
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Objectives:\n-Kill all enemy mages.\n-Take out the enemy bomber." +
-            "\n-Survive. \n\nGood luck, White silver.", v2: "flag"));
-
+        
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level1.Add(new LevelEvent(levelEventType.enemy3, 1));
         level1.Add(new LevelEvent(levelEventType.stop));
 
 

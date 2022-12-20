@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.24f1 (79c78de19888) revision 7980941'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16279 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 16279 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ E:/git/portfolio/Projects/Games/bullethell
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64163
+56806
 Successfully changed project path to: E:/git/portfolio/Projects/Games/bullethell
 E:/git/portfolio/Projects/Games/bullethell
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 103.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 93.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.24f1 (79c78de19888)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -29,95 +29,95 @@ Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
     Vendor:   
-    VRAM:     4053 MB
-    Driver:   31.0.15.1659
+    VRAM:     4047 MB
+    Driver:   31.0.15.2737
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004872 seconds.
+Registered in 0.004954 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 106.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 87.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.923 seconds
+- Completed reload, in  0.848 seconds
 Domain Reload Profiling:
-	ReloadAssembly (924ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (848ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (713ms)
-			LoadAssemblies (93ms)
+		EndReloadAssembly (663ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (217ms)
+			SetupTypeCache (193ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (300ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (252ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (107ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (121ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (20ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009142 seconds.
+Registered in 0.008523 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 97.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 91.11 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.894 seconds
+- Completed reload, in  1.519 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1896ms)
-		BeginReloadAssembly (249ms)
+	ReloadAssembly (1520ms)
+		BeginReloadAssembly (201ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (1543ms)
-			LoadAssemblies (171ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1231ms)
+			LoadAssemblies (137ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (550ms)
+			SetupTypeCache (415ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (564ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (468ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (98ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (294ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (19ms)
-				EditorAssembliesLoaded (1ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 1.43 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2924 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 222.2 MB.
-System memory in use after: 222.4 MB.
+System memory in use before: 222.3 MB.
+System memory in use after: 222.5 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3384.
-Total: 4.295200 ms (FindLiveObjects: 0.297500 ms CreateObjectMapping: 0.144400 ms MarkObjects: 3.695600 ms  DeleteObjects: 0.155700 ms)
+Total: 4.167700 ms (FindLiveObjects: 0.496600 ms CreateObjectMapping: 0.174200 ms MarkObjects: 3.376700 ms  DeleteObjects: 0.110700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,601 +131,145 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Assets/bullet/enemybullet.prefab
-  artifactKey: Guid(0c9fc05b30bc1f3449a9cf500c2e1e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/bullet/enemybullet.prefab using Guid(0c9fc05b30bc1f3449a9cf500c2e1e4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b840a03cd6171d5ec0d4fb84332ff8d') in 0.369816 seconds 
-  Import took 0.377487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000425 seconds.
-  path: Assets/Assets/bullet/redbullet.prefab
-  artifactKey: Guid(fb6130a57dd480a4d8c8812c524262b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/bullet/redbullet.prefab using Guid(fb6130a57dd480a4d8c8812c524262b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3209d25f675f4f94603adb5a18aa2e49') in 0.012152 seconds 
-  Import took 0.018889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Assets/bullet/New Material.mat
-  artifactKey: Guid(9f67fc894a5270a44a683e2195f3694e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/bullet/New Material.mat using Guid(9f67fc894a5270a44a683e2195f3694e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fed01d92e006827362af67b42c0cca8') in 0.069971 seconds 
-  Import took 0.079271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Assets/bullet
-  artifactKey: Guid(778bd057d0314e441a6738f4e41c989b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/bullet using Guid(778bd057d0314e441a6738f4e41c989b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9131dab506b80c1dcd3e9410019870de') in 0.007174 seconds 
-  Import took 0.014290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Assets/bullet/yellowbullet.prefab
-  artifactKey: Guid(f80f8c40bd3ad0844a829f73c708a214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/bullet/yellowbullet.prefab using Guid(f80f8c40bd3ad0844a829f73c708a214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c4fe110f9d230bd19d6b61f0a2539da') in 0.012216 seconds 
-  Import took 0.019586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.033015 seconds.
-  path: Assets/Assets/Laser Sprites
-  artifactKey: Guid(6361ad2d162eb5c4087646215d83d02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites using Guid(6361ad2d162eb5c4087646215d83d02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2b12b0a7def8237e5adf4e1bd7af09') in 0.009547 seconds 
-  Import took 0.021024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.051112 seconds.
-  path: Assets/Assets/Laser Sprites/01.png
-  artifactKey: Guid(71e5f67492b52614db4049f71942829b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/01.png using Guid(71e5f67492b52614db4049f71942829b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '690faa8b5165477d57c58d6ba86cf4d1') in 0.087851 seconds 
-  Import took 0.095586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Assets/Laser Sprites/48.png
-  artifactKey: Guid(084914cd8827df345866e7fd938b2f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/48.png using Guid(084914cd8827df345866e7fd938b2f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584dd75cc0388327e0b8e174c49c3ca9') in 0.021126 seconds 
-  Import took 0.028241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Assets/Laser Sprites/29.png
-  artifactKey: Guid(1abf5c624df3ce24c9df2ad52a552501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/29.png using Guid(1abf5c624df3ce24c9df2ad52a552501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3cf9ff91569d0337e984fbfd8461359') in 0.021047 seconds 
-  Import took 0.026847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Assets/Laser Sprites/38.png
-  artifactKey: Guid(8f8173cd8dc19c0479980c7f9426feb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/38.png using Guid(8f8173cd8dc19c0479980c7f9426feb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0de7923cd6cb8e2d0ce9c427d49a0448') in 0.019612 seconds 
-  Import took 0.026076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Assets/Laser Sprites/08.png
-  artifactKey: Guid(d4cfc2a1cf3bf69429857324b6a79979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/08.png using Guid(d4cfc2a1cf3bf69429857324b6a79979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bdac0e8267539bab330364bdcaf158e') in 0.017034 seconds 
-  Import took 0.024705 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Assets/Laser Sprites/22.png
-  artifactKey: Guid(3408d76e8bf4bf54885b5129a379d53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/22.png using Guid(3408d76e8bf4bf54885b5129a379d53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b2791e1d12804a4476941d17f6e040') in 0.020585 seconds 
-  Import took 0.030639 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Assets/Laser Sprites/42.png
-  artifactKey: Guid(1798e4092152f5e4db972e033a540aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/42.png using Guid(1798e4092152f5e4db972e033a540aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b8ee942eae40976a7fa29c2333f66c') in 0.017010 seconds 
-  Import took 0.025179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Assets/Laser Sprites/16.png
-  artifactKey: Guid(d7c101109c6037a47a36ad3514d0c120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/16.png using Guid(d7c101109c6037a47a36ad3514d0c120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa1ab0930d9679df83b4d775e9899d2') in 0.021118 seconds 
-  Import took 0.028241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Assets/Laser Sprites/37.png
-  artifactKey: Guid(709e26a34544ccb4d9823773203ab439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/37.png using Guid(709e26a34544ccb4d9823773203ab439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255fee187b377c78be48bedef5b6ce89') in 0.017736 seconds 
-  Import took 0.024771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Assets/Laser Sprites/47.png
-  artifactKey: Guid(34f8a9e4be6aa534eba4abb9990ab34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/47.png using Guid(34f8a9e4be6aa534eba4abb9990ab34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b040677f31e2d419391d7345b55b02d8') in 0.017921 seconds 
-  Import took 0.028328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Assets/Laser Sprites/09.png
-  artifactKey: Guid(acd1d4841fcb33c46a0472af33052a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/09.png using Guid(acd1d4841fcb33c46a0472af33052a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b86b047ba499f1e74a77ef81616a47') in 0.015769 seconds 
-  Import took 0.024473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Assets/Laser Sprites/21.png
-  artifactKey: Guid(500c40b4175a9fc4eac8e778ef3d4167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/21.png using Guid(500c40b4175a9fc4eac8e778ef3d4167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35b7efc921006f5ea572ede6ec15dc4') in 0.016731 seconds 
-  Import took 0.025104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Assets/Laser Sprites/13.png
-  artifactKey: Guid(560c1e2e96642a147a916bbacb6379d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/13.png using Guid(560c1e2e96642a147a916bbacb6379d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12423ef427bd82f4ec207c6d5c570e61') in 0.019412 seconds 
-  Import took 0.026798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000403 seconds.
-  path: Assets/Assets/Laser Sprites/36.png
-  artifactKey: Guid(8530322f9ae60c14186c9ed4e4f72585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/36.png using Guid(8530322f9ae60c14186c9ed4e4f72585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68012335672d9c7cce123d70903f73c2') in 0.023869 seconds 
-  Import took 0.031947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Assets/Laser Sprites/14.png
-  artifactKey: Guid(f2f0abb8fff079e40a85e88c2acfcd29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/14.png using Guid(f2f0abb8fff079e40a85e88c2acfcd29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88de5e142432d06f57eac7ad41cedb4') in 0.018088 seconds 
-  Import took 0.024873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Assets/Laser Sprites/11.png
-  artifactKey: Guid(25cecf5a05bdd3c4b8dc40f7962b528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/11.png using Guid(25cecf5a05bdd3c4b8dc40f7962b528a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7df2fb661f7862da610ec7f4859934') in 0.014970 seconds 
-  Import took 0.024478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Assets/Laser Sprites/32.png
-  artifactKey: Guid(7b1aa06a76f74e341a0df0d5ca443bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/32.png using Guid(7b1aa06a76f74e341a0df0d5ca443bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7bbd4fe6aacc349469ce242c2a29ea') in 0.017309 seconds 
-  Import took 0.024741 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Assets/Laser Sprites/26.png
-  artifactKey: Guid(6a12a9b2dccae4042ae53fcbe1bfec38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/26.png using Guid(6a12a9b2dccae4042ae53fcbe1bfec38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae04f6c6982b1578009837fe53ecdeaa') in 0.018962 seconds 
-  Import took 0.028392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Assets/Laser Sprites/46.png
-  artifactKey: Guid(29302986ff522844386f8501aeca5806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/46.png using Guid(29302986ff522844386f8501aeca5806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5053c5d5eca1ab9fba8f3fb3986d4c29') in 0.017412 seconds 
-  Import took 0.024146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Assets/Laser Sprites/02.png
-  artifactKey: Guid(4b79a4d037fa510468177596370ed102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/02.png using Guid(4b79a4d037fa510468177596370ed102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68b056965a3275451606480b056c102') in 0.016939 seconds 
-  Import took 0.024400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Assets/Laser Sprites/44.png
-  artifactKey: Guid(6e34df2806bd3df4ab620dd4ee416106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/44.png using Guid(6e34df2806bd3df4ab620dd4ee416106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd434510ef2960c69dacf2afce4c0722') in 0.018674 seconds 
-  Import took 0.027287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001005 seconds.
-  path: Assets/Assets/Laser Sprites/31.png
-  artifactKey: Guid(1168958c583831942a2bc6da2ec6afeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/31.png using Guid(1168958c583831942a2bc6da2ec6afeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55107664992359678234481354b1cc0b') in 0.014642 seconds 
-  Import took 0.023024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Assets/Laser Sprites/20.png
-  artifactKey: Guid(a02bba109d3c68a468bb1eb12e3dd5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/20.png using Guid(a02bba109d3c68a468bb1eb12e3dd5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630e26fdda65843f6e63eaac7c5349c5') in 0.022983 seconds 
-  Import took 0.029510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Assets/Laser Sprites/45.png
-  artifactKey: Guid(05344468caf45674b913dac8713ee4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/45.png using Guid(05344468caf45674b913dac8713ee4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd981c6a5d4b840e91ebf0c53d0b4fc41') in 0.021119 seconds 
-  Import took 0.028189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Assets/Laser Sprites/40.png
-  artifactKey: Guid(19a42001ebbbd95499fe5f18e3240372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/40.png using Guid(19a42001ebbbd95499fe5f18e3240372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '457790938edeae27315798ccce920315') in 0.027662 seconds 
-  Import took 0.035208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Assets/Laser Sprites/43.png
-  artifactKey: Guid(901ff795bb0e8eb49b9bdb3f7c103e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/43.png using Guid(901ff795bb0e8eb49b9bdb3f7c103e30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec842ff3bb7d412efe26c5300c9f800') in 0.028537 seconds 
-  Import took 0.038023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Assets/Laser Sprites/23.png
-  artifactKey: Guid(2e0418cda72e0884e892de386001d08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/23.png using Guid(2e0418cda72e0884e892de386001d08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66afb3b5b31370e40ac9f916ba53b8a1') in 0.027872 seconds 
-  Import took 0.034068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Assets/Laser Sprites/10.png
-  artifactKey: Guid(c2e9b4014f1314e44948caa8b2bf8a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/10.png using Guid(c2e9b4014f1314e44948caa8b2bf8a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b272e42bc2a2cf1c60e4e9a6862153') in 0.020358 seconds 
-  Import took 0.026931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Assets/Laser Sprites/17.png
-  artifactKey: Guid(81fab7b8f4316a847a440d3483b71e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/17.png using Guid(81fab7b8f4316a847a440d3483b71e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6dd976b65a4560f2c83a2d4ce7aced8') in 0.019287 seconds 
-  Import took 0.024964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Assets/Laser Sprites/24.png
-  artifactKey: Guid(cc4343947d814db49a2df5d77cbb0c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/24.png using Guid(cc4343947d814db49a2df5d77cbb0c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd776d7ae2b157be5aa12b03aca396dfa') in 0.012815 seconds 
-  Import took 0.024451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001683 seconds.
-  path: Assets/Assets/Laser Sprites/25.png
-  artifactKey: Guid(e3b72c6c7bc62534dbf97382ecf89377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/25.png using Guid(e3b72c6c7bc62534dbf97382ecf89377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d1ec687da7de8659cf14b7f4b5f8e4') in 0.014249 seconds 
-  Import took 0.023019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Assets/Laser Sprites/30.png
-  artifactKey: Guid(17985428a217a664eb47c220610fc9b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/30.png using Guid(17985428a217a664eb47c220610fc9b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf34fb9ab2dcc8b1dbdd073bc3fa5eb') in 0.018996 seconds 
-  Import took 0.026673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Assets/Laser Sprites/34.png
-  artifactKey: Guid(247adcbc0a802404caa3d8b6a131c200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/34.png using Guid(247adcbc0a802404caa3d8b6a131c200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7db4baf525ae448dd585ff0f58f26d5') in 0.018689 seconds 
-  Import took 0.026004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/Assets/Laser Sprites/07.png
-  artifactKey: Guid(320d345c4b245c6428439383d8222ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/07.png using Guid(320d345c4b245c6428439383d8222ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349db0b606d99afa9962107d72efe13f') in 0.012865 seconds 
-  Import took 0.020131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Assets/Laser Sprites/04.png
-  artifactKey: Guid(a360e447ce225c74595bc7897db88c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/04.png using Guid(a360e447ce225c74595bc7897db88c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3858a403cd64648daf0d0defb112c3a') in 0.015255 seconds 
-  Import took 0.025169 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Assets/Laser Sprites/33.png
-  artifactKey: Guid(e10d17bce271b4743b3a88a1eb3c094f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/33.png using Guid(e10d17bce271b4743b3a88a1eb3c094f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999be5281c8fd0a0558af3c085409a73') in 0.018353 seconds 
-  Import took 0.025290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Assets/Laser Sprites/28.png
-  artifactKey: Guid(5e1e864a5341395429ace286462a15a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/28.png using Guid(5e1e864a5341395429ace286462a15a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81069a30a2da38c35ba959a62eb6635') in 0.018501 seconds 
-  Import took 0.026302 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Assets/Laser Sprites/39.png
-  artifactKey: Guid(ea0974756a85d794d8cc22236b6e8b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/39.png using Guid(ea0974756a85d794d8cc22236b6e8b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a559383c5e963025783a4c37faee4e') in 0.012974 seconds 
-  Import took 0.020504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Assets/Laser Sprites/41.png
-  artifactKey: Guid(1c5741ca1f1cc164ab092c7c19fa9bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/41.png using Guid(1c5741ca1f1cc164ab092c7c19fa9bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47fb13ec1d2b630cd0d211024848b290') in 0.014648 seconds 
-  Import took 0.022677 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Assets/Laser Sprites/05.png
-  artifactKey: Guid(913b1035fb4211541ad1c2644046f4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/05.png using Guid(913b1035fb4211541ad1c2644046f4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4793e5bf3c4ef8555ad8ab7a0448f9') in 0.015891 seconds 
-  Import took 0.027851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Assets/Laser Sprites/06.png
-  artifactKey: Guid(ae2e66165e84f3c47be5e622fc114883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/06.png using Guid(ae2e66165e84f3c47be5e622fc114883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89cbe3bc816de2e3bd35fc8b6371f08') in 0.020216 seconds 
-  Import took 0.027570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Assets/Laser Sprites/27.png
-  artifactKey: Guid(2a62f65a723c707478fc61868cd4a6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/27.png using Guid(2a62f65a723c707478fc61868cd4a6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f383aa07949dacb74c2072259b412c') in 0.011751 seconds 
-  Import took 0.020731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Assets/Laser Sprites/03.png
-  artifactKey: Guid(03b851a50df32e94f94850ff2ac3ad4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/03.png using Guid(03b851a50df32e94f94850ff2ac3ad4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b3ece62151114f1add468d78c2bc7e') in 0.015979 seconds 
-  Import took 0.022890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Assets/Laser Sprites/12.png
-  artifactKey: Guid(1ff707aa175ef2e4abae9c7d0270196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/12.png using Guid(1ff707aa175ef2e4abae9c7d0270196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1452c0751a98d0fc77baf574573caab') in 0.016966 seconds 
-  Import took 0.023371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Assets/Laser Sprites/35.png
-  artifactKey: Guid(db38f4263df1ed540a46be764161a6e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/35.png using Guid(db38f4263df1ed540a46be764161a6e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4855035a431b4301970e2ada5942c402') in 0.016643 seconds 
-  Import took 0.025858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000241 seconds.
-  path: Assets/Assets/Laser Sprites/49.png
-  artifactKey: Guid(b86e5679e90d0bb469b73460fe3a5c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/49.png using Guid(b86e5679e90d0bb469b73460fe3a5c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125796ba8415d676a88f09cce941a9eb') in 0.015793 seconds 
-  Import took 0.021586 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Assets/Laser Sprites/19.png
-  artifactKey: Guid(ec52bd3708a248e4685b78bda0c1a424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/19.png using Guid(ec52bd3708a248e4685b78bda0c1a424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f88ba2a824b194fd2ea9e2165dd973') in 0.015113 seconds 
-  Import took 0.022543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Assets/Laser Sprites/15.png
-  artifactKey: Guid(03142507d21d71f42b2cf1d8ebd87178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/15.png using Guid(03142507d21d71f42b2cf1d8ebd87178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb9ce86c1bb81eed2c6233573b50acc') in 0.015777 seconds 
-  Import took 0.024198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Assets/Laser Sprites/18.png
-  artifactKey: Guid(caa6e85017550064fbe308db76fad9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/18.png using Guid(caa6e85017550064fbe308db76fad9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8448054bd4c63a341879689563b93005') in 0.014391 seconds 
-  Import took 0.020762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.064320 seconds.
-  path: Assets/Assets/Laser Sprites/50.png
-  artifactKey: Guid(cabdafa7678d5e54797f192f55e2173a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/50.png using Guid(cabdafa7678d5e54797f192f55e2173a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da5c0ac9a4e83e1b18f8511eb88a7380') in 0.014292 seconds 
-  Import took 0.022061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Assets/Laser Sprites/61.png
-  artifactKey: Guid(c332e6cb4d91dbf4fb8191a17a6d1900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/61.png using Guid(c332e6cb4d91dbf4fb8191a17a6d1900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6494bfa31ff12869992141e340bdfe6') in 0.015983 seconds 
-  Import took 0.024593 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Assets/Laser Sprites/57.png
-  artifactKey: Guid(bf52e7da9b08a2446a87d4405c554893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/57.png using Guid(bf52e7da9b08a2446a87d4405c554893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808c81926ef4aa914d239fe03ddabb33') in 0.015553 seconds 
-  Import took 0.022790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000440 seconds.
-  path: Assets/Assets/Laser Sprites/54.png
-  artifactKey: Guid(b0978793b7403994ca3044c72c52ceb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/54.png using Guid(b0978793b7403994ca3044c72c52ceb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce861e4d34b17d1b040bf1de5de2979') in 0.015151 seconds 
-  Import took 0.023388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Assets/Laser Sprites/58.png
-  artifactKey: Guid(e10a2617e26e04145825561e80c60569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/58.png using Guid(e10a2617e26e04145825561e80c60569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee972cd585f706cc7185a32433f553c') in 0.017311 seconds 
-  Import took 0.023837 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Assets/Laser Sprites/52.png
-  artifactKey: Guid(c113ce537d311384f98487abc712d7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/52.png using Guid(c113ce537d311384f98487abc712d7d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a01db33ae51cd44b28a2a6d706617e50') in 0.014464 seconds 
-  Import took 0.021212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Assets/Laser Sprites/51.png
-  artifactKey: Guid(47a00a59cd9465a4ebad7b7ea32fc2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/51.png using Guid(47a00a59cd9465a4ebad7b7ea32fc2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda62148a36d3166ff0a1ed9601579f1') in 0.014572 seconds 
-  Import took 0.023032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Assets/Laser Sprites/59.png
-  artifactKey: Guid(e3ddb34b1c196604dafdbadf8056cbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/59.png using Guid(e3ddb34b1c196604dafdbadf8056cbb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c77c8f4814a596ac6e50a492d7ea24') in 0.020073 seconds 
-  Import took 0.026199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Assets/Laser Sprites/53.png
-  artifactKey: Guid(e35b56225096e164b9141931cc6d234a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/53.png using Guid(e35b56225096e164b9141931cc6d234a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441c82406719b1d70b957317fd01e40f') in 0.020087 seconds 
-  Import took 0.026325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Assets/Laser Sprites/55.png
-  artifactKey: Guid(7a1ed1d27b65a254eae9dfbcd91eb030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/55.png using Guid(7a1ed1d27b65a254eae9dfbcd91eb030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a231fc5cde52be5a7ba429f18c4d6e36') in 0.015570 seconds 
-  Import took 0.024057 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Assets/Laser Sprites/60.png
-  artifactKey: Guid(84c321c0dc5a12343a18b1ff8694495e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/60.png using Guid(84c321c0dc5a12343a18b1ff8694495e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f28c4025e623656501a30f16d58bc7') in 0.013803 seconds 
-  Import took 0.021816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Assets/Laser Sprites/66.png
-  artifactKey: Guid(292f560107f64e849a263636164f3214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/66.png using Guid(292f560107f64e849a263636164f3214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d74bc71d39f0ff1a9477b151902139') in 0.019885 seconds 
-  Import took 0.025963 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Assets/Laser Sprites/63.png
-  artifactKey: Guid(8114cdb82cd6aaf418c8dc41581ee07f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/63.png using Guid(8114cdb82cd6aaf418c8dc41581ee07f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f49f428eb07a05116a3d372581da9c6') in 0.015500 seconds 
-  Import took 0.024682 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000571 seconds.
-  path: Assets/Assets/Laser Sprites/62.png
-  artifactKey: Guid(215ddb92987a9e64aa7a1eedddc427ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/62.png using Guid(215ddb92987a9e64aa7a1eedddc427ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e0025fc64df7c6b48d575071435c010') in 0.013831 seconds 
-  Import took 0.019840 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/Assets/Laser Sprites/65.png
-  artifactKey: Guid(863c830ad99584c46b402058d7b41e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/65.png using Guid(863c830ad99584c46b402058d7b41e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafa4ef61dec9a379a0d4e1632f315d0') in 0.015139 seconds 
-  Import took 0.022971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Assets/Laser Sprites/64.png
-  artifactKey: Guid(2468c348a48568c40bc24b906675999f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/64.png using Guid(2468c348a48568c40bc24b906675999f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c370acb3399270522ce236e162b3fd') in 0.016031 seconds 
-  Import took 0.023626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Assets/Laser Sprites/56.png
-  artifactKey: Guid(ac8bc222b788c0a4583c915c09fd4d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/56.png using Guid(ac8bc222b788c0a4583c915c09fd4d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a5df97d954ac0355ff2038c0c4bf68c') in 0.014687 seconds 
-  Import took 0.023016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.614793 seconds.
-  path: Assets/Assets/Laser Sprites/Materials
-  artifactKey: Guid(69562878bac4dc4439ebebc15d7cc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/Materials using Guid(69562878bac4dc4439ebebc15d7cc056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16700b919e1d573b6deda05579cde5ac') in 0.010146 seconds 
-  Import took 0.017199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029731 seconds.
-  path: Assets/Assets/Laser Sprites/Materials/01.mat
-  artifactKey: Guid(76b5ba4483d2c334fad586d42f76102c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/Materials/01.mat using Guid(76b5ba4483d2c334fad586d42f76102c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ac7cd6870b1c59cd3baeff14e9d109') in 0.023688 seconds 
-  Import took 0.029570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 150.143882 seconds.
-  path: Assets/Assets/Laser Sprites/Materials/01.mat
-  artifactKey: Guid(76b5ba4483d2c334fad586d42f76102c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Laser Sprites/Materials/01.mat using Guid(76b5ba4483d2c334fad586d42f76102c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4601d6e685c22293c5fd4a6d50b9a3bd') in 0.030109 seconds 
-  Import took 0.037845 seconds .
-
+  path: Assets/Scenes/levels/Level 1.unity
+  artifactKey: Guid(ad6cc48fe034aa04a94608a573b2e4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/levels/Level 1.unity using Guid(ad6cc48fe034aa04a94608a573b2e4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3f5e9c4981241951b0338bd6be4db7') in 0.020137 seconds 
+  Import took 0.026842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.828098 seconds.
+  path: Assets/Scenes/levels/Level 2.unity
+  artifactKey: Guid(5db9657f74adb6949b2465c7c2ebbba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/levels/Level 2.unity using Guid(5db9657f74adb6949b2465c7c2ebbba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f120fec935a4a45ebc770d10cb67808c') in 0.009340 seconds 
+  Import took 0.015999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.559077 seconds.
+  path: Assets/Scenes/levels/Level 3.unity
+  artifactKey: Guid(72170ec4ea3ad3245974a9aee3527989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/levels/Level 3.unity using Guid(72170ec4ea3ad3245974a9aee3527989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ff067bceeaea62734a7e6e3aadcda4') in 0.008368 seconds 
+  Import took 0.015523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.845410 seconds.
+  path: Assets/Scenes/levels/Level 4.unity
+  artifactKey: Guid(57cc97be998b34f4b804f4ed014ceadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/levels/Level 4.unity using Guid(57cc97be998b34f4b804f4ed014ceadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c777c4ca2f55fda769d24a7cb8fd4b') in 0.009427 seconds 
+  Import took 0.015551 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008187 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.430 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1430ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1165ms)
+			LoadAssemblies (151ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (422ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (392ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2793 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.0 MB.
+System memory in use after: 213.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3386.
+Total: 3.863400 ms (FindLiveObjects: 0.316200 ms CreateObjectMapping: 0.146700 ms MarkObjects: 3.376500 ms  DeleteObjects: 0.022600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008670 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.386 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1387ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1139ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (425ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (383ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2793 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 213.0 MB.
+System memory in use after: 213.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3388.
+Total: 3.584500 ms (FindLiveObjects: 0.294800 ms CreateObjectMapping: 0.137500 ms MarkObjects: 3.114700 ms  DeleteObjects: 0.036500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

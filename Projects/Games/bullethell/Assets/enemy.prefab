@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firerate: 0.5
-  bullet: {fileID: 443413745420575731, guid: 0c9fc05b30bc1f3449a9cf500c2e1e4d, type: 3}
+  bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   pos1: {x: 1.6, y: 0, z: 3}
   pos2: {x: -1.65, y: 0, z: 3}
   enemyHp: 100

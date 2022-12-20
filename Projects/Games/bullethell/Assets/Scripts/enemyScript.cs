@@ -7,12 +7,11 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// main enemy ai script
 /// </summary>
-public class enemyScript : MonoBehaviour
+public class enemyScript : EnemyBaseScript
 {
     public float firerate = 0.5f;
     float canfire = 1f;
 
-    public GameObject bullet;
     public Vector3 pos1;
     public Vector3 pos2;
 
@@ -29,7 +28,7 @@ public class enemyScript : MonoBehaviour
     public GameObject enemyPivot;
     public GameObject RayPrefab;
 
-    public GameObject player;
+
     public AudioManager AudioPlayer; 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +46,8 @@ public class enemyScript : MonoBehaviour
         if (Time.time > canfire)
         {
             //Shoot();
-            ShootRay();
+            StraightShot();
+            //ShootRay();
             //ShotGun();
             //ArcShot();
             //DelayedShoot();
@@ -169,19 +169,20 @@ public class enemyScript : MonoBehaviour
         }
     }
 
-    public void DecreaseHP()
-    {
-        if (enemyHp > 0)
-        {
-            enemyHp--;
-        }
-
-    }
+   //public void DecreaseHP()
+   //{
+   //    if (enemyHp > 0)
+   //    {
+   //        enemyHp--;
+   //    }
+   //
+   //}
 
     private void Shoot()
     {
         GameObject clone;
         clone = Instantiate(bullet);
+        clone.GetComponent<playerbullet>().init(this.gameObject);
 
         //AudioPlayer.PlayEnemyBulletAudio();
 
@@ -189,8 +190,20 @@ public class enemyScript : MonoBehaviour
 
         Vector3 playerdir = (playerpos - transform.position).normalized;
         clone.transform.LookAt(player.transform);
-        clone.transform.Rotate(90, 0, 0); 
+        clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
         clone.GetComponent<Rigidbody>().AddForce(playerdir * 1500);
+    }
+    private void StraightShot()
+    {
+        GameObject clone;
+        clone = Instantiate(bullet);
+        clone.GetComponent<playerbullet>().init(this.gameObject);
+
+        //AudioPlayer.PlayEnemyBulletAudio();
+        clone.transform.position = transform.position;
+        clone.transform.rotation *= Quaternion.Euler(new Vector3(0, -90, 0));
+
+        clone.GetComponent<Rigidbody>().AddForce(-this.transform.forward * 1500);
     }
 
     private void DelayedShoot()
@@ -206,6 +219,7 @@ public class enemyScript : MonoBehaviour
 
             GameObject clone;
             clone = Instantiate(bullet);
+            clone.GetComponent<playerbullet>().init(this.gameObject);
 
             //AudioPlayer.PlayEnemyBulletAudio();
 
@@ -268,12 +282,17 @@ public class enemyScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "bullet")
-        {
-            gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
-            Destroy(this.gameObject);
-        }
+       //if (other.tag == "bullet")
+       //{
+       //    gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
+       //    Destroy(this.gameObject);
+       //}
 
+    }
+    private void OnDestroy()
+    {
+        gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
+        Destroy(this.gameObject);
     }
 
 

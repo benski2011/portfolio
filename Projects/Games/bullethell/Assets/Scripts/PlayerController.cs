@@ -155,6 +155,8 @@ public class PlayerController : MonoBehaviour
     {
         GameObject clone;
         clone = Instantiate(bullet);
+        clone.GetComponent<playerbullet>().init(this.gameObject);
+
         AudioManager.PlayPlayerBulletAudio();
         clone.transform.position = muzzle.transform.position;
         // Give the cloned object an initial velocity along the current
@@ -162,23 +164,20 @@ public class PlayerController : MonoBehaviour
         clone.GetComponent<Rigidbody>().AddForce(Vector3.forward * 1500);
     }
 
-    public void decreaseHP()
+    public void decreaseHP(int dm)
     {
-        
-        if (hp>0)
+
+
+        hp -= dm;
+
+        hpSprite.GetComponent<Image>().fillAmount -= 0.1f;
+
+
+        if (hp < 0)
         {
-            
-            hp--;
-            if (hp == 0)
-            {
-                Debug.Log("u died :(");
-                deathscreen.SetActive(true);
-                gm.GetComponent<GameManager>().GameEnd = true; 
-
-
-            }
-            hpSprite.GetComponent<Image>().fillAmount -= 0.1f;
-            //hpSprite.transform.localScale = new Vector2(hpSprite.transform.localScale.x - UIHP, hpSprite.transform.localScale.y);
+            Debug.Log("u died :(");
+            deathscreen.SetActive(true);
+            gm.GetComponent<GameManager>().GameEnd = true;
         }
 
 
@@ -191,11 +190,11 @@ public class PlayerController : MonoBehaviour
         //hpSprite.transform.localScale = new Vector2(hpSprite.transform.localScale.x + UIHP, hpSprite.transform.localScale.y);
 
     }
-    public void decreaseShield()
+    public void decreaseShield(int dm)
     {
         if (shield > 0)
         {
-            shield--;
+            shield-= dm;
             AudioManager.PlayShieldAudio();
             shieldSprite.GetComponent<Image>().fillAmount -= 0.1f;
 

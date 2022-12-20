@@ -89,7 +89,7 @@ public class Level1Spawns : LevelBaseScript
         level1.Add(new LevelEvent(levelEventType.text, v1: "What on earth? Interference?", v2: "tanya"));
       
       
-        level1.Add(new LevelEvent(levelEventType.text, v1: "Our attack failed. Taking out observers and returning to base.", v2: "SueBoss_undamaged"));
+        level1.Add(new LevelEvent(levelEventType.text, v1: "Our attack failed. Taking out observers and returning to base.", v2: "sueboss_undamaged"));
       
         level1.Add(new LevelEvent(levelEventType.text, v1: "An intercepted transmission?", v2: "tanya"));
         level1.Add(new LevelEvent(levelEventType.text, v1: "Observers? Are they referring to me?", v2: "tanya"));

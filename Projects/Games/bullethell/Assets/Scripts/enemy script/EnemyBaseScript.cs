@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyBaseScript : MonoBehaviour
 {
 
@@ -28,7 +29,7 @@ public class EnemyBaseScript : MonoBehaviour
 
     public void EnemyDeath()
     {
-
+        Destroy(this);
     }
 
     private void CircleShot()
@@ -38,6 +39,7 @@ public class EnemyBaseScript : MonoBehaviour
         {
             GameObject clone;
             clone = Instantiate(bullet);
+            clone.GetComponent<playerbullet>().init(this.gameObject);
             clone.transform.position = transform.position;
 
             Vector3 dir = (playerpos - transform.position).normalized;
@@ -90,6 +92,8 @@ public class EnemyBaseScript : MonoBehaviour
 
         GameObject clone;
         clone = Instantiate(bullet);
+        clone.GetComponent<playerbullet>().init(this.gameObject);
+
 
         //AudioPlayer.PlayEnemyBulletAudio();
 
@@ -109,15 +113,21 @@ public class EnemyBaseScript : MonoBehaviour
 
    
 
-    public void DecreaseHP()
+    public void DecreaseHP(int dm)
     {
-    
+        EnemyHp -= dm;
+        if (EnemyHp < 0)
+        {
+            EnemyDeath();
+        }
     }
 
     private void Shoot()
     {
         GameObject clone;
         clone = Instantiate(bullet);
+        clone.GetComponent<playerbullet>().init(this.gameObject);
+
 
         //AudioPlayer.PlayEnemyBulletAudio();
 
@@ -142,6 +152,8 @@ public class EnemyBaseScript : MonoBehaviour
 
             GameObject clone;
             clone = Instantiate(bullet);
+            clone.GetComponent<playerbullet>().init(this.gameObject);
+
 
             //AudioPlayer.PlayEnemyBulletAudio();
 
@@ -169,6 +181,11 @@ public class EnemyBaseScript : MonoBehaviour
         clone = Instantiate(bullet);
         clone2 = Instantiate(bullet);
         clone3 = Instantiate(bullet);
+
+        clone.GetComponent<playerbullet>().init(this.gameObject);
+        clone2.GetComponent<playerbullet>().init(this.gameObject);
+        clone3.GetComponent<playerbullet>().init(this.gameObject);
+
 
         //AudioPlayer.PlayEnemyBulletAudio();
 
@@ -202,6 +219,10 @@ public class EnemyBaseScript : MonoBehaviour
         clone3.GetComponent<Rigidbody>().AddForce(playerpos3 * 1500);
     }
 
+    private void BurstShot()
+    {
+        //todo
+    }
 
 
 

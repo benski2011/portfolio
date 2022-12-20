@@ -53,17 +53,30 @@ public class bulletScript : MonoBehaviour
         {
            
 
-            target.GetComponent<PlayerController>().decreaseHP();
+            target.GetComponent<PlayerController>().decreaseHP(1);
             Destroy(this.gameObject);
         }
 
         if (target.tag == "Shield")
         {
             
-            target.transform.GetComponentInParent<PlayerController>().decreaseShield();
+            target.transform.GetComponentInParent<PlayerController>().decreaseShield(1);
             Destroy(this.gameObject);
 
         }
+
+
+    }
+    void OnTriggerExit(Collider target)
+    {
+
+        if (target.name == "killbox")
+        {
+
+            Destroy(this.gameObject);
+        }
+
+
     }
     private void OnDestroy()
     {

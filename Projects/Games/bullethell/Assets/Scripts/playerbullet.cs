@@ -7,12 +7,24 @@ using UnityEngine;
 /// </summary>
 public class playerbullet : MonoBehaviour
 {
-    public GameObject player; 
+    public GameObject shooter;
+    public string target;
+
+    private float bulletDamage = 0;
 
     // Start is called before the first frame update
-    void Start()
+    public void init(GameObject sbulletShooter)
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        shooter = sbulletShooter;
+        if (shooter.gameObject.tag == "Player")
+        {
+            target = "Enemy";
+        }
+        else
+        {
+            target = "Player";
+
+        }
     }
 
     // Update is called once per frame
@@ -21,14 +33,49 @@ public class playerbullet : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider target)
+    void SetBulletDamage(int damge)
+    {
+        bulletDamage = damge;
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (target == "Player" && col.tag == "Shield")
+            {
+            col.gameObject.transform.parent.transform.parent.GetComponent<PlayerController>().decreaseShield(1);
+            Destroy(this.gameObject);
+            }
+        if (col.tag == target)
+        {
+            //apply damage to interface
+
+
+
+            if (target == "Player")
+            {
+                col.gameObject.GetComponent<PlayerController>().decreaseHP(1);
+                Destroy(this.gameObject);
+
+
+            }
+            if (target == "Enemy")
+            {
+                col.gameObject.GetComponent<enemyScript>().DecreaseHP(1);
+                Destroy(this.gameObject);
+
+            }
+        }
+
+
+
+    }
+
+    void OnTriggerExit(Collider target)
     {
 
-        if (target.tag == "Enemy")
+        if (target.name == "killbox")
         {
-            Debug.Log("ability increase");
-
-            player.GetComponent<PlayerController>().increaseAbility();
+           
             Destroy(this.gameObject);
         }
 
