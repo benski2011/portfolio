@@ -14,7 +14,8 @@ public class EnemyManager1 : MonoBehaviour
     public GameObject enemy3;
 
     public GameObject enemyPlane;
-
+    public GameObject spawnSystem;
+    SpawnSystemScript sp;
     GameObject gameManager;
 
     public GameObject enemytest;
@@ -32,7 +33,8 @@ public class EnemyManager1 : MonoBehaviour
         enemyStartPos = transform.Find("Enemies").transform.position;
         planespawnStart = transform.Find("planespawnStart").transform.position;
         planespawnEnd = transform.Find("planespawnEnd").transform.position;
-
+        spawnSystem = GameObject.FindWithTag("SpawnSystem");
+        sp = spawnSystem.GetComponent<SpawnSystemScript>();
         //StartCoroutine(EnemySpawn());
     }
 
@@ -53,32 +55,71 @@ public class EnemyManager1 : MonoBehaviour
         
     }
 
-    internal void Spawn(string type, int number)
+    internal void Spawn(LevelEvent type)
     {
-        switch (type)
-        {
-            case "enemy1":
-                gameManager.GetComponent<Level1Spawns>().NumberOfEnemies++;
-                Instantiate(enemytest, enemyStartPos, transform.rotation);
-                Debug.Log("spawning: " + number + "of type " + type);
+        
+      switch (type.type.ToString())
+      {
+          case "enemy1":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemytest, type.number);
+                        break;
+
+                    case "left":
+                        sp.leftSpawn(enemytest, type.number);
+                        break;
+
+                    case "right":
+                        sp.rightSpawn(enemytest, type.number);
+                        break;
+                    default:
+                        break;
+                }   
+              break;
+          case "enemy2":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemytest, type.number);
+                        break;
+
+                    case "left":
+                        sp.leftSpawn(enemytest, type.number);
+                        break;
+
+                    case "right":
+                        sp.rightSpawn(enemytest, type.number);
+                        break;
+                    default:
+                        break;
+                }
                 break;
-            case "enemy2": 
-                gameManager.GetComponent<Level1Spawns>().NumberOfEnemies++;
-                plane = Instantiate(enemyPlane, planespawnStart, enemyPlane.transform.rotation);
-                Debug.Log("spawning: " + number + "of type " + type);
-                isPlane = true;
+          case "enemy3":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemy3, type.number);
+                        break;
+
+                    case "left":
+                        sp.leftSpawn(enemy3, type.number);
+                        break;
+
+                    case "right":
+                        sp.rightSpawn(enemy3, type.number);
+                        break;
+                    default:
+                        break;
+                }
                 break;
-            case "enemy3":
-                gameManager.GetComponent<Level1Spawns>().NumberOfEnemies++;
-                Instantiate(enemy3, enemyStartPos, enemy3.transform.rotation);
-                Debug.Log("spawning: " + number + "of type " + type);
-                break; 
-            default:
-                break;
-        }
+      }
 
         
     }
+
+    
 
     internal void SpawnPlane(string type, int number)
     {

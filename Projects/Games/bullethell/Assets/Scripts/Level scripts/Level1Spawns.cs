@@ -14,13 +14,14 @@ public struct LevelEvent
 {
 
     //todo move this shit to its own file 
-    public LevelEvent(levelEventType s, int i = 0, int j =0, string v1 = "", string v2 = "")
+    public LevelEvent(levelEventType s, int i = 0, int j =0, string loc = "", string v1 = "", string v2 = "")
     {
         type = s;
         number = i;
         secounds = j;
         text = v1;
         img = v2;
+        location = loc;
 
     }
 
@@ -37,6 +38,7 @@ public struct LevelEvent
 
     public string text;
     public string img;
+    public string location;
 
 }
 public class Level1Spawns : LevelBaseScript
@@ -102,20 +104,20 @@ public class Level1Spawns : LevelBaseScript
         
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc:"up"));
         level1.Add(new LevelEvent(levelEventType.stop));
 
 
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc: "left"));
         level1.Add(new LevelEvent(levelEventType.stop));
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy3, 1));
+        level1.Add(new LevelEvent(levelEventType.enemy3, 1, loc: "right"));
         level1.Add(new LevelEvent(levelEventType.stop));
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level1.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
         level1.Add(new LevelEvent(levelEventType.stop));
 
         level1.Add(new LevelEvent(levelEventType.wait, 0, 3));
@@ -147,15 +149,15 @@ public class Level1Spawns : LevelBaseScript
                     case levelEventType.wait: ListIndex++; break;
 
                     case levelEventType.enemy1:
-                        enemymanager.GetComponent<EnemyManager1>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy2:
-                        enemymanager.GetComponent<EnemyManager1>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy3:
-                        enemymanager.GetComponent<EnemyManager1>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
                         ListIndex++;
                         break;
 

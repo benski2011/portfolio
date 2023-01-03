@@ -14,7 +14,7 @@ public class EnemyBaseScript : MonoBehaviour
 
     public GameObject player;
     public GameObject bullet;
-    private Vector3 playerpos;
+    public Vector3 playerpos;
 
     public void init(int enemyHp, int enemyShieldHp, float enemyMoveSpeed, float enemyDamage, float enemyFireRate)
     {

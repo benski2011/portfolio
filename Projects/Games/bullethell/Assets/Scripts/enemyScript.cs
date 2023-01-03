@@ -17,7 +17,6 @@ public class enemyScript : EnemyBaseScript
 
     GameObject ray;
 
-    Vector3 playerpos; 
     Vector3 goal;
     bool canmove = false; 
     public float enemyHp;
