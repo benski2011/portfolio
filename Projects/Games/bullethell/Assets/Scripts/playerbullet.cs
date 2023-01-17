@@ -10,7 +10,7 @@ public class playerbullet : MonoBehaviour
     public GameObject shooter;
     public string target;
 
-    private float bulletDamage = 0;
+    public float bulletDamage = 1;
 
     // Start is called before the first frame update
     public void init(GameObject sbulletShooter)

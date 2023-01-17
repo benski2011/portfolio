@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //check if game is still running
         if (gm.GetComponent<GameManager>().GameEnd)
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
 
         hp -= dm;
 
-        hpSprite.GetComponent<Image>().fillAmount -= 0.1f;
+        
 
 
         if (hp < 0)
@@ -179,7 +179,9 @@ public class PlayerController : MonoBehaviour
             deathscreen.SetActive(true);
             gm.GetComponent<GameManager>().GameEnd = true;
         }
+        hpSprite.GetComponent<Image>().fillAmount -= 0.1f;
 
+        
 
     }
     public void increaseHP()

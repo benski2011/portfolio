@@ -10,50 +10,31 @@ using UnityEngine;
 public class EnemyManager1 : MonoBehaviour
 {
     public GameObject audiomanager;
-    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
     public GameObject enemy3;
+    public GameObject enemy4;
+    public GameObject enemy5;
+    public GameObject enemy6;
+    public GameObject enemy7;
 
-    public GameObject enemyPlane;
     public GameObject spawnSystem;
     SpawnSystemScript sp;
     GameObject gameManager;
 
-    public GameObject enemytest;
-    Vector3 enemyStartPos;
-    Vector3 planespawnStart;
-    Vector3 planespawnEnd;
 
-    bool isPlane = false;
-    GameObject plane;
+
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.FindWithTag("GameManager");
         audiomanager = GameObject.FindWithTag("AudioManager");
-        enemyStartPos = transform.Find("Enemies").transform.position;
-        planespawnStart = transform.Find("planespawnStart").transform.position;
-        planespawnEnd = transform.Find("planespawnEnd").transform.position;
+        
         spawnSystem = GameObject.FindWithTag("SpawnSystem");
         sp = spawnSystem.GetComponent<SpawnSystemScript>();
-        //StartCoroutine(EnemySpawn());
     }
 
-    IEnumerator EnemySpawn()
-    {
-        yield return new WaitForSeconds(3);
-        enemy.SetActive(true);
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (plane)
-        {
-            movePlane();
-        }
-        
-    }
 
     internal void Spawn(LevelEvent type)
     {
@@ -64,15 +45,15 @@ public class EnemyManager1 : MonoBehaviour
                 switch (type.location)
                 {
                     case "up":
-                        sp.upSpawn(enemytest, type.number);
+                        sp.upSpawn(enemy1, type.number);
                         break;
 
                     case "left":
-                        sp.leftSpawn(enemytest, type.number);
+                        StartCoroutine(sp.leftSpawn(enemy1, type.number));
                         break;
 
                     case "right":
-                        sp.rightSpawn(enemytest, type.number);
+                        StartCoroutine(sp.rightSpawn(enemy1, type.number));
                         break;
                     default:
                         break;
@@ -82,15 +63,15 @@ public class EnemyManager1 : MonoBehaviour
                 switch (type.location)
                 {
                     case "up":
-                        sp.upSpawn(enemytest, type.number);
+                        sp.upSpawn(enemy2, type.number);
                         break;
 
                     case "left":
-                        sp.leftSpawn(enemytest, type.number);
+                        StartCoroutine(sp.leftSpawn(enemy2, type.number));
                         break;
 
                     case "right":
-                        sp.rightSpawn(enemytest, type.number);
+                        StartCoroutine(sp.rightSpawn(enemy2, type.number));
                         break;
                     default:
                         break;
@@ -104,36 +85,94 @@ public class EnemyManager1 : MonoBehaviour
                         break;
 
                     case "left":
-                        sp.leftSpawn(enemy3, type.number);
+                        StartCoroutine(sp.leftSpawn(enemy3, type.number));
                         break;
 
                     case "right":
-                        sp.rightSpawn(enemy3, type.number);
+                        StartCoroutine(sp.rightSpawn(enemy3, type.number));
                         break;
                     default:
                         break;
                 }
                 break;
-      }
+            case "enemy4":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemy4, type.number);
+                        break;
+
+                    case "left":
+                        StartCoroutine(sp.leftSpawn(enemy4, type.number));
+                        break;
+
+                    case "right":
+                        StartCoroutine(sp.rightSpawn(enemy4, type.number));
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "enemy5":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemy5, type.number);
+                        break;
+
+                    case "left":
+                        StartCoroutine(sp.leftSpawn(enemy5, type.number));
+                        break;
+
+                    case "right":
+                        StartCoroutine(sp.rightSpawn(enemy5, type.number));
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "enemy6":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemy6, type.number);
+                        break;
+
+                    case "left":
+                        StartCoroutine(sp.leftSpawn(enemy6, type.number));
+                        break;
+
+                    case "right":
+                        StartCoroutine(sp.rightSpawn(enemy6, type.number));
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "enemy7":
+                switch (type.location)
+                {
+                    case "up":
+                        sp.upSpawn(enemy7, type.number);
+                        break;
+
+                    case "left":
+                        StartCoroutine(sp.leftSpawn(enemy7, type.number));
+                        break;
+
+                    case "right":
+                        StartCoroutine(sp.rightSpawn(enemy7, type.number));
+                        break;
+                    default:
+                        break;
+                }
+                break;
+        }
 
         
     }
 
     
-
-    internal void SpawnPlane(string type, int number)
-    {
-        gameManager.GetComponent<Level1Spawns>().NumberOfEnemies++;
-        plane = Instantiate(enemyPlane, planespawnStart, enemyPlane.transform.rotation);
-        Debug.Log("spawning: " + number + "of type " + type);
-        isPlane = true;
-    }
-
-    private void movePlane()
-    {
-
-        plane.transform.position = Vector3.MoveTowards(plane.transform.position, planespawnEnd, 0.05f);
-    }
 
  
 }

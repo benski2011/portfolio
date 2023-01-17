@@ -9,6 +9,16 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class enemyScript : EnemyBaseScript
 {
+    public bool s_Shoot = false;
+    public bool s_StraightShot = false;
+    public bool s_ShootRay = false;
+    public bool s_ShotGun = false;
+    public bool s_ArcShot = false;
+    public bool s_DelayedShoot = false;
+    public bool s_BurstShot = false;
+
+    public bool s_CircleShot = false;
+
     public float firerate = 0.5f;
     float canfire = 1f;
 
@@ -27,25 +37,52 @@ public class enemyScript : EnemyBaseScript
     public GameObject enemyPivot;
     public GameObject RayPrefab;
 
+    public GameObject barrel;
+    public GameObject playermidpoint;
+
 
     public AudioManager AudioPlayer; 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindWithTag("Player").transform.Find("Player_midpoint").gameObject;
+        playermidpoint = GameObject.FindWithTag("Player").transform.Find("Player_midpoint").gameObject;
         goal = pos1;
         gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+        barrel = this.transform.Find("BarrelEnd").gameObject;
+        barrel.transform.position = new Vector3(barrel.transform.position.x, 0, barrel.transform.position.z);
+
+        renderer = enemyRender.GetComponent<Renderer>();
+        currentMaterial = renderer.material;
+
+
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        playerpos = player.transform.position;
+        playerpos = playermidpoint.transform.position;
 
         if (Time.time > canfire)
         {
+            if (s_Shoot) { Shoot(); } 
+            if (s_StraightShot) { StraightShot(); }
+            if (s_ShootRay) { ShootRay(); }
+            else
+            {
+                if (ray)
+                {
+                    Destroy(ray);
+                }
+            }
+            if (s_ShotGun) { ShotGun(); }
+            if (s_ArcShot) { ArcShot(); }
+            if (s_BurstShot) { Burst(); }
+            if (s_DelayedShoot) { DelayedShoot(); }
+            if (s_CircleShot) { CircleShot(); }
+            
+
             //Shoot();
-            StraightShot();
+            //StraightShot();
             //ShootRay();
             //ShotGun();
             //ArcShot();
@@ -61,7 +98,7 @@ public class enemyScript : EnemyBaseScript
         if(ray)
         {
            ray.transform.position = this.transform.position;
-           Vector3 direction = playerpos - ray.transform.position;
+           Vector3 direction = playermidpoint.transform.position - ray.transform.position;
            direction.y = 0;
            direction = direction.normalized;
            
@@ -78,9 +115,9 @@ public class enemyScript : EnemyBaseScript
         {
             GameObject clone;
             clone = Instantiate(bullet);
-            clone.transform.position = transform.position;
+            clone.transform.position = barrel.transform.position;
 
-            Vector3 dir = (playerpos - transform.position).normalized;
+            Vector3 dir = (playermidpoint.transform.position - transform.position).normalized;
             Vector3 playerpos1 = Quaternion.Euler(0, i, 0) * dir;
 
 
@@ -133,10 +170,10 @@ public class enemyScript : EnemyBaseScript
 
         //AudioPlayer.PlayEnemyBulletAudio();
 
-        clone.transform.position = transform.position;
+        clone.transform.position = barrel.transform.position;
 
-        Vector3 playerdir = (playerpos - transform.position).normalized;
-        Vector3 arc = (playerpos - newVector).normalized;
+        Vector3 playerdir = (playermidpoint.transform.position - transform.position).normalized;
+        Vector3 arc = (playermidpoint.transform.position - newVector).normalized;
 
         clone.transform.LookAt(player.transform);
         clone.transform.Rotate(90, 0, 0);
@@ -185,12 +222,39 @@ public class enemyScript : EnemyBaseScript
 
         //AudioPlayer.PlayEnemyBulletAudio();
 
-        clone.transform.position = transform.position;
+        clone.transform.position = barrel.transform.position;
 
-        Vector3 playerdir = (playerpos - transform.position).normalized;
-        clone.transform.LookAt(player.transform);
+        Vector3 playerdir = (playermidpoint.transform.position - barrel.transform.position).normalized;
+        clone.transform.LookAt(playermidpoint.transform);
         clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
         clone.GetComponent<Rigidbody>().AddForce(playerdir * 1500);
+    }
+    private void Burst()
+    {
+
+        StartCoroutine(burstshot());
+
+        IEnumerator burstshot()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                GameObject clone;
+                clone = Instantiate(bullet);
+                clone.GetComponent<playerbullet>().init(this.gameObject);
+
+                //AudioPlayer.PlayEnemyBulletAudio();
+
+                clone.transform.position = barrel.transform.position;
+
+                Vector3 playerdir = (playermidpoint.transform.position - transform.position).normalized;
+                clone.transform.LookAt(playermidpoint.transform.position);
+                clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
+                clone.GetComponent<Rigidbody>().AddForce(playerdir * 1500);
+
+                yield return new WaitForSeconds(0.1f);
+            }
+           
+        }
     }
     private void StraightShot()
     {
@@ -199,7 +263,7 @@ public class enemyScript : EnemyBaseScript
         clone.GetComponent<playerbullet>().init(this.gameObject);
 
         //AudioPlayer.PlayEnemyBulletAudio();
-        clone.transform.position = transform.position;
+        clone.transform.position = barrel.transform.position;
         clone.transform.rotation *= Quaternion.Euler(new Vector3(0, -90, 0));
 
         clone.GetComponent<Rigidbody>().AddForce(-this.transform.forward * 1500);
@@ -218,11 +282,12 @@ public class enemyScript : EnemyBaseScript
 
             GameObject clone;
             clone = Instantiate(bullet);
+
             clone.GetComponent<playerbullet>().init(this.gameObject);
 
             //AudioPlayer.PlayEnemyBulletAudio();
 
-            clone.transform.position = transform.position;
+            clone.transform.position = barrel.transform.position;
 
             Vector3 playerdir = (targetPos - transform.position).normalized;
             clone.transform.LookAt(targetPos);
@@ -239,44 +304,33 @@ public class enemyScript : EnemyBaseScript
 
     private void ShotGun()
     {
-        GameObject clone;
-        GameObject clone2;
-        GameObject clone3;
+        int[] array1 = new int[] { 0, 20, -20};
 
-        clone = Instantiate(bullet);
-        clone2 = Instantiate(bullet);
-        clone3 = Instantiate(bullet);
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject clone1;
 
-        //AudioPlayer.PlayEnemyBulletAudio();
+            clone1 = Instantiate(bullet);
+            clone1.GetComponent<playerbullet>().init(this.gameObject);
 
-        clone.transform.position = transform.position;
-        clone2.transform.position = transform.position;
-        clone3.transform.position = transform.position;
+            //AudioPlayer.PlayEnemyBulletAudio();
 
-        Vector3 dir = (playerpos - transform.position).normalized;
-        Vector3 playerpos1 = Quaternion.Euler(0, 0, 0) * dir;
-        Vector3 playerpos2 = Quaternion.Euler(0, 20, 0) * dir;
-        Vector3 playerpos3 = Quaternion.Euler(0, -20, 0) * dir;
+            clone1.transform.position = barrel.transform.position;
 
-        playerpos1.y = 0;
-        playerpos2.y = 0;
-        playerpos3.y = 0;
-        clone.transform.LookAt(player.transform);
-        clone2.transform.LookAt(player.transform);
-        clone3.transform.LookAt(player.transform);
+            Vector3 dir = (playermidpoint.transform.position - transform.position).normalized;
 
+            Vector3 playerpos3 = Quaternion.Euler(0, array1[i], 0) * dir;
 
+            playerpos3.y = 0;
 
-        clone.transform.Rotate(90, 0, 0);
-        clone2.transform.Rotate(90, 0, 0);
-        clone3.transform.Rotate(90, 0, 0);
+            clone1.transform.LookAt(playermidpoint.transform);
+
+            clone1.transform.Rotate(0, 90, 0);
+
+            clone1.GetComponent<Rigidbody>().AddForce(playerpos3 * 1500);
+        }
 
 
-
-        clone.GetComponent<Rigidbody>().AddForce(playerpos * 1500);
-        clone2.GetComponent<Rigidbody>().AddForce(playerpos2 * 1500);
-
-        clone3.GetComponent<Rigidbody>().AddForce(playerpos3 * 1500);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -302,7 +356,7 @@ public class enemyScript : EnemyBaseScript
 
             ray = Instantiate(RayPrefab);
             //ray.transform.parent = this.transform;
-            ray.transform.position = this.transform.position;
+            ray.transform.position = barrel.transform.position;
 
         }
 

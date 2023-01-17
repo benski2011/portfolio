@@ -16,6 +16,16 @@ public class EnemyBaseScript : MonoBehaviour
     public GameObject bullet;
     public Vector3 playerpos;
 
+    public GameObject enemyRender;
+
+
+    public Material newMaterialRef;
+
+    public Renderer renderer;
+    public Material currentMaterial;
+
+
+
     public void init(int enemyHp, int enemyShieldHp, float enemyMoveSpeed, float enemyDamage, float enemyFireRate)
     {
         EnemyHp = enemyHp;
@@ -111,7 +121,7 @@ public class EnemyBaseScript : MonoBehaviour
 
     }
 
-   
+
 
     public void DecreaseHP(int dm)
     {
@@ -119,6 +129,16 @@ public class EnemyBaseScript : MonoBehaviour
         if (EnemyHp < 0)
         {
             EnemyDeath();
+        }
+
+        StartCoroutine(damage());
+
+        IEnumerator damage()
+        { 
+            renderer.material = newMaterialRef;
+            yield return new WaitForSeconds(0.15f);
+            renderer.material = currentMaterial;
+
         }
     }
 

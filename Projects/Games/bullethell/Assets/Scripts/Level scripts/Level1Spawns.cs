@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum levelEventType { wait, enemy1, enemy2, enemy3, stop, end, text, special};
+public enum levelEventType { wait, enemy1, enemy2, enemy3, enemy4, enemy5, enemy6, enemy7, enemy8, stop, end, text, special};
 public enum imgtype { tanya, command };
 
 /// <summary>
@@ -104,26 +104,41 @@ public class Level1Spawns : LevelBaseScript
         
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc:"up"));
+        level1.Add(new LevelEvent(levelEventType.enemy1, 3, loc:"up"));
         level1.Add(new LevelEvent(levelEventType.stop));
-
-
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+
+        level1.Add(new LevelEvent(levelEventType.enemy2, 2, loc: "left"));
+        level1.Add(new LevelEvent(levelEventType.stop));
+        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        
+        level1.Add(new LevelEvent(levelEventType.enemy2, 2, loc: "right"));
+        level1.Add(new LevelEvent(levelEventType.stop));
+        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        
+        level1.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "top"));
+        level1.Add(new LevelEvent(levelEventType.stop));
+        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        
         level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc: "left"));
+        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc: "right"));
         level1.Add(new LevelEvent(levelEventType.stop));
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
+        
+        level1.Add(new LevelEvent(levelEventType.enemy3, 1, loc: "left"));
         level1.Add(new LevelEvent(levelEventType.enemy3, 1, loc: "right"));
+        level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc: "top"));
+
         level1.Add(new LevelEvent(levelEventType.stop));
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level1.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
-        level1.Add(new LevelEvent(levelEventType.stop));
 
         level1.Add(new LevelEvent(levelEventType.wait, 0, 3));
         Debug.Log("end of setup level 1");
 
-        //level1.Add(new LevelEvent(levelEventType.end));
+        level1.Add(new LevelEvent(levelEventType.end));
 
 
 
@@ -167,7 +182,9 @@ public class Level1Spawns : LevelBaseScript
                         ListIndex++;
                         break;
                     case levelEventType.end:
-                        Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
+                        Debug.Log("game end"); 
+                        mapEnabler.map[1] = true;
+                        this.GetComponent<GameManager>().endGame(); 
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;

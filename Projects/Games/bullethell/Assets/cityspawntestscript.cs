@@ -18,7 +18,7 @@ public class cityspawntestscript : MonoBehaviour
 
     public float speed = 0.2f;
 
-    int[] rotationDegrees = { 0, 90, 180, 270 };
+    float[] rotationDegrees = { 0f, 90f, 180f, 270f };
 
 
     // Start is called before the first frame update
@@ -28,7 +28,10 @@ public class cityspawntestscript : MonoBehaviour
         {
             for (int ii = 0; ii < 5; ii++)
             {
+                int RandomInt = UnityEngine.Random.Range(0, 4);
+
                 GameObject temp = Instantiate(Objects[ii], new Vector3(999, 999, 999), Quaternion.identity);
+                temp.transform.Rotate(0, rotationDegrees[RandomInt], 0);
                 int rot = UnityEngine.Random.Range(0, 4);
                 //temp.transform.Rotate(0, rotationDegrees[rot], 0);
                 temp.transform.SetParent(this.gameObject.transform);
@@ -55,11 +58,9 @@ public class cityspawntestscript : MonoBehaviour
         {
 
             int RandomInt = UnityEngine.Random.Range(0, ObjectPool.Count);
-            Debug.Log(RandomInt);
 
             GameObject tile = ObjectPool[RandomInt];
             tile.SetActive(true);
-            Debug.Log(StartPos);
             tile.transform.localPosition = StartPos;
             CurrentActive.Add(tile);
             ObjectPool.Remove(tile);
@@ -93,7 +94,6 @@ public class cityspawntestscript : MonoBehaviour
                 //delete the game object
                 //instantinate new gameobject at xxx, add it to list 
                 int RandomInt = UnityEngine.Random.Range(0, ObjectPool.Count);
-                Debug.Log(RandomInt);
 
                 GameObject tile = ObjectPool[RandomInt].gameObject;
                 ObjectPool.Remove(tile);

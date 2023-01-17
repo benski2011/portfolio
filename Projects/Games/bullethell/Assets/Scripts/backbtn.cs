@@ -29,6 +29,7 @@ public class backbtn : MonoBehaviour
     {
         mainmenu.SetActive(true);
         mapmenu.SetActive(false);
+        ActivateMap.mapmenu = false;
 
     }
 }
