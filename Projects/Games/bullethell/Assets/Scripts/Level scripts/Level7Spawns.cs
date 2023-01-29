@@ -59,7 +59,10 @@ public class Level7Spawns : LevelBaseScript
         level7.Add(new LevelEvent(levelEventType.text, v1: "Unable to comply, if we can the dro---", v2: "tanya"));
         //GRANTZ GET SNIPED
 
-        level7.Add(new LevelEvent(levelEventType.special, v1: "sniped"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "sniped"));
+
+        
+
 
 
         level7.Add(new LevelEvent(levelEventType.text, v1: "A battalion of mages, incoming!", v2: "visha"));
@@ -67,41 +70,48 @@ public class Level7Spawns : LevelBaseScript
         //Spawn many difficult enemies on ski and horse
         //Last boss is smg dude with shotgun
         //Start with shooting a lot of shotgun bullets
-        
-        level7.Add(new LevelEvent(levelEventType.text, v1: "THIS IS GODS RECCONING", v2: "SueBoss_damaged"));
+
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level7.Add(new LevelEvent(levelEventType.stop));
+        //level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        //level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        //level7.Add(new LevelEvent(levelEventType.stop));
+        //level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        //level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        //level7.Add(new LevelEvent(levelEventType.stop));
+
+
+        level7.Add(new LevelEvent(levelEventType.text, v1: "THIS IS GODS RECCONING", v2: "sueboss_damaged"));
+        level7.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
+
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
         level7.Add(new LevelEvent(levelEventType.text, v1: "SHOTGUNS!", v2: "tanya"));
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
         level7.Add(new LevelEvent(levelEventType.text, v1: "THIS IS A TREATY VIOLATION!", v2: "tanya"));
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 1));
+
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Objective: Survive", v2: "flag"));
 
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level7.Add(new LevelEvent(levelEventType.enemy1, 1));
         level7.Add(new LevelEvent(levelEventType.stop));
 
 
-        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level7.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level7.Add(new LevelEvent(levelEventType.stop));
-        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-        level7.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level7.Add(new LevelEvent(levelEventType.stop));
-        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-        level7.Add(new LevelEvent(levelEventType.enemy2, 1));
-        level7.Add(new LevelEvent(levelEventType.stop));
+        
 
         level7.Add(new LevelEvent(levelEventType.wait, 0, 3));
         Debug.Log("end of setup level 1");
 
-        //level1.Add(new LevelEvent(levelEventType.end));
+        level7.Add(new LevelEvent(levelEventType.end));
 
 
 
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         if (lvlstart)
@@ -112,7 +122,7 @@ public class Level7Spawns : LevelBaseScript
 
             if (time >= timeUntilExe && !waitForText)
             {
-                
+
                 time = 0;
 
                 switch (current.type)
@@ -120,28 +130,27 @@ public class Level7Spawns : LevelBaseScript
                     case levelEventType.wait: ListIndex++; break;
 
                     case levelEventType.enemy1:
-                        enemymanager.GetComponent<EnemyManager7>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager7>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy2:
-                        enemymanager.GetComponent<EnemyManager7>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager7>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy3:
-                        enemymanager.GetComponent<EnemyManager7>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager7>().Spawn(current);
                         ListIndex++;
                         break;
 
                     case levelEventType.text:
-                        
-                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
+
+                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;
                     case levelEventType.end:
-                        Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
-                        break;
-                    case levelEventType.special:
-                        Debug.Log("special"); 
+                        Debug.Log("game end");
+                        mapEnabler.map[7] = true;
+                        this.GetComponent<GameManager>().endGame();
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
@@ -153,8 +162,7 @@ public class Level7Spawns : LevelBaseScript
             }
 
         }
-        
+
 
     }
-
 }

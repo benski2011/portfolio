@@ -22,14 +22,14 @@ public class Level6Spawns : LevelBaseScript
     int ListIndex = 0;
     List<LevelEvent> level6 = new List<LevelEvent>();
     bool lvlstart = true;
-    float timeUntilExe = 0f; 
+    float timeUntilExe = 0f;
     // Start is called before the first frame update
     void Start()
     {
         gamemanager = GameObject.Find("GameManager");
 
         Level6Setup();
-        
+
         VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
 
         //StartCoroutine(Spawn());
@@ -50,10 +50,18 @@ public class Level6Spawns : LevelBaseScript
         //some groudnd to air?
         //purple laser bolts 
         //StartCoroutine(startuptext());
-       
+
         level6.Add(new LevelEvent(levelEventType.text, v1: "The 203rd is to elimitate enemy mages who have joined forces with Arene rebels.", v2: "observer"));
         level6.Add(new LevelEvent(levelEventType.text, v1: "Afterward, work with allies to recapture the city.", v2: "observer"));
         level6.Add(new LevelEvent(levelEventType.wait, 0, 1));
+
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level6.Add(new LevelEvent(levelEventType.stop));
+
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level6.Add(new LevelEvent(levelEventType.stop));
 
         level6.Add(new LevelEvent(levelEventType.text, v1: "Men!", v2: "tanya"));
         level6.Add(new LevelEvent(levelEventType.text, v1: "Evacuation orders has been issued for Arene!", v2: "tanya"));
@@ -63,21 +71,19 @@ public class Level6Spawns : LevelBaseScript
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level6.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level6.Add(new LevelEvent(levelEventType.stop));
-
 
         level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level6.Add(new LevelEvent(levelEventType.enemy1, 1));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level6.Add(new LevelEvent(levelEventType.stop));
-        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level6.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level6.Add(new LevelEvent(levelEventType.stop));
         level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-        level6.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level6.Add(new LevelEvent(levelEventType.stop));
+
+
 
         level6.Add(new LevelEvent(levelEventType.wait, 0, 3));
 
@@ -86,14 +92,12 @@ public class Level6Spawns : LevelBaseScript
 
         Debug.Log("end of setup level 1");
 
-        //level1.Add(new LevelEvent(levelEventType.end));
+        level6.Add(new LevelEvent(levelEventType.end));
 
 
 
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         if (lvlstart)
@@ -104,7 +108,7 @@ public class Level6Spawns : LevelBaseScript
 
             if (time >= timeUntilExe && !waitForText)
             {
-                
+
                 time = 0;
 
                 switch (current.type)
@@ -112,28 +116,27 @@ public class Level6Spawns : LevelBaseScript
                     case levelEventType.wait: ListIndex++; break;
 
                     case levelEventType.enemy1:
-                        enemymanager.GetComponent<EnemyManager6>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager6>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy2:
-                        enemymanager.GetComponent<EnemyManager6>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager6>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy3:
-                        enemymanager.GetComponent<EnemyManager6>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager6>().Spawn(current);
                         ListIndex++;
                         break;
 
                     case levelEventType.text:
-                        
-                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
+
+                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;
                     case levelEventType.end:
-                        Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
-                        break;
-                    case levelEventType.special:
-                        Debug.Log("specials"); 
+                        Debug.Log("game end");
+                        mapEnabler.map[6] = true;
+                        this.GetComponent<GameManager>().endGame();
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
@@ -145,9 +148,7 @@ public class Level6Spawns : LevelBaseScript
             }
 
         }
-        
+
 
     }
-
-
 }

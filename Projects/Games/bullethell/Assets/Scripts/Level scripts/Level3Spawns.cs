@@ -51,31 +51,39 @@ public class Level3Spawns : LevelBaseScript
 
 
         level3.Add(new LevelEvent(levelEventType.text, v1: "Assist the Empire soldiers. Find a way to deal with the bombers.", v2: "flag"));
+        
+        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level3.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level3.Add(new LevelEvent(levelEventType.stop));
+
+
+        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level3.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level3.Add(new LevelEvent(levelEventType.stop));
+       
+        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level3.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level3.Add(new LevelEvent(levelEventType.stop));
+       
+        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level3.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level3.Add(new LevelEvent(levelEventType.stop));
+
+
         level3.Add(new LevelEvent(levelEventType.text, v1: "Hello", v2: "tanya"));
+        level3.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
+        level3.Add(new LevelEvent(levelEventType.stop));
         level3.Add(new LevelEvent(levelEventType.text, v1: "Goodbye", v2: "tanya"));
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level3.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level3.Add(new LevelEvent(levelEventType.stop));
 
 
-        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level3.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level3.Add(new LevelEvent(levelEventType.stop));
-        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-        level3.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level3.Add(new LevelEvent(levelEventType.stop));
-        level3.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-        level3.Add(new LevelEvent(levelEventType.enemy2, 1));
-        level3.Add(new LevelEvent(levelEventType.stop));
-
+       
         level3.Add(new LevelEvent(levelEventType.wait, 0, 3));
         Debug.Log("end of setup level 1");
 
-        //level1.Add(new LevelEvent(levelEventType.end));
+        level3.Add(new LevelEvent(levelEventType.end));
 
 
 
@@ -93,7 +101,7 @@ public class Level3Spawns : LevelBaseScript
 
             if (time >= timeUntilExe && !waitForText)
             {
-                
+
                 time = 0;
 
                 switch (current.type)
@@ -101,25 +109,27 @@ public class Level3Spawns : LevelBaseScript
                     case levelEventType.wait: ListIndex++; break;
 
                     case levelEventType.enemy1:
-                        enemymanager.GetComponent<EnemyManager3>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager3>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy2:
-                        enemymanager.GetComponent<EnemyManager3>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager3>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy3:
-                        enemymanager.GetComponent<EnemyManager3>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager3>().Spawn(current);
                         ListIndex++;
                         break;
 
                     case levelEventType.text:
-                        
-                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
+
+                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;
                     case levelEventType.end:
-                        Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
+                        Debug.Log("game end");
+                        mapEnabler.map[3] = true;
+                        this.GetComponent<GameManager>().endGame();
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
@@ -131,7 +141,6 @@ public class Level3Spawns : LevelBaseScript
             }
 
         }
-        
 
     }
 

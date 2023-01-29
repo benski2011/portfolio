@@ -46,6 +46,7 @@ Transform:
   - {fileID: 8004586515635347959}
   - {fileID: 1175157531829778420}
   - {fileID: 7991139848409037633}
+  - {fileID: 5309712666508458374}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,33 +75,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf501f393f8359c479238156baf91822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHp: 0
+  EnemyHp: 5
   EnemyShieldHp: 0
   EnemyMoveSpeed: 0
-  EnemyDamage: 0
-  EnemyFireRate: 0
+  EnemyDamage: 1
+  EnemyFireRate: 0.8
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 0}
-  newMaterialRef: {fileID: 0}
+  enemyRender: {fileID: 4200463321810973964, guid: ff79abe020255254ebf243881c0490e2, type: 3}
+  newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
   renderer: {fileID: 0}
   currentMaterial: {fileID: 0}
   s_Shoot: 0
-  s_StraightShot: 0
+  s_StraightShot: 1
   s_ShootRay: 0
   s_ShotGun: 0
   s_ArcShot: 0
   s_DelayedShoot: 0
   s_BurstShot: 0
   s_CircleShot: 0
-  firerate: 0.5
-  pos1: {x: 1.6, y: 0, z: 3}
-  pos2: {x: -1.65, y: 0, z: 3}
-  enemyHp: 100
+  firerate: 0.8
+  pos1: {x: 0, y: 0, z: 0}
+  pos2: {x: 0, y: 0, z: 0}
+  enemyHp: 0
   gm: {fileID: 0}
   RayExist: 0
-  enemyPivot: {fileID: 515645520464973432, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemyPivot: {fileID: 0}
   RayPrefab: {fileID: 5644447072525298870, guid: 0fe5f1486c5f14243910ba7238af2911, type: 3}
   barrel: {fileID: 0}
   playermidpoint: {fileID: 0}
@@ -226,6 +227,36 @@ Transform:
   - {fileID: 707301856674014624}
   m_Father: {fileID: 1438065392904534530}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &492832424318727568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5309712666508458374}
+  m_Layer: 0
+  m_Name: BarrelEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5309712666508458374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492832424318727568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 796522791557437798}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587184883666878204
 GameObject:

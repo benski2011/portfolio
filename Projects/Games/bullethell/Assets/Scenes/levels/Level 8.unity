@@ -759,11 +759,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
---- !u!1 &266846129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
-  m_PrefabInstance: {fileID: 266846128}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &267462703
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,10 +4175,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiomanager: {fileID: 1941768996}
-  enemy: {fileID: 266846129}
+  enemy1: {fileID: 19705372851356636, guid: 33086bb10fea4c841b9af63851dd83d3, type: 3}
+  enemy2: {fileID: 0}
   enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
-  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy4: {fileID: 0}
+  enemy5: {fileID: 0}
+  enemy6: {fileID: 0}
+  enemy7: {fileID: 0}
+  spawnSystem: {fileID: 0}
 --- !u!4 &1476649241
 Transform:
   m_ObjectHideFlags: 0

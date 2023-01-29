@@ -8,9 +8,9 @@ public class timer : MonoBehaviour
 {
     TextMeshProUGUI text;
 
-    GameObject menu;
+    public GameObject menu;
 
-    public float time = 60;
+    public float time = 30;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class timer : MonoBehaviour
 
     public void resettimer()
     {
-        time = 60;
+        time = 30;
     }
     // Update is called once per frame
     void FixedUpdate()

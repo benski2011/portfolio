@@ -63,32 +63,45 @@ public class Level9Spawns : LevelBaseScript
         level9.Add(new LevelEvent(levelEventType.text, v1: "Buzzkillers.", v2: "tanya"));
 
 
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level9.Add(new LevelEvent(levelEventType.stop));
+             
+        //level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        //level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        //level9.Add(new LevelEvent(levelEventType.stop));
+        //     
+        //level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        //level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        //level9.Add(new LevelEvent(levelEventType.stop));
+
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+
+
         level9.Add(new LevelEvent(levelEventType.text, v1: "God give me strength.", v2: "mary"));
 
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level9.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
 
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 5));
+
+        level9.Add(new LevelEvent(levelEventType.text, v1: "What the hell.", v2: "tanya"));
+        level9.Add(new LevelEvent(levelEventType.stop));
         //spawn mary boss fight 
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
         //when mary is defeated blow her up in a yellow explotion 
-        level9.Add(new LevelEvent(levelEventType.text, v1: "What the hell.", v2: "tanya"));
         level9.Add(new LevelEvent(levelEventType.text, v1: "MEN! Retreat!", v2: "tanya"));
+
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 3));
+
 
         Debug.Log("end of setup level 1");
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level9.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level9.Add(new LevelEvent(levelEventType.stop));
+        
 
-
-        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level9.Add(new LevelEvent(levelEventType.enemy1, 1));
-        level9.Add(new LevelEvent(levelEventType.stop));
-        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-        level9.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level9.Add(new LevelEvent(levelEventType.stop));
-        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
-
-        //level1.Add(new LevelEvent(levelEventType.end));
+        level9.Add(new LevelEvent(levelEventType.end));
 
 
 
@@ -106,7 +119,7 @@ public class Level9Spawns : LevelBaseScript
 
             if (time >= timeUntilExe && !waitForText)
             {
-                
+
                 time = 0;
 
                 switch (current.type)
@@ -114,25 +127,27 @@ public class Level9Spawns : LevelBaseScript
                     case levelEventType.wait: ListIndex++; break;
 
                     case levelEventType.enemy1:
-                        enemymanager.GetComponent<EnemyManager9>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager9>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy2:
-                        enemymanager.GetComponent<EnemyManager9>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager9>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy3:
-                        enemymanager.GetComponent<EnemyManager9>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager9>().Spawn(current);
                         ListIndex++;
                         break;
 
                     case levelEventType.text:
-                        VP.increaseAudioTrack();
-                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
+
+                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;
                     case levelEventType.end:
-                        Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
+                        Debug.Log("game end");
+                        mapEnabler.map[9] = true;
+                        this.GetComponent<GameManager>().endGame();
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
@@ -144,8 +159,7 @@ public class Level9Spawns : LevelBaseScript
             }
 
         }
-        
+
 
     }
-
 }

@@ -183,7 +183,7 @@ public class Level1Spawns : LevelBaseScript
                         break;
                     case levelEventType.end:
                         Debug.Log("game end"); 
-                        mapEnabler.map[1] = true;
+                        mapEnabler.map[2] = true;
                         this.GetComponent<GameManager>().endGame(); 
                         break;
 

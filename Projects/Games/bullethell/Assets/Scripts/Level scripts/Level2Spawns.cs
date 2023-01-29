@@ -94,7 +94,7 @@ public class Level2Spawns : LevelBaseScript
 
             if (time >= timeUntilExe && !waitForText)
             {
-                
+
                 time = 0;
 
                 switch (current.type)
@@ -102,26 +102,27 @@ public class Level2Spawns : LevelBaseScript
                     case levelEventType.wait: ListIndex++; break;
 
                     case levelEventType.enemy1:
-                        enemymanager.GetComponent<EnemyManager2>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy2:
-                        enemymanager.GetComponent<EnemyManager2>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
                         ListIndex++;
                         break;
                     case levelEventType.enemy3:
-                        enemymanager.GetComponent<EnemyManager2>().Spawn(current.type.ToString(), current.number);
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
                         ListIndex++;
                         break;
 
                     case levelEventType.text:
 
-                        Debug.Log("hei");
-                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
+                        StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;
                     case levelEventType.end:
-                        Debug.Log("game end"); this.GetComponent<GameManager>().endGame(); mapEnabler.map[1] = true;
+                        Debug.Log("game end");
+                        mapEnabler.map[1] = true;
+                        this.GetComponent<GameManager>().endGame();
                         break;
 
                     case levelEventType.stop: if (NumberOfEnemies == 0) { ListIndex++; } break;
@@ -133,10 +134,9 @@ public class Level2Spawns : LevelBaseScript
             }
 
         }
-        
+
 
     }
 
-
-
 }
+

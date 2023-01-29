@@ -4756,6 +4756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efc729e27db720479017f3001b0edca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 651216689}
   time: 30
 --- !u!114 &849585391
 MonoBehaviour:
@@ -9135,7 +9136,7 @@ GameObject:
   - component: {fileID: 1968611498}
   - component: {fileID: 1968611504}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: mainthingy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

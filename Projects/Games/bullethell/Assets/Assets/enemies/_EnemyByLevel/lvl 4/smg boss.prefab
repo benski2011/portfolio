@@ -68,7 +68,7 @@ MonoBehaviour:
   s_ShotGun: 0
   s_ArcShot: 0
   s_DelayedShoot: 0
-  s_BurstShot: 0
+  s_BurstShot: 1
   s_CircleShot: 0
   firerate: 0.8
   pos1: {x: 0, y: 0, z: 0}

@@ -15,6 +15,17 @@ public class planeaicontroller : MonoBehaviour
     GameObject frontgun;
     public GameObject bullet;
 
+
+    public bool midgun = false;
+    public bool rightgun = false;
+    public bool leftgun = false;
+
+    public GameObject Leftgun;
+    public GameObject RightGun;
+    public GameObject MiddleGun;
+    public GameManager gm;
+
+
     public float bulletspeed = 1000;
 
     float canfire = 1f;
@@ -24,6 +35,14 @@ public class planeaicontroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+        rightgun = true;
+        leftgun = true;
+        midgun = false;
+        MiddleGun.SetActive(midgun);
+
         player = GameObject.FindGameObjectWithTag("Player");
 
         rgun = GameObject.Find("rgun");
@@ -32,9 +51,26 @@ public class planeaicontroller : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    internal void dead()
     {
+        gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
+            Destroy(this.gameObject);
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        if (!leftgun && !rightgun && !midgun)
+        {
+            
+        }
+
+        if (!leftgun && !rightgun)
+        {
+            midgun = true;
+            MiddleGun.SetActive(true);
+        }
+
         float distanceToPlane_frontgun = Vector3.Dot(frontgun.transform.up, player.transform.position - frontgun.transform.position);
         Vector3 pointOnPlane_frontgun = player.transform.position - (frontgun.transform.up * distanceToPlane_frontgun);
         frontgun.transform.LookAt(pointOnPlane_frontgun, frontgun.transform.up);
@@ -62,46 +98,64 @@ public class planeaicontroller : MonoBehaviour
 
     private void frontgunShoot()
     {
-        GameObject clone;
-        clone = Instantiate(bullet);
+        if (midgun)
+        {
+            GameObject clone;
+            clone = Instantiate(bullet);
 
-        //AudioPlayer.PlayEnemyBulletAudio();
+            //AudioPlayer.PlayEnemyBulletAudio();
 
-        clone.transform.position = frontgun.transform.GetChild(0).position;
+            clone.transform.position = frontgun.transform.GetChild(0).position;
+            clone.GetComponent<playerbullet>().init(this.gameObject);
 
-        Vector3 playerpos = (player.transform.position - frontgun.transform.position).normalized;
-        clone.transform.LookAt(player.transform);
-        clone.transform.Rotate(90, 0, 0);
-        clone.GetComponent<Rigidbody>().AddForce(playerpos * bulletspeed);
+
+            Vector3 playerdir = (player.transform.position - frontgun.transform.position).normalized;
+            clone.transform.LookAt(player.transform.position);
+            clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
+            clone.GetComponent<Rigidbody>().AddForce(playerdir * bulletspeed);
+        }
+       
     }
 
     private void rgunShoot()
     {
-        GameObject clone;
-        clone = Instantiate(bullet);
+        if (rightgun)
+        {
 
-        //AudioPlayer.PlayEnemyBulletAudio();
 
-        clone.transform.position = rgun.transform.GetChild(0).position;
+            GameObject clone;
+            clone = Instantiate(bullet);
 
-        Vector3 playerpos = (player.transform.position - rgun.transform.position).normalized;
-        clone.transform.LookAt(player.transform);
-        clone.transform.Rotate(90, 0, 0);
-        clone.GetComponent<Rigidbody>().AddForce(playerpos * bulletspeed);
+            //AudioPlayer.PlayEnemyBulletAudio();
+
+            clone.transform.position = rgun.transform.GetChild(0).position;
+            clone.GetComponent<playerbullet>().init(this.gameObject);
+
+            Vector3 playerdir = (player.transform.position - rgun.transform.position).normalized;
+            clone.transform.LookAt(player.transform.position);
+            clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
+            clone.GetComponent<Rigidbody>().AddForce(playerdir * bulletspeed);
+        }
     }
 
     private void lgunShoot()
     {
-        GameObject clone;
-        clone = Instantiate(bullet);
+        if (leftgun)
+        {
 
-        //AudioPlayer.PlayEnemyBulletAudio();
 
-        clone.transform.position = lgun.transform.GetChild(0).position;
+            GameObject clone;
+            clone = Instantiate(bullet);
 
-        Vector3 playerpos = (player.transform.position - lgun.transform.position).normalized;
-        clone.transform.LookAt(player.transform);
-        clone.transform.Rotate(90, 0, 0);
-        clone.GetComponent<Rigidbody>().AddForce(playerpos * bulletspeed);
+            //AudioPlayer.PlayEnemyBulletAudio();
+
+            clone.transform.position = lgun.transform.GetChild(0).position;
+            clone.GetComponent<playerbullet>().init(this.gameObject);
+
+            Vector3 playerdir = (player.transform.position - lgun.transform.position).normalized;
+            clone.transform.LookAt(player.transform.position);
+            clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
+            clone.GetComponent<Rigidbody>().AddForce(playerdir * bulletspeed);
+        }
     }
 }

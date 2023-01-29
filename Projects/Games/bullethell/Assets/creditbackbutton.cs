@@ -7,6 +7,7 @@ public class creditbackbutton : MonoBehaviour
 {
     private Button btn;
     public GameObject creditmenu;
+    public GameObject mainmenu;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,9 @@ public class creditbackbutton : MonoBehaviour
     {
         
         creditmenu.SetActive(false);
-        
+        mainmenu.SetActive(true);
+
+
 
     }
 }

@@ -29,11 +29,13 @@ public class VoiceLinePlayer : MonoBehaviour
     public void increaseAudioTrack()
     {
         audio.Stop();
-        audio.clip = audioClips[currentAudioTrack];
-        audio.Play();
-        if (currentAudioTrack <= audioClips.Count)
+        
+        if (currentAudioTrack < audioClips.Count-1)
         {
             currentAudioTrack++;
+            audio.clip = audioClips[currentAudioTrack];
+            audio.Play();
         }
+       
     }
 }

@@ -639,7 +639,7 @@ Transform:
   m_LocalScale: {x: 81.80264, y: 56.18964, z: 67.01289}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &120822573 stripped
 Transform:
@@ -1618,7 +1618,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &639567247
 GameObject:
@@ -2485,7 +2485,7 @@ Transform:
   - {fileID: 60393482}
   - {fileID: 267462704}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1045726263
 GameObject:
@@ -3081,7 +3081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d28dd2d94069f4eb290b9a6f7c7d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -0.5
+  scrollSpeed: -0.4
 --- !u!1 &1130618940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,7 +3414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2377241431422200508, guid: e436789506e5e694893141115eb948e1, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2377241431422200508, guid: e436789506e5e694893141115eb948e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3730,7 +3730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7984378909212753380, guid: e40ce288d593e2e4e8bae145545131df, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7984378909212753380, guid: e40ce288d593e2e4e8bae145545131df, type: 3}
       propertyPath: m_LocalScale.x
@@ -3940,10 +3940,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiomanager: {fileID: 1941768996}
-  enemy: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy1: {fileID: 9140527844982347103, guid: add445bd307df484e86ba12086cbee59, type: 3}
+  enemy2: {fileID: 8630239960566741873, guid: cb849bd90ee8d0149bd98c627fb13cf1, type: 3}
   enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
-  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy4: {fileID: 0}
+  enemy5: {fileID: 0}
+  enemy6: {fileID: 0}
+  enemy7: {fileID: 0}
+  spawnSystem: {fileID: 0}
 --- !u!4 &1476649241
 Transform:
   m_ObjectHideFlags: 0
@@ -4133,7 +4137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6954853054254459119, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6954853054254459119, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4508,7 +4512,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1686846246
 GameObject:

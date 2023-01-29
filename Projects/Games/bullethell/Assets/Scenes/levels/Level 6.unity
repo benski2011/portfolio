@@ -4079,10 +4079,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiomanager: {fileID: 1941768996}
-  enemy: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy1: {fileID: 19705372851356636, guid: d66f04d9f81f32342b217d6486fa950a, type: 3}
+  enemy2: {fileID: 19705372851356636, guid: d66f04d9f81f32342b217d6486fa950a, type: 3}
   enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemyPlane: {fileID: 1957126895367840040, guid: 8e52c590b4ac3114ca78a0dbb68b6a67, type: 3}
-  enemytest: {fileID: 7122426163740718320, guid: 7938e060d1a69d34ca865f5529b892a3, type: 3}
+  enemy4: {fileID: 0}
+  enemy5: {fileID: 0}
+  enemy6: {fileID: 0}
+  enemy7: {fileID: 0}
+  spawnSystem: {fileID: 0}
 --- !u!4 &1476649241
 Transform:
   m_ObjectHideFlags: 0

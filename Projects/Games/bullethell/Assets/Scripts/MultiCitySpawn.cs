@@ -75,11 +75,11 @@ public class MultiCitySpawn : MonoBehaviour
         {
 
             int RandomInt = UnityEngine.Random.Range(0, ObjectPool.Count);
-            Debug.Log(RandomInt);
+           // Debug.Log(RandomInt);
 
             GameObject tile = ObjectPool[RandomInt];
             tile.SetActive(true);
-            Debug.Log(StartPos);
+           // Debug.Log(StartPos);
             tile.transform.localPosition = StartPos;
             CurrentActive.Add(tile);
             ObjectPool.Remove(tile);
@@ -117,7 +117,7 @@ public class MultiCitySpawn : MonoBehaviour
                 //delete the game object
                 //instantinate new gameobject at xxx, add it to list 
                 int RandomInt = UnityEngine.Random.Range(0, ObjectPool.Count);
-                Debug.Log(RandomInt);
+                //Debug.Log(RandomInt);
 
                 GameObject tile = ObjectPool[RandomInt].gameObject;
                 ObjectPool.Remove(tile);
