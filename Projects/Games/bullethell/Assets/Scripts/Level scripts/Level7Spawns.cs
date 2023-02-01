@@ -59,7 +59,7 @@ public class Level7Spawns : LevelBaseScript
         level7.Add(new LevelEvent(levelEventType.text, v1: "Unable to comply, if we can the dro---", v2: "tanya"));
         //GRANTZ GET SNIPED
 
-        level7.Add(new LevelEvent(levelEventType.text, v1: "sniped"));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "*at this point an ally of tanya that has not been added yet gets sniped*"));
 
         
 

@@ -60,7 +60,8 @@ public class playerbullet : MonoBehaviour
             }
             if (target == "Enemy")
             {
-                col.gameObject.GetComponent<enemyScript>().DecreaseHP(1);
+                //Debug.Log(col.name);
+                col.gameObject.GetComponent<EnemyBaseScript>().DecreaseHP(1);
                 Destroy(this.gameObject);
 
             }

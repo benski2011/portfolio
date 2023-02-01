@@ -4035,8 +4035,8 @@ MonoBehaviour:
   audiomanager: {fileID: 1941768996}
   enemy1: {fileID: 19705372851356636, guid: 26a17e099ea00774c8e385d1f203abb7, type: 3}
   enemy2: {fileID: 617281135918162639, guid: afa988ce96627c942b313408909aca9f, type: 3}
-  enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemy4: {fileID: 0}
+  enemy3: {fileID: 19705372851356636, guid: 26a17e099ea00774c8e385d1f203abb7, type: 3}
+  enemy4: {fileID: 8262231335976464751, guid: bb0e60efe978a4c45a7a69c389997b65, type: 3}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   enemy7: {fileID: 0}
