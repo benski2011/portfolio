@@ -59,7 +59,7 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.wait, 0, 1));
 
 
-       level10.Add(new LevelEvent(levelEventType.enemy4, 1, loc: "up"));
+       level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
        level10.Add(new LevelEvent(levelEventType.stop));
        level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
        level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
@@ -69,7 +69,6 @@ public class Level10Spawns : LevelBaseScript
 
         level10.Add(new LevelEvent(levelEventType.text, v1: "Men! We are not allowed to retreat from this battle! We will crush these commies!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "For freedom!", v2: "tanya"));
-        level10.Add(new LevelEvent(levelEventType.text, v1: "*Here there is suppose to be a map change", v2: "flag"));
 
 
         //special event 
@@ -80,11 +79,21 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.text, v1: "We need to cancel their city tour.", v2: "tanya"));
 
         level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level10.Add(new LevelEvent(levelEventType.enemy4, 2, loc: "up"));
+        level10.Add(new LevelEvent(levelEventType.stop));
+
+
+        level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level10.Add(new LevelEvent(levelEventType.stop));
 
 
         level10.Add(new LevelEvent(levelEventType.text, v1: "*I plan to add figher planes here, these has not been added yet*", v2: "tanya"));
+
+        level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level10.Add(new LevelEvent(levelEventType.enemy4, 1, loc: "up"));
+        level10.Add(new LevelEvent(levelEventType.stop));
+
 
         level10.Add(new LevelEvent(levelEventType.text, v1: "Objective: Achieve victory at all cost", v2: "flag"));
 
