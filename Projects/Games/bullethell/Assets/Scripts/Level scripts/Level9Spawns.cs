@@ -12,6 +12,7 @@ public class Level9Spawns : LevelBaseScript
     public GameObject textUi;
     public GameObject talkingImage;
     public GameObject gamemanager;
+    public GameObject Mapmanager;
 
     public Sprite tanyaimg;
     public Sprite vishaimg;
@@ -47,12 +48,17 @@ public class Level9Spawns : LevelBaseScript
         Debug.Log("setup level 9");
 
         //StartCoroutine(startuptext());
-       
-        
+
+        level9.Add(new LevelEvent(levelEventType.text, v1: "The Federation has delcared war against the Empire, Fight with all you got!", v2: "tanya"));
+        level9.Add(new LevelEvent(levelEventType.special, v1: "mapchange"));
+
 
 
         level9.Add(new LevelEvent(levelEventType.text, v1: "Men! You were all highly efficient dealing with the commies, and now it's time to see how far we can push this. ", v2: "tanya"));
         level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+
+
 
         level9.Add(new LevelEvent(levelEventType.text, v1: "I hope you can show me around in your home country Serebryakov.", v2: "tanya"));
         level9.Add(new LevelEvent(levelEventType.wait, 0, 1));
@@ -139,6 +145,12 @@ public class Level9Spawns : LevelBaseScript
                         ListIndex++;
                         break;
 
+                    case levelEventType.special:
+                        //Debug.Log("special " + current.text);
+                        ProcessSpecial(current.text);
+                        ListIndex++;
+                        break;
+
                     case levelEventType.text:
 
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
@@ -161,5 +173,18 @@ public class Level9Spawns : LevelBaseScript
         }
 
 
+    }
+    private void ProcessSpecial(string text)
+    {
+        switch (text)
+        {
+            case "mapchange":
+                Debug.Log("map change special detected");
+                Mapmanager.GetComponent<MultiCitySpawn>().NextObjectList = true;
+                break;
+
+            default:
+                break;
+        }
     }
 }

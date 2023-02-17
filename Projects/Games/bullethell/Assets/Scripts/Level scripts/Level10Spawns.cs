@@ -30,6 +30,7 @@ public class Level10Spawns : LevelBaseScript
     // Start is called before the first frame update
     void Start()
     {
+
         VP = VoiceLineManager.GetComponent<VoiceLinePlayer>();
         gamemanager = GameObject.Find("GameManager");
 
@@ -49,8 +50,8 @@ public class Level10Spawns : LevelBaseScript
         Debug.Log("setup level 10");
 
         //StartCoroutine(startuptext());
-        
 
+        //level10.Add(new LevelEvent(levelEventType.special, v1: "mapchange"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "Major! Eight divisions of federation troops were speed spotted coming in our direction.", v2: "visha"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "Why?!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "Did the commies figure out our plans? Or do we have a leak in our intel?", v2: "tanya"));
@@ -59,7 +60,7 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.wait, 0, 1));
 
 
-       level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+       level10.Add(new LevelEvent(levelEventType.enemy4, 3, loc: "up"));
        level10.Add(new LevelEvent(levelEventType.stop));
        level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
        level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
@@ -72,7 +73,7 @@ public class Level10Spawns : LevelBaseScript
 
 
         //special event 
-        //level10.Add(new LevelEvent(levelEventType.special, v1: "mapchange"));
+        level10.Add(new LevelEvent(levelEventType.special, v1: "mapchange"));
 
 
         level10.Add(new LevelEvent(levelEventType.text, v1: "Massive waves of incoming air units are approaching.", v2: "observer"));
@@ -88,7 +89,6 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.stop));
 
 
-        level10.Add(new LevelEvent(levelEventType.text, v1: "*I plan to add figher planes here, these has not been added yet*", v2: "tanya"));
 
         level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level10.Add(new LevelEvent(levelEventType.enemy4, 1, loc: "up"));
@@ -179,6 +179,12 @@ public class Level10Spawns : LevelBaseScript
                         break;
                     case levelEventType.enemy5:
                         enemymanager.GetComponent<EnemyManager10>().Spawn(current);
+                        ListIndex++;
+                        break;
+
+                    case levelEventType.special:
+                        //Debug.Log("special " + current.text);
+                        ProcessSpecial(current.text);
                         ListIndex++;
                         break;
 

@@ -57,7 +57,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 4200463321810973964}
+  enemyRender: {fileID: 4200763538762316844}
   newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
   renderer: {fileID: 0}
   currentMaterial: {fileID: 0}
@@ -91,8 +91,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.52506196, y: 1.7973528, z: 1.0511678}
-  m_Center: {x: -0.0030343335, y: -0.3986758, z: -0.025583427}
+  m_Size: {x: 0.7260008, y: 1.7973528, z: 1.0511678}
+  m_Center: {x: -0.027395725, y: -0.3986758, z: -0.025583446}
 --- !u!1 &194192238841037325
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,16 +655,16 @@ PrefabInstance:
     - target: {fileID: 137100339907184174, guid: e890dffb44407254789568863177ad28, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
+      objectReference: {fileID: 2100000, guid: 6f464c658ba86194e86f58706f1db045, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e890dffb44407254789568863177ad28, type: 3}
+--- !u!1 &4200763538762316844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1125180930134808, guid: e890dffb44407254789568863177ad28, type: 3}
+  m_PrefabInstance: {fileID: 4201827073455632180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4206079499592203496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4816355636270044, guid: e890dffb44407254789568863177ad28, type: 3}
-  m_PrefabInstance: {fileID: 4201827073455632180}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4200463321810973964 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1381350945364536, guid: e890dffb44407254789568863177ad28, type: 3}
   m_PrefabInstance: {fileID: 4201827073455632180}
   m_PrefabAsset: {fileID: 0}

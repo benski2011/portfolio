@@ -74,6 +74,25 @@ public class Level7Spawns : LevelBaseScript
         level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level7.Add(new LevelEvent(levelEventType.stop));
+
+
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 2, loc: "up"));
+        level7.Add(new LevelEvent(levelEventType.stop));
+
+
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level7.Add(new LevelEvent(levelEventType.stop));
+
+
+
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 2, loc: "up"));
+        level7.Add(new LevelEvent(levelEventType.stop));
+
+
+
         //level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
         //level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         //level7.Add(new LevelEvent(levelEventType.stop));

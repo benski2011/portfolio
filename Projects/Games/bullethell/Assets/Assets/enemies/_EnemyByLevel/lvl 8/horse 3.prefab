@@ -61,8 +61,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.061854932, y: 0.057784952, z: 0.02721134}
-  m_Center: {x: -0.00066307053, y: 0.0061099115, z: 0.0010211956}
+  m_Size: {x: 0.028353393, y: 0.057784952, z: 0.02721134}
+  m_Center: {x: -0.0021469856, y: 0.0061099115, z: 0.0010211954}
 --- !u!114 &1041048950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 4200463321810973964, guid: 87a5ee6f802bc8d448d164464d3b9ffe, type: 3}
+  enemyRender: {fileID: 7994961901778170533}
   newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
   renderer: {fileID: 0}
   currentMaterial: {fileID: 0}

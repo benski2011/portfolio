@@ -57,7 +57,7 @@ public class fighterplanescript : EnemyBaseScript
         barrel2.transform.position = new Vector3(barrel2.transform.position.x, 0, barrel.transform.position.z);
 
         //renderer = enemyRender.GetComponent<Renderer>();
-        //currentMaterial = renderer.material;
+        currentMaterial = renderer.material;
 
 
     }

@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf501f393f8359c479238156baf91822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHp: 5
+  EnemyHp: 30
   EnemyShieldHp: 0
   EnemyMoveSpeed: 0
   EnemyDamage: 1
@@ -121,8 +121,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.52506196, y: 1.7973528, z: 1.0511678}
-  m_Center: {x: -0.0030343335, y: -0.3986758, z: -0.025583427}
+  m_Size: {x: 0.7260008, y: 1.7973528, z: 1.0511678}
+  m_Center: {x: -0.027395725, y: -0.3986758, z: -0.025583446}
 --- !u!1001 &4843522792736505323
 PrefabInstance:
   m_ObjectHideFlags: 0

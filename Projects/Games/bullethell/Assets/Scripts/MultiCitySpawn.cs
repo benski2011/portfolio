@@ -104,6 +104,8 @@ public class MultiCitySpawn : MonoBehaviour
         if (NextObjectList)
         {
             ObjectPool = ObjectPool2;
+            NextObjectList = false;
+            
         }
         for (int i = 0; i < CurrentActive.Count; i++)
         {
@@ -116,12 +118,22 @@ public class MultiCitySpawn : MonoBehaviour
             {
                 //delete the game object
                 //instantinate new gameobject at xxx, add it to list 
-                int RandomInt = UnityEngine.Random.Range(0, ObjectPool.Count);
+                int RandomInt;
                 //Debug.Log(RandomInt);
 
+
+                //todo add inactive elements to a list and take from that
+                //i forhold til logikken med liste i bullethell gamesett de siste 4-5 til aktiv og current,
+                //la de andre 20 være inaktiveobjectpool lenght - size of currentlist
+                do
+                {
+                    RandomInt = UnityEngine.Random.Range(0, ObjectPool.Count);
+
+                } while (ObjectPool[RandomInt].gameObject.activeSelf);
+
                 GameObject tile = ObjectPool[RandomInt].gameObject;
-                ObjectPool.Remove(tile);
-                ObjectPool.Add(CurrentActive[i].gameObject);
+                //ObjectPool.Remove(tile);
+                //ObjectPool.Add(CurrentActive[i].gameObject);
 
                 tile.SetActive(true);
                 tile.transform.localPosition = new Vector3(CurrentActive[CurrentActive.Count - 1].transform.localPosition.x,

@@ -116,9 +116,9 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 0}
+  enemyRender: {fileID: 8742192034612674987}
   newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
-  renderer: {fileID: 0}
+  renderer: {fileID: 8720589400595447373}
   currentMaterial: {fileID: 0}
   s_Shoot: 1
   s_StraightShot: 0

@@ -54,7 +54,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 4200463321810973964, guid: 420cfff5b3e4d2d44b7bcb792f990603, type: 3}
+  enemyRender: {fileID: 5474408331130806362}
   newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
   renderer: {fileID: 0}
   currentMaterial: {fileID: 0}
@@ -805,5 +805,10 @@ PrefabInstance:
 --- !u!4 &5471652675625412928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4607422485331148, guid: 91d45977d04f02745aadebe1f5eb15bf, type: 3}
+  m_PrefabInstance: {fileID: 5476211616500848012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5474408331130806362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1803388720985558, guid: 91d45977d04f02745aadebe1f5eb15bf, type: 3}
   m_PrefabInstance: {fileID: 5476211616500848012}
   m_PrefabAsset: {fileID: 0}

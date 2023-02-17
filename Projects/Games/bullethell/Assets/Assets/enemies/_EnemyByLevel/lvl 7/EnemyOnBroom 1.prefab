@@ -1851,7 +1851,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 4200463321810973964, guid: 42573675f3ab8c5408e1ba6bb8ab9794, type: 3}
+  enemyRender: {fileID: 8159304718983700303}
   newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
   renderer: {fileID: 0}
   currentMaterial: {fileID: 0}
@@ -1885,8 +1885,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3827097, y: 2.3600762, z: 1.0674472}
-  m_Center: {x: 0.01480107, y: -0.07679188, z: -0.033723637}
+  m_Size: {x: 0.70345753, y: 2.3600762, z: 1.0674472}
+  m_Center: {x: -0.04685673, y: -0.07679188, z: -0.033723652}
 --- !u!1001 &9140527843453643250
 PrefabInstance:
   m_ObjectHideFlags: 0
