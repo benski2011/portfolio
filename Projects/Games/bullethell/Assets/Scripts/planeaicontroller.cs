@@ -26,6 +26,9 @@ public class planeaicontroller : MonoBehaviour
     public GameManager gm;
 
 
+
+
+
     public float bulletspeed = 1000;
 
     float canfire = 1f;
@@ -54,7 +57,9 @@ public class planeaicontroller : MonoBehaviour
     internal void dead()
     {
         gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
-            Destroy(this.gameObject);
+        gm.PlayerScore += 400;
+
+        Destroy(this.gameObject);
     }
 
     // Update is called once per frame

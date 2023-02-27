@@ -58,8 +58,9 @@ public class Level7Spawns : LevelBaseScript
         level7.Add(new LevelEvent(levelEventType.text, v1: "Negative, wait for reinforcements", v2: "radio"));
         level7.Add(new LevelEvent(levelEventType.text, v1: "Unable to comply, if we can the dro---", v2: "tanya"));
         //GRANTZ GET SNIPED
+        level7.Add(new LevelEvent(levelEventType.special));
+        level7.Add(new LevelEvent(levelEventType.text, v1: "Grantz!", v2: "tanya"));
 
-        level7.Add(new LevelEvent(levelEventType.text, v1: "*at this point an ally of tanya that has not been added yet gets sniped*"));
 
         
 
@@ -71,9 +72,20 @@ public class Level7Spawns : LevelBaseScript
         //Last boss is smg dude with shotgun
         //Start with shooting a lot of shotgun bullets
 
-        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        level7.Add(new LevelEvent(levelEventType.stop));
+       level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+       level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+       level7.Add(new LevelEvent(levelEventType.stop));
+      
+      
+       level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+       level7.Add(new LevelEvent(levelEventType.enemy1, 2, loc: "up"));
+       level7.Add(new LevelEvent(levelEventType.stop));
+      
+      
+       level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+       level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+       level7.Add(new LevelEvent(levelEventType.stop));
+
 
 
         level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
@@ -81,24 +93,20 @@ public class Level7Spawns : LevelBaseScript
         level7.Add(new LevelEvent(levelEventType.stop));
 
 
+
+        level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level7.Add(new LevelEvent(levelEventType.stop));
+
         level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level7.Add(new LevelEvent(levelEventType.stop));
 
 
-
         level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level7.Add(new LevelEvent(levelEventType.enemy1, 2, loc: "up"));
+        level7.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
         level7.Add(new LevelEvent(levelEventType.stop));
 
-
-
-        //level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        //level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        //level7.Add(new LevelEvent(levelEventType.stop));
-        //level7.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        //level7.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        //level7.Add(new LevelEvent(levelEventType.stop));
 
 
         level7.Add(new LevelEvent(levelEventType.text, v1: "THIS IS GODS RECCONING", v2: "sueboss_damaged"));
@@ -160,9 +168,15 @@ public class Level7Spawns : LevelBaseScript
                         enemymanager.GetComponent<EnemyManager7>().Spawn(current);
                         ListIndex++;
                         break;
+                    case levelEventType.special:
+                        GameObject g = GameObject.FindGameObjectWithTag("randomsoldiergettingmurdered");
+                        g.SetActive(false);
+
+                        ListIndex++;
+                        break;
 
                     case levelEventType.text:
-
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;

@@ -16,6 +16,7 @@ public class fighterplanescript : EnemyBaseScript
     public bool s_ArcShot = false;
     public bool s_DelayedShoot = false;
     public bool s_BurstShot = false;
+    public int scoreWorth = 200;
 
     public bool s_CircleShot = false;
 
@@ -375,6 +376,8 @@ public class fighterplanescript : EnemyBaseScript
     private void OnDestroy()
     {
         gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
+        gm.PlayerScore += scoreWorth;
+
         Destroy(this.gameObject);
     }
 

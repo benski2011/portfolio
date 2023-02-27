@@ -11,6 +11,7 @@ TagManager:
   - GameManager
   - EnemyBullet
   - SpawnSystem
+  - randomsoldiergettingmurdered
   layers:
   - Default
   - TransparentFX

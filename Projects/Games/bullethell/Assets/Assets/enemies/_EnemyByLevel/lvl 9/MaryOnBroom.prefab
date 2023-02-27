@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5476211615341013310}
   - component: {fileID: -7950853302528823364}
   - component: {fileID: 963247985724715912}
+  - component: {fileID: 2445526708091226646}
   m_Layer: 0
   m_Name: MaryOnBroom
   m_TagString: Enemy
@@ -41,7 +42,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5476211615341013281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf501f393f8359c479238156baf91822, type: 3}
   m_Name: 
@@ -90,6 +91,53 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.70108455, y: 2.4219654, z: 1}
   m_Center: {x: -0.063715346, y: -0.06783118, z: 0}
+--- !u!114 &2445526708091226646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5476211615341013281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f8f8f025fb8124195269818a10e2a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHp: 40
+  EnemyShieldHp: 0
+  EnemyMoveSpeed: 0
+  EnemyDamage: 1
+  EnemyFireRate: 0
+  player: {fileID: 0}
+  bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
+  playerpos: {x: 0, y: 0, z: 0}
+  enemyRender: {fileID: 5474408331130806362}
+  newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
+  renderer: {fileID: 0}
+  currentMaterial: {fileID: 0}
+  s_Shoot: 1
+  s_StraightShot: 1
+  s_ShootRay: 1
+  s_ShotGun: 1
+  s_ArcShot: 1
+  s_DelayedShoot: 1
+  s_BurstShot: 1
+  s_CircleShot: 0
+  aimcriclesize: 4
+  smgFireRate: 0.4
+  normalFireRate: 0.45
+  firerate: 0.4
+  pos1: {x: 0, y: 0, z: 0}
+  pos2: {x: 0, y: 0, z: 0}
+  enemyHp: 0
+  gm: {fileID: 0}
+  RayExist: 0
+  enemyPivot: {fileID: 0}
+  RayPrefab: {fileID: 0}
+  barrel: {fileID: 0}
+  playermidpoint: {fileID: 0}
+  AudioPlayer: {fileID: 0}
+  stateDuration: 5
 --- !u!1 &5476211616455056635
 GameObject:
   m_ObjectHideFlags: 0

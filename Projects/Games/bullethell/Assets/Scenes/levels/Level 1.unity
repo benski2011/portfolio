@@ -3470,7 +3470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[0]
@@ -3483,25 +3483,29 @@ PrefabInstance:
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: 0d96b23b6c0abff44b69c12a025e0476, type: 3}
+      objectReference: {fileID: 8300000, guid: c8fd9c152ad1015489f4d82bc298b724, type: 3}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: ff944394b2b040f4caaa2e629ab3a814, type: 3}
+      objectReference: {fileID: 8300000, guid: 0d96b23b6c0abff44b69c12a025e0476, type: 3}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[4]
       value: 
-      objectReference: {fileID: 8300000, guid: c91962ff386b7f84bb92f5b7e92fab52, type: 3}
+      objectReference: {fileID: 8300000, guid: ff944394b2b040f4caaa2e629ab3a814, type: 3}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[5]
       value: 
-      objectReference: {fileID: 8300000, guid: c8fd9c152ad1015489f4d82bc298b724, type: 3}
+      objectReference: {fileID: 8300000, guid: c91962ff386b7f84bb92f5b7e92fab52, type: 3}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[6]
       value: 
-      objectReference: {fileID: 8300000, guid: 2db11e7404f84d849b54821ee3781892, type: 3}
+      objectReference: {fileID: 8300000, guid: c8fd9c152ad1015489f4d82bc298b724, type: 3}
     - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
       propertyPath: audioClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2db11e7404f84d849b54821ee3781892, type: 3}
+    - target: {fileID: 6954853055504879917, guid: aeb6859ee0df4534b9acbb041853c8cc, type: 3}
+      propertyPath: audioClips.Array.data[8]
       value: 
       objectReference: {fileID: 8300000, guid: e7078d2aa1cbc534e8133b120a1d87fb, type: 3}
     m_RemovedComponents: []
@@ -3924,7 +3928,7 @@ MonoBehaviour:
   enemy1: {fileID: 194192236958651485, guid: 420cfff5b3e4d2d44b7bcb792f990603, type: 3}
   enemy2: {fileID: 194192236958651485, guid: 87a5ee6f802bc8d448d164464d3b9ffe, type: 3}
   enemy3: {fileID: 194192236958651485, guid: ff79abe020255254ebf243881c0490e2, type: 3}
-  enemy4: {fileID: 194192236958651485, guid: 420cfff5b3e4d2d44b7bcb792f990603, type: 3}
+  enemy4: {fileID: 194192236958651485, guid: a3af937fddb4f00479060593ef68331a, type: 3}
   enemy5: {fileID: 194192236958651485, guid: 420cfff5b3e4d2d44b7bcb792f990603, type: 3}
   enemy6: {fileID: 194192236958651485, guid: 420cfff5b3e4d2d44b7bcb792f990603, type: 3}
   enemy7: {fileID: 194192236958651485, guid: 420cfff5b3e4d2d44b7bcb792f990603, type: 3}
@@ -4175,6 +4179,8 @@ MonoBehaviour:
   PlayerRestrictionTopRight: {x: 4.5, y: 0, z: 3.2}
   PlayerRestrictionBotLeft: {x: -7.8, y: 0, z: -8.9}
   textUi: {fileID: 2033536734}
+  HSUi: {fileID: 0}
+  ScoreUi: {fileID: 0}
   talkingImage: {fileID: 1534900163}
   tanyaimg: {fileID: 21300000, guid: 9f5828cf9a630dc45b9d10bf14d5cd96, type: 3}
   vishaimg: {fileID: 21300000, guid: a73a3ffdbedcbf94084471ecd111793e, type: 3}
@@ -4186,7 +4192,9 @@ MonoBehaviour:
   Mary: {fileID: 21300000, guid: e990a6f829fa1164f8ec9decbdbc9fb3, type: 3}
   MaryMad: {fileID: 21300000, guid: a501216f7092cdd498f752608205c2fa, type: 3}
   observer: {fileID: 21300000, guid: 2980661f4ffc53447b795a6d5e622cfc, type: 3}
+  highscore: 0
   error: {fileID: 21300000, guid: a29c046d80941194bb2530e0da8cf756, type: 3}
+  currentSceneName: 
 --- !u!4 &1532436687
 Transform:
   m_ObjectHideFlags: 0

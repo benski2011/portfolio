@@ -39,8 +39,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8630239960566741878}
-  - component: {fileID: 8617840203123210359}
   - component: {fileID: 8834332789357830825}
+  - component: {fileID: -4220349690864093165}
   m_Layer: 0
   m_Name: shotgunboss
   m_TagString: Enemy
@@ -67,49 +67,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8617840203123210359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8630239960566741873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf501f393f8359c479238156baf91822, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyHp: 30
-  EnemyShieldHp: 0
-  EnemyMoveSpeed: 0
-  EnemyDamage: 1
-  EnemyFireRate: 0.8
-  player: {fileID: 0}
-  bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
-  playerpos: {x: 0, y: 0, z: 0}
-  enemyRender: {fileID: 5710043613143013920}
-  newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
-  renderer: {fileID: 0}
-  currentMaterial: {fileID: 0}
-  s_Shoot: 0
-  s_StraightShot: 0
-  s_ShootRay: 0
-  s_ShotGun: 1
-  s_ArcShot: 0
-  s_DelayedShoot: 0
-  s_BurstShot: 0
-  s_CircleShot: 0
-  firerate: 0.8
-  pos1: {x: 0, y: 0, z: 0}
-  pos2: {x: 0, y: 0, z: 0}
-  enemyHp: 0
-  gm: {fileID: 0}
-  RayExist: 0
-  enemyPivot: {fileID: 0}
-  RayPrefab: {fileID: 5644447072525298870, guid: 0fe5f1486c5f14243910ba7238af2911, type: 3}
-  barrel: {fileID: 0}
-  playermidpoint: {fileID: 0}
-  AudioPlayer: {fileID: 0}
 --- !u!65 &8834332789357830825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -123,6 +80,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7260008, y: 1.7973528, z: 1.0511678}
   m_Center: {x: -0.027395725, y: -0.3986758, z: -0.025583446}
+--- !u!114 &-4220349690864093165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8630239960566741873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c10a01791957f49a04fdf88fe495df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHp: 30
+  EnemyShieldHp: 0
+  EnemyMoveSpeed: 0
+  EnemyDamage: 0
+  EnemyFireRate: 0.8
+  player: {fileID: 0}
+  bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
+  playerpos: {x: 0, y: 0, z: 0}
+  enemyRender: {fileID: 5710043613143013920}
+  newMaterialRef: {fileID: 2100000, guid: 826e552671ca92040a88a18729fe6832, type: 2}
+  renderer: {fileID: 0}
+  currentMaterial: {fileID: 0}
+  s_Shoot: 0
+  s_StraightShot: 0
+  s_ShootRay: 0
+  s_ShotGun: 0
+  s_ArcShot: 0
+  s_DelayedShoot: 0
+  s_BurstShot: 0
+  s_CircleShot: 0
+  shotgunFireRate: 0.4
+  normalFireRate: 0.3
+  firerate: 0.5
+  pos1: {x: 0, y: 0, z: 0}
+  pos2: {x: 0, y: 0, z: 0}
+  enemyHp: 0
+  gm: {fileID: 0}
+  RayExist: 0
+  enemyPivot: {fileID: 0}
+  RayPrefab: {fileID: 0}
+  barrel: {fileID: 0}
+  playermidpoint: {fileID: 0}
+  AudioPlayer: {fileID: 0}
+  stateDuration: 5
 --- !u!1001 &4843522792736505323
 PrefabInstance:
   m_ObjectHideFlags: 0

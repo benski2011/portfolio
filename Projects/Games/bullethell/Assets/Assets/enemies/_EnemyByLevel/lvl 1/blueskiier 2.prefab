@@ -53,7 +53,7 @@ MonoBehaviour:
   EnemyShieldHp: 0
   EnemyMoveSpeed: 0
   EnemyDamage: 1
-  EnemyFireRate: 0.8
+  EnemyFireRate: 0.9
   player: {fileID: 0}
   bullet: {fileID: 5728383916289444550, guid: 2839dba9ba1ba074f867c985bd8ababa, type: 3}
   playerpos: {x: 0, y: 0, z: 0}

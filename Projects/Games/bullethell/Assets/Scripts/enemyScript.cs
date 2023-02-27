@@ -33,6 +33,9 @@ public class enemyScript : EnemyBaseScript
     public GameManager gm;
     public bool RayExist = false;
 
+    public int scoreWorth = 100;
+
+
     GameObject raypivot = null;
     public GameObject enemyPivot;
     public GameObject RayPrefab;
@@ -140,12 +143,12 @@ public class enemyScript : EnemyBaseScript
     {
         
 
-        Vector3 playerDistanceDir = (player.transform.position-this.transform.position ).normalized;
+        Vector3 playerDistanceDir = (playermidpoint.transform.position - transform.position).normalized;
         playerDistanceDir.y = 0;
-        Vector3 playerDistance = player.transform.position;
+        Vector3 playerDistance = playermidpoint.transform.position;
 
         playerDistanceDir.y = 0;
-        Vector3 halfpoint = (((player.transform.position + this.transform.position) / 2));
+        Vector3 halfpoint = (((playermidpoint.transform.position + this.transform.position) / 2));
 
         Debug.Log("dist: " + playerDistance + " halfway: "+ halfpoint );
         
@@ -172,14 +175,14 @@ public class enemyScript : EnemyBaseScript
 
         clone.transform.position = barrel.transform.position;
 
-        Vector3 playerdir = (playermidpoint.transform.position - transform.position).normalized;
+        playerDistanceDir = (playermidpoint.transform.position - transform.position).normalized;
         Vector3 arc = (playermidpoint.transform.position - newVector).normalized;
 
-        clone.transform.LookAt(player.transform);
-        clone.transform.Rotate(90, 0, 0);
+        clone.transform.LookAt(playermidpoint.transform);
+        clone.transform.rotation *= Quaternion.Euler(new Vector3(0, 90, 0));
 
-        clone.GetComponent<bulletScript>().arcShot(newVector,this.transform.position,
-            player.transform.position, 1500);
+        clone.GetComponent<playerbullet>().arcShot(newVector,this.transform.position,
+            playermidpoint.transform.position, 1500);
 
 
     }
@@ -342,12 +345,13 @@ public class enemyScript : EnemyBaseScript
        //}
 
     }
+
     private void OnDestroy()
     {
         gm.GetComponent<LevelBaseScript>().NumberOfEnemies--;
+        gm.PlayerScore += scoreWorth;
         Destroy(this.gameObject);
     }
-
 
     private void ShootRay()
     {

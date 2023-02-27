@@ -69,17 +69,20 @@ public class Level9Spawns : LevelBaseScript
         level9.Add(new LevelEvent(levelEventType.text, v1: "Buzzkillers.", v2: "tanya"));
 
 
+
+
+
         level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level9.Add(new LevelEvent(levelEventType.stop));
              
-        //level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        //level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        //level9.Add(new LevelEvent(levelEventType.stop));
-        //     
-        //level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        //level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        //level9.Add(new LevelEvent(levelEventType.stop));
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level9.Add(new LevelEvent(levelEventType.stop));
+             
+        level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level9.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level9.Add(new LevelEvent(levelEventType.stop));
 
         level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
@@ -89,7 +92,6 @@ public class Level9Spawns : LevelBaseScript
 
         level9.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level9.Add(new LevelEvent(levelEventType.enemy2, 1, loc: "up"));
-
         level9.Add(new LevelEvent(levelEventType.wait, 0, 5));
 
         level9.Add(new LevelEvent(levelEventType.text, v1: "What the hell.", v2: "tanya"));
@@ -152,7 +154,7 @@ public class Level9Spawns : LevelBaseScript
                         break;
 
                     case levelEventType.text:
-
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;

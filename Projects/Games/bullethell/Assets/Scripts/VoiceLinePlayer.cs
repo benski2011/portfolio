@@ -32,9 +32,10 @@ public class VoiceLinePlayer : MonoBehaviour
         
         if (currentAudioTrack < audioClips.Count-1)
         {
-            currentAudioTrack++;
+            Debug.Log(currentAudioTrack);
             audio.clip = audioClips[currentAudioTrack];
             audio.Play();
+            currentAudioTrack++;
         }
        
     }

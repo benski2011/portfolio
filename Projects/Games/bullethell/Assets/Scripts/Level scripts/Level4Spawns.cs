@@ -119,7 +119,7 @@ public class Level4Spawns : LevelBaseScript
                         break;
 
                     case levelEventType.text:
-
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;

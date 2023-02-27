@@ -55,19 +55,21 @@ public class Level6Spawns : LevelBaseScript
         level6.Add(new LevelEvent(levelEventType.text, v1: "Afterward, work with allies to recapture the city.", v2: "observer"));
         level6.Add(new LevelEvent(levelEventType.wait, 0, 1));
 
-        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        level6.Add(new LevelEvent(levelEventType.stop));
 
-        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
-        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-        level6.Add(new LevelEvent(levelEventType.stop));
 
         level6.Add(new LevelEvent(levelEventType.text, v1: "Men!", v2: "tanya"));
         level6.Add(new LevelEvent(levelEventType.text, v1: "Evacuation orders has been issued for Arene!", v2: "tanya"));
         level6.Add(new LevelEvent(levelEventType.text, v1: "Under international law, anyone who is left in this city is considered a Republican Soldier.", v2: "tanya"));
         level6.Add(new LevelEvent(levelEventType.text, v1: "Destroy all republican soldiers! For the Empire!", v2: "tanya"));
         level6.Add(new LevelEvent(levelEventType.text, v1: "Objectives: Take out the enemy mages occupying Arene.", v2: "flag"));
+
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level6.Add(new LevelEvent(levelEventType.stop));
+
+        level6.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level6.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level6.Add(new LevelEvent(levelEventType.stop));
 
 
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
@@ -129,7 +131,7 @@ public class Level6Spawns : LevelBaseScript
                         break;
 
                     case levelEventType.text:
-
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;

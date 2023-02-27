@@ -100,7 +100,6 @@ public class Level11Spawns : LevelBaseScript
                         break;
 
                     case levelEventType.text:
-                        
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
                         ListIndex++;
                         break;

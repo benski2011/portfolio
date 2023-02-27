@@ -57,14 +57,15 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.text, v1: "Did the commies figure out our plans? Or do we have a leak in our intel?", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.text, v1: "Objective: Achieve victory at all cost", v2: "flag"));
 
+
         level10.Add(new LevelEvent(levelEventType.wait, 0, 1));
+        level10.Add(new LevelEvent(levelEventType.enemy4, 2, loc: "up"));
+        level10.Add(new LevelEvent(levelEventType.stop));
 
 
-       level10.Add(new LevelEvent(levelEventType.enemy4, 3, loc: "up"));
-       level10.Add(new LevelEvent(levelEventType.stop));
-       level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
-       level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
-       level10.Add(new LevelEvent(levelEventType.stop));
+        level10.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level10.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
+        level10.Add(new LevelEvent(levelEventType.stop));
 
 
 
@@ -118,7 +119,7 @@ public class Level10Spawns : LevelBaseScript
         level10.Add(new LevelEvent(levelEventType.text, v1: "HER AGAIN?!", v2: "tanya"));
         level10.Add(new LevelEvent(levelEventType.wait, 0, 1));
 
-        level10.Add(new LevelEvent(levelEventType.text, v1: "YOU KILLED MY FATHER! PREPARE TO DIE!", v2: "MaryMad"));
+        level10.Add(new LevelEvent(levelEventType.text, v1: "YOU KILLED MY FATHER! PREPARE TO DIE!", v2: "marymad"));
         level10.Add(new LevelEvent(levelEventType.wait, 0, 1));
 
         level10.Add(new LevelEvent(levelEventType.text, v1: "What's With This Sassy Lost Child?", v2: "tanya"));
@@ -189,7 +190,7 @@ public class Level10Spawns : LevelBaseScript
                         break;
 
                     case levelEventType.text:
-
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;

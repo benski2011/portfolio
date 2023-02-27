@@ -4178,9 +4178,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audiomanager: {fileID: 1941768996}
   enemy1: {fileID: 19705372851356636, guid: 33086bb10fea4c841b9af63851dd83d3, type: 3}
-  enemy2: {fileID: 0}
+  enemy2: {fileID: 19705372851356636, guid: 8cac132fec964ff4ca1c99f63aeae76b, type: 3}
   enemy3: {fileID: 19705372851356636, guid: 7d573bf5dfa495441ab787d566e8d9ee, type: 3}
-  enemy4: {fileID: 0}
+  enemy4: {fileID: 19705372851356636, guid: d9a086ddaf083e74a8a465d5b50d67be, type: 3}
   enemy5: {fileID: 0}
   enemy6: {fileID: 0}
   enemy7: {fileID: 0}

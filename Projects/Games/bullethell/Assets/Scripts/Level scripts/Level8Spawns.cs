@@ -59,6 +59,11 @@ public class Level8Spawns : LevelBaseScript
 
 
         level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level8.Add(new LevelEvent(levelEventType.enemy4, 3, loc: "up"));
+        level8.Add(new LevelEvent(levelEventType.stop));
+
+
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level8.Add(new LevelEvent(levelEventType.enemy1, 3, loc: "up"));
         level8.Add(new LevelEvent(levelEventType.stop));
         level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
@@ -78,11 +83,17 @@ public class Level8Spawns : LevelBaseScript
         level8.Add(new LevelEvent(levelEventType.stop));
         level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
-        level8.Add(new LevelEvent(levelEventType.enemy3, 1));
-        level8.Add(new LevelEvent(levelEventType.stop));
-        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
-
         level8.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level8.Add(new LevelEvent(levelEventType.stop));
+
+
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level8.Add(new LevelEvent(levelEventType.enemy2, 1));
+        level8.Add(new LevelEvent(levelEventType.stop));
+
+
+        level8.Add(new LevelEvent(levelEventType.wait, 0, 2));
+        level8.Add(new LevelEvent(levelEventType.enemy1, 4));
         level8.Add(new LevelEvent(levelEventType.stop));
 
         level8.Add(new LevelEvent(levelEventType.wait, 0, 3));
@@ -123,9 +134,18 @@ public class Level8Spawns : LevelBaseScript
                         enemymanager.GetComponent<EnemyManager8>().Spawn(current);
                         ListIndex++;
                         break;
+                    case levelEventType.enemy4:
+                        enemymanager.GetComponent<EnemyManager8>().Spawn(current);
+                        ListIndex++;
+                        break;
+                    case levelEventType.enemy5:
+                        enemymanager.GetComponent<EnemyManager8>().Spawn(current);
+                        ListIndex++;
+                        break;
+
 
                     case levelEventType.text:
-
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text, current.img));
                         ListIndex++;
                         break;

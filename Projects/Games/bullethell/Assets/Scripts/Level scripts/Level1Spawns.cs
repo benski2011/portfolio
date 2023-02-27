@@ -101,8 +101,6 @@ public class Level1Spawns : LevelBaseScript
         level1.Add(new LevelEvent(levelEventType.text, v1: "Task: Initiate Delaying action until reinforcements arrives", v2: "flag"));
 
 
-        
-
         //level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
         level1.Add(new LevelEvent(levelEventType.enemy1, 3, loc:"up"));
         level1.Add(new LevelEvent(levelEventType.stop));
@@ -131,6 +129,10 @@ public class Level1Spawns : LevelBaseScript
         level1.Add(new LevelEvent(levelEventType.enemy3, 1, loc: "right"));
         level1.Add(new LevelEvent(levelEventType.enemy1, 1, loc: "top"));
 
+        level1.Add(new LevelEvent(levelEventType.stop));
+        level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
+
+        level1.Add(new LevelEvent(levelEventType.enemy4, 1, loc: "up"));
         level1.Add(new LevelEvent(levelEventType.stop));
         level1.Add(new LevelEvent(levelEventType.wait, 0, 2));
 
@@ -176,8 +178,13 @@ public class Level1Spawns : LevelBaseScript
                         ListIndex++;
                         break;
 
+                    case levelEventType.enemy4:
+                        enemymanager.GetComponent<EnemyManager1>().Spawn(current);
+                        ListIndex++;
+                        break;
+
                     case levelEventType.text:
-                        
+                        VP.increaseAudioTrack();
                         StartCoroutine(gamemanager.GetComponent<GameManager>().writeText(current.text,current.img));
                         ListIndex++;
                         break;

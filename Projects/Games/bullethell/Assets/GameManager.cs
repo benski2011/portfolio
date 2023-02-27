@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +17,11 @@ public class GameManager : MonoBehaviour
     public Vector3 PlayerRestrictionBotLeft;
 
     public GameObject textUi;
+
+    public GameObject HSUi;
+    public GameObject ScoreUi;
+
+
     public GameObject talkingImage;
     Level1Spawns level1Spawns;
 
@@ -31,14 +37,82 @@ public class GameManager : MonoBehaviour
     public Sprite observer;
 
 
-    public Sprite error; 
+    private int _playerScore = 0;
 
+    public int PlayerScore
+    {
+        get { return _playerScore; }
+        set
+        {
+            _playerScore = value;
+            // Run your code here
+            ScoreUi.GetComponent<TextMeshProUGUI>().text = _playerScore.ToString();
+
+            Debug.Log("Player score updated to: " + _playerScore);
+        }
+    }
+    public int highscore;
+
+
+    public Sprite error;
+    public string currentSceneName;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        HSUi = GameObject.Find("scorenr").transform.GetChild(0).gameObject;
+        ScoreUi = GameObject.Find("scorenr").transform.GetChild(1).gameObject;
+        ScoreUi.GetComponent<TextMeshProUGUI>().text = 0.ToString();
+
         PlayerModel = GameObject.FindWithTag("Player");
         level1Spawns = this.GetComponent<Level1Spawns>();
+
+        currentSceneName = SceneManager.GetActiveScene().name;
+        setHighscore(currentSceneName);
+
+    }
+
+    private void setHighscore(string currentSceneName)
+    {
+        switch (currentSceneName)
+        {
+            case "Level 1":
+                highscore = mapEnabler.level1_highscore;
+                break;
+            case "Level 2":
+                highscore = mapEnabler.level2_highscore;
+                break;
+            case "Level 3":
+                highscore = mapEnabler.level3_highscore;
+                break;
+            case "Level 4":
+                highscore = mapEnabler.level4_highscore;
+                break;
+            case "Level 5":
+                highscore = mapEnabler.level5_highscore;
+                break;
+            case "Level 6":
+                highscore = mapEnabler.level6_highscore;
+                break;
+            case "Level 7":
+                highscore = mapEnabler.level7_highscore;
+                break;
+            case "Level 8":
+                highscore = mapEnabler.level8_highscore;
+                break;
+            case "Level 9":
+                highscore = mapEnabler.level9_highscore;
+                break;
+            case "Level 10":
+                highscore = mapEnabler.level10_highscore;
+                break;
+            default:
+                // Handle invalid scene names
+                break;
+
+        }
+        HSUi.GetComponent<TextMeshProUGUI>().text = highscore.ToString();
     }
 
     // Update is called once per frame
@@ -88,6 +162,7 @@ public class GameManager : MonoBehaviour
 
     internal void endGame()
     {
+        SaveScore();
         GameEnd = true;
         ActivateMap.mapmenu = true;
 
@@ -152,5 +227,99 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         this.GetComponent<LevelBaseScript>().waitForText = false;
         this.GetComponent<LevelBaseScript>().time = 0.00f;
+    }
+
+    void SaveScore()
+    {
+        switch (currentSceneName)
+        {
+            case "Level 1":
+                if (_playerScore > mapEnabler.level1_highscore)
+                {
+                    Debug.Log("saved game");
+                    Debug.Log("score = "+ _playerScore);
+                    Debug.Log("hs = " + mapEnabler.level1_highscore);
+
+                    mapEnabler.level1_highscore = _playerScore;
+                }
+                mapEnabler.level1_prevscore = _playerScore;
+
+                break;
+            case "Level 2":
+                if (_playerScore > mapEnabler.level2_highscore)
+                {
+                    mapEnabler.level2_highscore = _playerScore;
+                }
+                mapEnabler.level2_highscore = _playerScore;
+
+                break;
+            case "Level 3":
+                if (_playerScore > mapEnabler.level3_highscore)
+                {
+                    mapEnabler.level3_highscore = _playerScore;
+                }
+                mapEnabler.level3_highscore = _playerScore;
+
+                break;
+            case "Level 4":
+                if (_playerScore > mapEnabler.level4_highscore)
+                {
+                    mapEnabler.level4_highscore = _playerScore;
+                }
+                mapEnabler.level4_highscore = _playerScore;
+
+                break;
+            case "Level 5":
+                if (_playerScore > mapEnabler.level5_highscore)
+                {
+                    mapEnabler.level5_highscore = _playerScore;
+                }
+                mapEnabler.level5_highscore = _playerScore;
+
+                break;
+            case "Level 6":
+                if (_playerScore > mapEnabler.level6_highscore)
+                {
+                    mapEnabler.level6_highscore = _playerScore;
+                }
+                mapEnabler.level6_highscore = _playerScore;
+
+                break;
+            case "Level 7":
+                if (_playerScore > mapEnabler.level7_highscore)
+                {
+                    mapEnabler.level7_highscore = _playerScore;
+                }
+                mapEnabler.level7_highscore = _playerScore;
+
+                break;
+            case "Level 8":
+                if (_playerScore > mapEnabler.level8_highscore)
+                {
+                    mapEnabler.level8_highscore = _playerScore;
+                }
+                mapEnabler.level8_highscore = _playerScore;
+
+                break;
+            case "Level 9":
+                if (_playerScore > mapEnabler.level9_highscore)
+                {
+                    mapEnabler.level9_highscore = _playerScore;
+                }
+                mapEnabler.level9_highscore = _playerScore;
+
+                break;
+            case "Level 10":
+                if (_playerScore > mapEnabler.level10_highscore)
+                {
+                    mapEnabler.level10_highscore = _playerScore;
+                }
+                mapEnabler.level10_highscore = _playerScore;
+
+                break;
+            default:
+                Debug.Log("error with score " + currentSceneName);
+                break;
+        }
     }
 }
